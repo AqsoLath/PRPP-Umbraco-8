@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="kontak-alamat">
+	<h3>@Model.AddressTitle</h3>
+	<p>@Model.AddressAddress</p>
+</div>

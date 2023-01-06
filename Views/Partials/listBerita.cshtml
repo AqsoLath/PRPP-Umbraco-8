@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+<div class="container slider-container ">
+    @* <div class="tanda-link" id="berita">a</div>
+    <div class="tanda-link" id="news">a</div> *@
+    <div class="berita-slider swiper">
+        <div class="berita-head">
+            <img src="/images/vector-paper.svg">
+            <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
+        </div>
+        <div class="swiper-wrapper">
+            
+@{
+	var selection = Umbraco.Content(Guid.Parse("8e38fed3-d166-4af2-92f1-54168fab20d0"))
+    .Children()
+    .Where(x => x.IsVisible());
+}
+	@foreach (var item in selection)
+	{
+		<div class="swiper-slide">
+            <a href="@item.Url()" class="slider-card-link">
+            @{var image = item.Value<IPublishedContent>("NewsImage");}
+                <div class="slider-card" style='background-image: url(@image.Url())'>
+                    <div class="slider-date">
+                        <h6>@item.Value("NewsPostDate")</h6>
+                    </div>
+                    <div class="slider-content">
+                        <h3>@item.Value("NewsShortTitle")</h3>
+                            <span>@Umbraco.GetDictionaryValue("lihat selengkapnya")
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                    </div>
+                    <div class="bg-gradient-biru"></div>
+                </div>
+            </a>
+        </div>
+	}
+
+
+
+            
+        </div>
+        <div>
+            <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
+        </div>
+        <div>
+            <img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+        </div>
+    </div>
+</div>
