@@ -2,17 +2,15 @@
 @using Umbraco.Web;
 
 <div class="container slider-container ">
-    @* <div class="tanda-link" id="berita">a</div>
-    <div class="tanda-link" id="news">a</div> *@
-    <div class="berita-slider swiper">
+    <div class="laporantahunan-slider swiper">
         <div class="berita-head">
-            <img src="/images/vector-paper.svg">
-            <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
+            <img src="/images/vector-network.svg">
+            <h2>@Umbraco.GetDictionaryValue("judul laporan")</h2>
         </div>
         <div class="swiper-wrapper">
             
 @{
-	var selection = Umbraco.Content(Guid.Parse("8e38fed3-d166-4af2-92f1-54168fab20d0"))
+	var selection = Umbraco.Content(Guid.Parse("22440b10-b891-4a8f-8399-6b5d841b3354"))
     .Children()
     .Where(x => x.IsVisible());
 }
@@ -35,11 +33,7 @@
                 </div>
             </a>
         </div>
-	}
-
-
-
-            
+	}  
         </div>
         <div>
             <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">

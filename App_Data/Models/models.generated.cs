@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a8cdac6329a6c46d")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1d122a7c6b4d2026")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -2638,6 +2638,13 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Headline 1 Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("headline1Date")]
+		public virtual global::System.DateTime Headline1Date => this.Value<global::System.DateTime>("headline1Date");
+
+		///<summary>
 		/// Headline 1 Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -2666,6 +2673,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string Headline1Type => this.Value<string>("headline1Type");
 
 		///<summary>
+		/// Headline 2 Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("headline2Date")]
+		public virtual global::System.DateTime Headline2Date => this.Value<global::System.DateTime>("headline2Date");
+
+		///<summary>
 		/// Headline 2 Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -2692,6 +2706,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("headline2Type")]
 		public virtual string Headline2Type => this.Value<string>("headline2Type");
+
+		///<summary>
+		/// Headline 3 Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("headline3Date")]
+		public virtual global::System.DateTime Headline3Date => this.Value<global::System.DateTime>("headline3Date");
 
 		///<summary>
 		/// Headline 3 Image
@@ -3265,6 +3286,208 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for News Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		public static string GetNewsTitle(INewsContent that) => that.Value<string>("newsTitle");
+	}
+
+	/// <summary>Announcement</summary>
+	[PublishedModel("announcement")]
+	public partial class Announcement : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "announcement";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Announcement, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Announcement(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+	}
+
+	/// <summary>Announcement Item</summary>
+	[PublishedModel("announcementItem")]
+	public partial class AnnouncementItem : PublishedContentModel, IHeader, INewsContent
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "announcementItem";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<AnnouncementItem, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public AnnouncementItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// News Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops NewsImage => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsImage(this);
+
+		///<summary>
+		/// News Post Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsPostDate")]
+		public virtual global::System.DateTime NewsPostDate => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsPostDate(this);
+
+		///<summary>
+		/// News Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsRichTextContent")]
+		public virtual global::System.Web.IHtmlString NewsRichTextContent => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsRichTextContent(this);
+
+		///<summary>
+		/// News Short Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsShortTitle")]
+		public virtual string NewsShortTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsShortTitle(this);
+
+		///<summary>
+		/// News Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsTitle")]
+		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
+	}
+
+	/// <summary>Report</summary>
+	[PublishedModel("report")]
+	public partial class Report : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "report";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Report, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Report(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+	}
+
+	/// <summary>Report Item</summary>
+	[PublishedModel("reportItem")]
+	public partial class ReportItem : PublishedContentModel, IHeader, INewsContent
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "reportItem";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ReportItem, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ReportItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// News Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops NewsImage => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsImage(this);
+
+		///<summary>
+		/// News Post Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsPostDate")]
+		public virtual global::System.DateTime NewsPostDate => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsPostDate(this);
+
+		///<summary>
+		/// News Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsRichTextContent")]
+		public virtual global::System.Web.IHtmlString NewsRichTextContent => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsRichTextContent(this);
+
+		///<summary>
+		/// News Short Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsShortTitle")]
+		public virtual string NewsShortTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsShortTitle(this);
+
+		///<summary>
+		/// News Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsTitle")]
+		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
 	}
 
 	/// <summary>Folder</summary>

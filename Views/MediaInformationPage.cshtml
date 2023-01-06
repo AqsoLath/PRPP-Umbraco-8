@@ -23,7 +23,7 @@
 				<a href="@Model.Headline1Link.Url" class="headline-link">
 					<div class="berita-headline">
 						<div class="headline-date">
-							<h6>11 - 12 - 2020</h6>
+							<h6>@Model.Headline1Date.ToString("dd - MM - yyyy")</h6>
 						</div>
 						<h3>@Model.Headline1Title</h3>
 						<p>@Model.Headline1Type</p>
@@ -42,7 +42,7 @@
 					{
 						<div class="gambar" style="background-image: url('@Model.Headline2Image.Url()');">
 							<div class="headline-date">
-								<h6>11 - 12 - 2020</h6>
+								<h6>@Model.Headline2Date.ToString("dd - MM - yyyy")</h6>
 							</div>
 						</div>
 					}
@@ -61,7 +61,7 @@
 					{
 						<div class="gambar" style="background-image: url('@Model.Headline3Image.Url()');">
 							<div class="headline-date">
-								<h6>11 - 12 - 2020</h6>
+								<h6>@Model.Headline3Date.ToString("dd - MM - yyyy")</h6>
 							</div>
 						</div>
 					}
@@ -76,3 +76,7 @@
 </div>
 
 @Html.Partial("~/Views/Partials/listBerita.cshtml")
+
+@Html.Partial("~/Views/Partials/listPengumuman.cshtml")
+
+@Html.Partial("~/Views/Partials/listLaporan.cshtml")

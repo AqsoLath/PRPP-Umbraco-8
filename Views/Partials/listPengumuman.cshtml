@@ -1,18 +1,16 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Web;
 
 <div class="container slider-container ">
-    @* <div class="tanda-link" id="berita">a</div>
-    <div class="tanda-link" id="news">a</div> *@
-    <div class="berita-slider swiper">
+    <div class="pengumuman-slider swiper">
         <div class="berita-head">
-            <img src="/images/vector-paper.svg">
-            <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
+            <img src="/images/vector-message.svg">
+            <h2>@Umbraco.GetDictionaryValue("judul pengumuman")</h2>
         </div>
         <div class="swiper-wrapper">
             
 @{
-	var selection = Umbraco.Content(Guid.Parse("8e38fed3-d166-4af2-92f1-54168fab20d0"))
+	var selection = Umbraco.Content(Guid.Parse("9df6ac0e-aed6-46e7-a7e5-5b061ecb8da6"))
     .Children()
     .Where(x => x.IsVisible());
 }
