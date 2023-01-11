@@ -3,3 +3,68 @@
 @{
 	Layout = "master.cshtml";
 }
+
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+<div class="tentang-navbar">
+	<div class="container tentang-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarAbout.cshtml")
+		<div class="tentang-navbar-arrowdown" id="tentang-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container penghargaan-container" data-aos="fade-up">
+	<div class="penghargaan-penghargaan">
+		<h2>@Model.AwardTitle</h2>
+		@if (Model.AwardLink != null)
+		{
+			<a href="@Model.AwardLink.Url">
+				<div class="penghargaan-card">
+					<div class="gambar"><img src="/images/penghargaan-pabrik.png"></div>
+					<div class="penghargaan-content">
+						<h3>@Model.AwardSubtitle</h3>
+						<p>@Model.AwardDescription</p>
+					</div>
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</a>
+		}
+	</div>
+</div>
+
+<div class="container penghargaan-container" data-aos="fade-up">
+	<div class="penghargaan-penghargaan">
+		<h2>@Model.CertificationTitle</h2>
+		@if (Model.CertificationLink != null)
+		{
+			<a href="@Model.CertificationLink.Url">
+				<div class="penghargaan-card">
+					<div class="gambar">
+						<img src="/images/penghargaan-kilang.png" class="kilang-satu">
+						<img src="/images/penghargaan-kilang.png" class="kilang-dua">
+					</div>
+					<div class="penghargaan-content">
+						<h3>@Model.CertificationSubtitle</h3>
+						<p>@Model.CertificationDescription</p>
+					</div>
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</a>
+		}
+	</div>
+</div>
+

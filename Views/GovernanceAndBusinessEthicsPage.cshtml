@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.GovernanceAndBusinessEthicsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarResponsibility.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container container-tata-kelola">
+        <h4>@Model.GovernanceContentTitle</h4>
+        <p>@Model.GovernanceContentText</p>
+    </div>
+    
+    <div class="container container-kode-etik">
+        <div class="ethics-code-wrapper">
+            <p>@Model.EthicsCodeDescription</p>
+        </div>
+
+        <div class="ethics-code-list-wrapper">
+		@foreach (var item in Model.EthicsCodeList){
+			<div class="ethics-code-list">
+                <div class="gambar">
+                    <img src="@item.EthicsCodeImage.Url()" alt="ethics code">
+                </div>
+                <div class="konten">
+                    <p>@item.EthicsCodeContent</p>
+                </div>
+            </div>
+		}
+        </div>
+    </div>

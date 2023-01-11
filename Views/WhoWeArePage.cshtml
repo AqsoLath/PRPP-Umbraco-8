@@ -23,3 +23,24 @@
 		</div>
 	</div>
 </div>
+
+<div class="container whoweare-content rich-text-content">
+	@Model.WhoweareContent
+</div>
+
+@*
+<div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper">
+	fakk
+</div>
+*@
+
+		
+	<div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper">
+		<div class="container">
+			<h3>@Model.FaseTitle</h3>
+			<img src="@Model.FaseImage.Url()" alt="fase">
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque cupiditate obcaecati eaque facere eius adipisci quo facilis repellat, eos minus laboriosam praesentium vero et. Animi consectetur optio totam error?
+			</p>
+		</div>
+	</div>

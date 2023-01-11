@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+<div class="container-informasipengadaan container">
+
+    @{
+        var selection = Umbraco.Content(Guid.Parse("f94cbf2f-4840-4b10-ad14-b19567f4ad36"))
+            .Children()
+            .Where(x => x.IsVisible());
+    }
+    @foreach (var item in selection)
+    {
+        <div class="item" data-aos="fade-up">
+            @{
+                var image = item.Value<IPublishedContent>("NewsImage");
+            }
+            <div class="gambar">
+                <img src="@image.Url()">
+            </div>
+            <div class="konten">
+                <h2>@item.Value("NewsTitle")</h2>
+				<div class="pengadaan-konten-singkat">
+				    @item.Value("NewsRichTextContent")
+				</div>
+                <a href="@item.Url()">
+                    <span>@Umbraco.GetDictionaryValue("lihat selengkapnya")</span>
+                    <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    }
+</div>

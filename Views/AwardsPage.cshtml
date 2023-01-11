@@ -3,3 +3,34 @@
 @{
 	Layout = "master.cshtml";
 }
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+
+
+<div class="container-detailpenghargaan container">
+	@if (Model.AwardsDetailList != null)
+	{
+		foreach (var item in Model.AwardsDetailList)
+		{
+			<div class="item">
+				<div class="gambar">
+					@if (item.AwardsCertificationsDetailImage != null)
+					{
+						<img src="@item.AwardsCertificationsDetailImage.Url()" alt="@item.AwardsCertificationsDetailTitle">
+					}
+				</div>
+				<div class="konten">
+					<h2>@item.AwardsCertificationsDetailTitle</h2>
+					<p>@item.AwardsCertificationsDetailDescription</p>
+				</div>
+			</div>
+		}
+	}
+</div>

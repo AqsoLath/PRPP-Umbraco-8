@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1d122a7c6b4d2026")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "81f4762b1fb6e5da")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -742,7 +742,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("contactForm")]
-		public virtual string ContactForm => this.Value<string>("contactForm");
+		public virtual object ContactForm => this.Value("contactForm");
 
 		///<summary>
 		/// Contact Form Header
@@ -953,7 +953,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Contact Page</summary>
 	[PublishedModel("contactPage")]
-	public partial class ContactPage : PublishedContentModel, IHeader
+	public partial class ContactPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -977,18 +977,11 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
-		/// Address Address
+		/// Contact Form
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("addressAddress")]
-		public virtual global::System.Web.IHtmlString AddressAddress => this.Value<global::System.Web.IHtmlString>("addressAddress");
-
-		///<summary>
-		/// Address Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("addressTitle")]
-		public virtual string AddressTitle => this.Value<string>("addressTitle");
+		[ImplementPropertyType("contactForm")]
+		public virtual global::System.Web.IHtmlString ContactForm => this.Value<global::System.Web.IHtmlString>("contactForm");
 
 		///<summary>
 		/// Page Number
@@ -1003,9 +996,30 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("titlePageUtama")]
 		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// Hero Background Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroBackgroundImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroBackgroundImage => global::Umbraco.Web.PublishedModels.Hero.GetHeroBackgroundImage(this);
+
+		///<summary>
+		/// Hero Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroSubtitle")]
+		public virtual string HeroSubtitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroSubtitle(this);
+
+		///<summary>
+		/// Hero Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroTitle")]
+		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Home Page</summary>
+	/// <summary>0 Home Page</summary>
 	[PublishedModel("homePage")]
 	public partial class HomePage : PublishedContentModel, IFooter, IHeader, INavbarAbout, INavbarBusiness, INavbarResponsibility, INavigationList
 	{
@@ -2006,6 +2020,41 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Fase Background Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("faseBackgroundImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops FaseBackgroundImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("faseBackgroundImage");
+
+		///<summary>
+		/// Fase Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("faseContent")]
+		public virtual global::System.Web.IHtmlString FaseContent => this.Value<global::System.Web.IHtmlString>("faseContent");
+
+		///<summary>
+		/// Fase Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("faseImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops FaseImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("faseImage");
+
+		///<summary>
+		/// Fase Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("faseTitle")]
+		public virtual string FaseTitle => this.Value<string>("faseTitle");
+
+		///<summary>
+		/// Whoweare Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContent")]
+		public virtual global::System.Web.IHtmlString WhoweareContent => this.Value<global::System.Web.IHtmlString>("whoweareContent");
+
+		///<summary>
 		/// Page Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -2257,7 +2306,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Vision Mission Page</summary>
 	[PublishedModel("visionMissionPage")]
-	public partial class VisionMissionPage : PublishedContentModel, IHero
+	public partial class VisionMissionPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2279,6 +2328,69 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Akhlak Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("akhlakDescription")]
+		public virtual string AkhlakDescription => this.Value<string>("akhlakDescription");
+
+		///<summary>
+		/// Akhlak List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("akhlakList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AkhlakList> AkhlakList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AkhlakList>>("akhlakList");
+
+		///<summary>
+		/// Akhlak Logo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("akhlakLogo")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops AkhlakLogo => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("akhlakLogo");
+
+		///<summary>
+		/// Mission Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("missionText")]
+		public virtual string MissionText => this.Value<string>("missionText");
+
+		///<summary>
+		/// Mission Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("missionTitle")]
+		public virtual string MissionTitle => this.Value<string>("missionTitle");
+
+		///<summary>
+		/// Vision Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("visionText")]
+		public virtual string VisionText => this.Value<string>("visionText");
+
+		///<summary>
+		/// Vision Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("visionTitle")]
+		public virtual string VisionTitle => this.Value<string>("visionTitle");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -2379,7 +2491,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Shareholders Page</summary>
 	[PublishedModel("shareholdersPage")]
-	public partial class ShareholdersPage : PublishedContentModel, IHero
+	public partial class ShareholdersPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2401,6 +2513,27 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Shareholders Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("shareholdersImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops ShareholdersImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("shareholdersImage");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -2426,7 +2559,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Award Certification Page</summary>
 	[PublishedModel("awardCertificationPage")]
-	public partial class AwardCertificationPage : PublishedContentModel, IHero
+	public partial class AwardCertificationPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2448,6 +2581,76 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Award Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardDescription")]
+		public virtual string AwardDescription => this.Value<string>("awardDescription");
+
+		///<summary>
+		/// Award Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardLink")]
+		public virtual global::Umbraco.Web.Models.Link AwardLink => this.Value<global::Umbraco.Web.Models.Link>("awardLink");
+
+		///<summary>
+		/// Award Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardSubtitle")]
+		public virtual string AwardSubtitle => this.Value<string>("awardSubtitle");
+
+		///<summary>
+		/// Award Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardTitle")]
+		public virtual string AwardTitle => this.Value<string>("awardTitle");
+
+		///<summary>
+		/// Certification Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("certificationDescription")]
+		public virtual string CertificationDescription => this.Value<string>("certificationDescription");
+
+		///<summary>
+		/// Certification Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("certificationLink")]
+		public virtual global::Umbraco.Web.Models.Link CertificationLink => this.Value<global::Umbraco.Web.Models.Link>("certificationLink");
+
+		///<summary>
+		/// Certification Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("certificationSubtitle")]
+		public virtual string CertificationSubtitle => this.Value<string>("certificationSubtitle");
+
+		///<summary>
+		/// Certification Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("certificationTitle")]
+		public virtual string CertificationTitle => this.Value<string>("certificationTitle");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -2780,7 +2983,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Career Page</summary>
 	[PublishedModel("careerPage")]
-	public partial class CareerPage : PublishedContentModel, IHero
+	public partial class CareerPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2802,6 +3005,27 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Career Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent")]
+		public virtual global::System.Web.IHtmlString CareerContent => this.Value<global::System.Web.IHtmlString>("careerContent");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -2827,7 +3051,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Certifications Page</summary>
 	[PublishedModel("certificationsPage")]
-	public partial class CertificationsPage : PublishedContentModel, IHero
+	public partial class CertificationsPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2849,6 +3073,27 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Certifications Detail List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("certificationsDetailList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AwardsCertificationsList> CertificationsDetailList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AwardsCertificationsList>>("certificationsDetailList");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -2874,7 +3119,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Awards Page</summary>
 	[PublishedModel("awardsPage")]
-	public partial class AwardsPage : PublishedContentModel, IHero
+	public partial class AwardsPage : PublishedContentModel, IHeader, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -2896,6 +3141,27 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Awards Detail List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardsDetailList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AwardsCertificationsList> AwardsDetailList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.AwardsCertificationsList>>("awardsDetailList");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
 
 		///<summary>
 		/// Hero Background Image
@@ -3488,6 +3754,447 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("newsTitle")]
 		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
+	}
+
+	/// <summary>Awards Certifications List</summary>
+	[PublishedModel("awardsCertificationsList")]
+	public partial class AwardsCertificationsList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "awardsCertificationsList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<AwardsCertificationsList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public AwardsCertificationsList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Awards Certifications Detail Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardsCertificationsDetailDescription")]
+		public virtual string AwardsCertificationsDetailDescription => this.Value<string>("awardsCertificationsDetailDescription");
+
+		///<summary>
+		/// Awards Certifications Detail Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardsCertificationsDetailImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops AwardsCertificationsDetailImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("awardsCertificationsDetailImage");
+
+		///<summary>
+		/// Awards Certifications Detail Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("awardsCertificationsDetailTitle")]
+		public virtual string AwardsCertificationsDetailTitle => this.Value<string>("awardsCertificationsDetailTitle");
+	}
+
+	/// <summary>Akhlak List</summary>
+	[PublishedModel("akhlakList")]
+	public partial class AkhlakList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "akhlakList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<AkhlakList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public AkhlakList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Akhlak Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("akhlakDescription")]
+		public virtual string AkhlakDescription => this.Value<string>("akhlakDescription");
+
+		///<summary>
+		/// Akhlak Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("akhlakTitle")]
+		public virtual string AkhlakTitle => this.Value<string>("akhlakTitle");
+	}
+
+	/// <summary>Procurements Page</summary>
+	[PublishedModel("procurementsPage")]
+	public partial class ProcurementsPage : PublishedContentModel, IHeader, IHero
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "procurementsPage";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ProcurementsPage, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ProcurementsPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Pengadaan Content Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pengadaanContentText")]
+		public virtual string PengadaanContentText => this.Value<string>("pengadaanContentText");
+
+		///<summary>
+		/// Pengadaan Content Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pengadaanContentTitle")]
+		public virtual string PengadaanContentTitle => this.Value<string>("pengadaanContentTitle");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// Hero Background Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroBackgroundImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroBackgroundImage => global::Umbraco.Web.PublishedModels.Hero.GetHeroBackgroundImage(this);
+
+		///<summary>
+		/// Hero Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroSubtitle")]
+		public virtual string HeroSubtitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroSubtitle(this);
+
+		///<summary>
+		/// Hero Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroTitle")]
+		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+	}
+
+	/// <summary>Procurement Item</summary>
+	[PublishedModel("procurementItem")]
+	public partial class ProcurementItem : PublishedContentModel, IHeader, INewsContent
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "procurementItem";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ProcurementItem, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ProcurementItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Procurement File
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("procurementFile")]
+		public virtual string ProcurementFile => this.Value<string>("procurementFile");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// News Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops NewsImage => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsImage(this);
+
+		///<summary>
+		/// News Post Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsPostDate")]
+		public virtual global::System.DateTime NewsPostDate => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsPostDate(this);
+
+		///<summary>
+		/// News Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsRichTextContent")]
+		public virtual global::System.Web.IHtmlString NewsRichTextContent => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsRichTextContent(this);
+
+		///<summary>
+		/// News Short Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsShortTitle")]
+		public virtual string NewsShortTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsShortTitle(this);
+
+		///<summary>
+		/// News Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("newsTitle")]
+		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
+	}
+
+	/// <summary>Sustainable Business Page</summary>
+	[PublishedModel("sustainableBusinessPage")]
+	public partial class SustainableBusinessPage : PublishedContentModel, IHeader, IHero
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "sustainableBusinessPage";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SustainableBusinessPage, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public SustainableBusinessPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Sustainable Business Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("sustainableBusinessContent")]
+		public virtual global::System.Web.IHtmlString SustainableBusinessContent => this.Value<global::System.Web.IHtmlString>("sustainableBusinessContent");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// Hero Background Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroBackgroundImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroBackgroundImage => global::Umbraco.Web.PublishedModels.Hero.GetHeroBackgroundImage(this);
+
+		///<summary>
+		/// Hero Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroSubtitle")]
+		public virtual string HeroSubtitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroSubtitle(this);
+
+		///<summary>
+		/// Hero Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroTitle")]
+		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+	}
+
+	/// <summary>Governance And Business Ethics  Page</summary>
+	[PublishedModel("governanceAndBusinessEthicsPage")]
+	public partial class GovernanceAndBusinessEthicsPage : PublishedContentModel, IHeader, IHero
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "governanceAndBusinessEthicsPage";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<GovernanceAndBusinessEthicsPage, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public GovernanceAndBusinessEthicsPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Ethics Code Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ethicsCodeDescription")]
+		public virtual string EthicsCodeDescription => this.Value<string>("ethicsCodeDescription");
+
+		///<summary>
+		/// Ethics Code List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ethicsCodeList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.EthicsCode> EthicsCodeList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.EthicsCode>>("ethicsCodeList");
+
+		///<summary>
+		/// Governance Content Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("governanceContentText")]
+		public virtual string GovernanceContentText => this.Value<string>("governanceContentText");
+
+		///<summary>
+		/// Governance Content Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("governanceContentTitle")]
+		public virtual string GovernanceContentTitle => this.Value<string>("governanceContentTitle");
+
+		///<summary>
+		/// Page Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageNumber")]
+		public virtual int PageNumber => global::Umbraco.Web.PublishedModels.Header.GetPageNumber(this);
+
+		///<summary>
+		/// Title Page Utama
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("titlePageUtama")]
+		public virtual string TitlePageUtama => global::Umbraco.Web.PublishedModels.Header.GetTitlePageUtama(this);
+
+		///<summary>
+		/// Hero Background Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroBackgroundImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroBackgroundImage => global::Umbraco.Web.PublishedModels.Hero.GetHeroBackgroundImage(this);
+
+		///<summary>
+		/// Hero Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroSubtitle")]
+		public virtual string HeroSubtitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroSubtitle(this);
+
+		///<summary>
+		/// Hero Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("heroTitle")]
+		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+	}
+
+	/// <summary>Ethics Code</summary>
+	[PublishedModel("ethicsCode")]
+	public partial class EthicsCode : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "ethicsCode";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<EthicsCode, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public EthicsCode(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Ethics Code Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ethicsCodeContent")]
+		public virtual string EthicsCodeContent => this.Value<string>("ethicsCodeContent");
+
+		///<summary>
+		/// Ethics Code Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ethicsCodeImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops EthicsCodeImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ethicsCodeImage");
 	}
 
 	/// <summary>Folder</summary>

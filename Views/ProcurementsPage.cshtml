@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProcurementsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+
+<div class="pengadaan-wrapper">
+	<div class="container">
+		<h6>@Model.PengadaanContentTitle</h6>
+		<p>@Model.PengadaanContentText</p>
+	</div>
+</div>
+
+@Html.Partial("~/Views/Partials/listPengadaan.cshtml")
