@@ -4,7 +4,9 @@
 @{
     Layout = null;
     // Get basic design settings from the homepage
-    // var home = (Home)Model.Root();
+    var home = (HomePage)Model.Root();
+	var favicon = home.FaviconImage;
+	var headerRoot = home.CustomHeaderBanner;
     // var font = home.Font;
     // var colorTheme = home.ColorTheme;
 }
@@ -20,8 +22,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="page-number" content="@Model.Value("pageNumber")">
+	
+	<link rel="icon" type="image/x-icon" href="@favicon.Url()">
     
-    <link rel="stylesheet" href="@Url.Content("~/css/style3.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/style9.css")" />
 	<link rel="stylesheet" href="@Url.Content("~/css/bootstrap.css")" />
 	<link rel="stylesheet" href="@Url.Content("~/css/CustomRichTextEditor.css")" />
 	<script src="https://www.google.com/recaptcha/api.js" defer></script>
@@ -59,11 +63,16 @@
 	
 	@Html.Partial("~/Views/Partials/navbar.cshtml")
 	<div class="header-banner">
-		<img src="/images/header-root-transparent.png" class="header-root">
+	@if(headerRoot != null){
+		<img src="@headerRoot.Url()" class="header-root">
+	}else{
+		<img src="/images/header-root-transparent-2.png" class="header-root">
 		<img src="/images/header-burung.png" class="header-burung">
 		<img src="/images/header-awan.png" class="header-awan">
 		<img src="/images/header-awan-kecil.png" class="header-awan-kecil">
 		<img src="/images/header-truk.png" class="header-truk">
+	}
+		
 	</div>
     <main>
         @RenderBody()

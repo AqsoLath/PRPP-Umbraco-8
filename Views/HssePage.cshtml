@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HssePage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarResponsibility.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<div class="container rich-text-content">
+    @Model.HsseContent
+</div>
+
+
+<div style="background-image: url('@Model.HsseBackgroundImage.Url()')" class="hsse-wrapper">
+    <div class="container">
+        <div class="hsse-title">
+            <h4>@Model.HsseTitleIndonesia</h4>
+            <h4>@Model.HsseTitleEnglish</h4>
+        </div>
+        <div class="hsse-quotes hsse-quotes-indonesia">
+            <h5>@Model.HsseQuotesTitleIndonesia</h5>
+            <h5>@Model.HsseQuotesTextIndonesia</h5>
+        </div>
+        
+        <div class="hsse-quotes hsse-quotes-indonesia">
+            <h5>@Model.HsseQuotesTitleEnglish</h5>
+            <h5>@Model.HsseQuotesTextEnglish</h5>
+        </div>
+        <div class="hsse-structure">
+            <h6>@Model.HsseStructureTitleIndonesia</h6>
+            <h6>@Model.HsseStructureTitleEnglish</h6>
+            <img src="@Model.HsseStructureImage.Url()">
+        </div>
+    </div>
+</div>

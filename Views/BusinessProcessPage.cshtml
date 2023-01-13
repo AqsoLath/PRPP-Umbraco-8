@@ -3,3 +3,28 @@
 @{
 	Layout = "master.cshtml";
 }
+
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarBusiness.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<div class="container businessprocess-container" data-aos="fade-up">
+    <img src="@Model.BusinessProcessImage.Url()" alt="business process">
+</div>

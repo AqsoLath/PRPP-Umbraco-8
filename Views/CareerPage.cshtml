@@ -4,6 +4,37 @@
 	Layout = "master.cshtml";
 }
 
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+	<div class="container-fluid content">
+		<h1>@Model.HeroTitle</h1>
+		<h2>@Model.HeroSubtitle</h2>
+	</div>
+</div>
+
 <div class="container container-karir rich-text-content">
     @Model.CareerContent
+</div>
+
+
+<div class="fluid-container home-karir d-flex " data-aos="fade-up">
+	<div class="home-karir-vektor">
+		<img src="/images/mekanik.png" class="mekanik">
+		<img src="/images/rumput.png" class="rumput">
+	</div>
+	<div class="row-home-karir-konten-lihat">
+		<div class="home-karir-konten align-self-center">
+			<h2>@Model.CareerBannerSubtitle</h2>
+			<h3>@Model.CareerBannerTitle</h3>
+		</div>
+		<div class="home-karir-lihat align-self-center">
+			@if (Model.CareerBannerLink != null)
+			{
+				<a href="@Model.CareerBannerLink.Url">@Model.CareerBannerLink.Name <i class="fa-solid fa-arrow-right"></i></a>
+			}
+		</div>
+	</div>
+
+	@* <img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni"> *@
 </div>
