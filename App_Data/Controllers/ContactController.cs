@@ -9,6 +9,8 @@ using Umbraco.Core.Services;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.PublishedModels;
 
+using App_Data.Models;
+
 namespace App_Data.Controllers
 {
     public class ContactController : SurfaceController

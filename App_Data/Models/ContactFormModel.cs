@@ -1,4 +1,4 @@
-namespace Umbraco.Web.PublishedModels
+namespace App_Data.Models 
 {
     public partial class ContactFormModel : PublishedContentModel 
     {
