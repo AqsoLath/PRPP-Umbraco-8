@@ -1,5 +1,5 @@
-using Umbraco.Cms.Core.Models;
-using Umbraco.Cms.Web.Common.Models;
+using Umbraco.Core.Models;
+using Umbraco.Web.Common.Models;
 namespace App_Code.Models 
 {
     public class ContactFormModel : PostRedirectModel 
