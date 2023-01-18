@@ -1,6 +1,6 @@
-﻿@using ContentModels = Umbraco.Web.PublishedModels;
-
-@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Web.PublishedModels;
 
 @{
 	Layout = "master.cshtml";
@@ -48,9 +48,7 @@
 		</div>
 	</div>
 	<div class="kontak-form">
-		@{
-			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContentModels.ContactFormModel()); 
-		}
+		@{ Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel()); }
 	</div>
 </div>
 
