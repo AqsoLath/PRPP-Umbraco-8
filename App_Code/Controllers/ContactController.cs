@@ -33,7 +33,7 @@ namespace App_Code.Controllers
             {
                 if (ModelState.IsValid == false)
                 {
-                    Console.WriteLine("ModelState.IsValid: false");
+                    // Console.WriteLine("ModelState.IsValid: false");
                     throw new Exception();
                 }
 
@@ -52,7 +52,7 @@ namespace App_Code.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("DoRegister.e: " + e.Message);
+                // Console.WriteLine("DoRegister.e: " + e.Message);
                 TempData["error"] = false;
                 return CurrentUmbracoPage();
             }
