@@ -1,4 +1,4 @@
-namespace App_Data.Models 
+namespace App_Code.Models 
 {
     public partial class ContactFormModel : PublishedContentModel 
     {
