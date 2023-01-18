@@ -4,8 +4,6 @@ using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Core.Services;
 using Umbraco.Web.Mvc;
-using Umbraco.Web.Models;
-using Umbraco.Web.PublishedModels;
 
 using App_Code.Models;
 
