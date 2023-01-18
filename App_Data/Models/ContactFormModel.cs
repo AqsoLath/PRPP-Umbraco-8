@@ -1,6 +1,6 @@
-namespace PertaminaPrpp.Models
+namespace Umbraco.Web.PublishedModels
 {
-    public class ContactFormModel
+    public partial class ContactFormModel : PublishedContentModel 
     {
         public int? Id { get; set; }
         public string Nama { get; set; }

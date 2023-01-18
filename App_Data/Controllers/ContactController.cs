@@ -7,10 +7,9 @@ using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Core.Services;
 using Umbraco.Web.Mvc;
+using Umbraco.Web.PublishedModels;
 
-using PertaminaPrpp.Models;
-
-namespace PertaminaPrpp.Controllers
+namespace App_Data.Controllers
 {
     public class ContactController : SurfaceController
     {

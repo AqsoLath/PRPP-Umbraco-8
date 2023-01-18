@@ -1,6 +1,6 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
-@using ContentModels = Umbraco.Web.PublishedModels;
-@using PertaminaPrpp.Models
+﻿@using ContentModels = Umbraco.Web.PublishedModels;
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
 
 @{
 	Layout = "master.cshtml";
@@ -48,7 +48,9 @@
 		</div>
 	</div>
 	<div class="kontak-form">
-		@{ Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel()); }
+		@{
+			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContentModels.ContactFormModel()); 
+		}
 	</div>
 </div>
 
