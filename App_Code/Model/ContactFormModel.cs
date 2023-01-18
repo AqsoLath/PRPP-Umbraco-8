@@ -2,7 +2,7 @@ using Umbraco.Core.Models;
 using Umbraco.Web.Models;
 namespace App_Code.Models 
 {
-    public class ContactFormModel : PostRedirectModel 
+    public class ContactFormModel 
     {
         public int? Id { get; set; }
         public string Nama { get; set; }

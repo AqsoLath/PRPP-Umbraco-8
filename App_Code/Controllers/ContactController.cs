@@ -29,11 +29,11 @@ namespace App_Code.Controllers
         {
             try
             {
-                // if (ModelState.IsValid == false)
-                // {
-                //     Console.WriteLine("ModelState.IsValid: false");
-                //     throw new Exception();
-                // }
+                if (ModelState.IsValid == false)
+                {
+                    Console.WriteLine("ModelState.IsValid: false");
+                    throw new Exception();
+                }
 
                 var parentGuid = Guid.Parse("7e854621-8ba2-4539-8f07-a09184ecf403");
                 var contactMessage = _contentService.Create(System.Guid.NewGuid().ToString(), parentGuid, "contactMessages");
@@ -50,7 +50,7 @@ namespace App_Code.Controllers
             }
             catch (Exception e)
             {
-                // Console.WriteLine("DoRegister.e: " + e.Message);
+                Console.WriteLine("DoRegister.e: " + e.Message);
                 TempData["error"] = false;
                 return CurrentUmbracoPage();
             }
