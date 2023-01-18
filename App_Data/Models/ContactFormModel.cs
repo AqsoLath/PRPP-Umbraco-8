@@ -1,6 +1,6 @@
-namespace App_Code.Models
+namespace PertaminaPrpp.Models
 {
-    public class ContactMessagesModel
+    public class ContactFormModel
     {
         public int? Id { get; set; }
         public string Nama { get; set; }

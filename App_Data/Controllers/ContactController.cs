@@ -1,9 +1,4 @@
-using System;
 using System.Web.Mvc;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 // using Microsoft.AspNetCore.Mvc;
 // using Microsoft.Extensions.Logging;
@@ -13,9 +8,9 @@ using Umbraco.Core.Models;
 using Umbraco.Core.Services;
 using Umbraco.Web.Mvc;
 
-using App_Code.Models;
+using PertaminaPrpp.Models;
 
-namespace App_Code.Controllers
+namespace PertaminaPrpp.Controllers
 {
     public class ContactController : SurfaceController
     {
@@ -31,7 +26,7 @@ namespace App_Code.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateUmbracoFormRouteString]
-        public ActionResult DoRegister(ContactMessagesModel model)
+        public ActionResult DoRegister(ContactFormModel model)
         {
             try
             {
