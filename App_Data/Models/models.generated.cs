@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6705e4785610ef01")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7130658469b28991")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -4266,11 +4266,67 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Sub Content 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent1")]
+		public virtual string SubContent1 => this.Value<string>("subContent1");
+
+		///<summary>
+		/// Sub Content 1 Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent1Image")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops SubContent1Image => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("subContent1Image");
+
+		///<summary>
+		/// Sub Content 1 Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent1Title")]
+		public virtual string SubContent1Title => this.Value<string>("subContent1Title");
+
+		///<summary>
+		/// Sub Content 2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent2")]
+		public virtual string SubContent2 => this.Value<string>("subContent2");
+
+		///<summary>
+		/// Sub Content 2 Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent2Image")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops SubContent2Image => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("subContent2Image");
+
+		///<summary>
+		/// Sub Content 2 Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("subContent2Title")]
+		public virtual string SubContent2Title => this.Value<string>("subContent2Title");
+
+		///<summary>
 		/// Sustainable Business Content
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("sustainableBusinessContent")]
 		public virtual global::System.Web.IHtmlString SustainableBusinessContent => this.Value<global::System.Web.IHtmlString>("sustainableBusinessContent");
+
+		///<summary>
+		/// Sustainable Business Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("sustainableBusinessImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops SustainableBusinessImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("sustainableBusinessImage");
+
+		///<summary>
+		/// Sustainable Business Image Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("sustainableBusinessImageTitle")]
+		public virtual string SustainableBusinessImageTitle => this.Value<string>("sustainableBusinessImageTitle");
 
 		///<summary>
 		/// Page Number
@@ -4706,7 +4762,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Contact Messages</summary>
 	[PublishedModel("contactMessages")]
-	public partial class ContactMessages : PublishedContentModel
+	public partial class ContactMessages : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -4723,7 +4779,7 @@ namespace Umbraco.Web.PublishedModels
 #pragma warning restore 0109
 
 		// ctor
-		public ContactMessages(IPublishedContent content)
+		public ContactMessages(IPublishedElement content)
 			: base(content)
 		{ }
 

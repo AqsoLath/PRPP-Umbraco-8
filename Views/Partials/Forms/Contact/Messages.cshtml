@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<App_Code.Models.ContactMessagesModel>
+
+@using App_Code.Controllers
+@using App_Code.Models
+
+@{
+    
+}
+
+@using (Html.BeginUmbracoForm<ContactController>(nameof(ContactController.DoRegister)))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="formbox ">
+        <div class="formbox-field">
+            <label class="formbox-label" for="contactNama">Nama</label>
+            <input id="contactNama" class="form-control" type="text" name="Nama" required />
+        </div>
+        <div class="formbox-field">
+            <label class="formbox-label" for="contactEmail">Email</label>
+            <input id="contactEmail" class="form-control" type="text" name="Email" required />
+        </div>
+        <div class="formbox-field">
+            <label class="formbox-label" for="contactPesan">Pesan Anda</label>
+            <textarea id="contactPesan" class="form-control" name="Pesan" required></textarea>
+        </div>
+    </div>
+    <div class="formbox">
+        <div class="formbox-body">
+            <div class="formbox-action">
+                <button class="action" type="submit">Kirim <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+}

@@ -28,3 +28,22 @@
 <div class="container sustainable-container rich-text-content">
     @Model.SustainableBusinessContent
 </div>
+
+<div class="container sustainable-business-image">
+    <h3>@Model.SustainableBusinessImageTitle</h3>
+    <img src="@Model.SustainableBusinessImage.Url()">
+</div>
+
+<div class="container px-2 sustainable-sub-content sustainable-sub-content-1">
+    <img src="@Model.SubContent1Image.Url()">
+	<h4>@Model.SubContent1Title</h4>
+    
+    <p>@Model.SubContent1</p>
+</div>
+
+<div class="container px-2 sustainable-sub-content sustainable-sub-content-2">
+	<img src="@Model.SubContent2Image.Url()">
+	<h4>@Model.SubContent2Title</h4>
+    
+    <p>@Model.SubContent2</p>
+</div>
