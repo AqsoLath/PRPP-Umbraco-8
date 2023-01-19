@@ -1,13 +1,13 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<App_Code.Models.ContactFormModel>
 
-@using App_Code.Controllers;
-@using App_Code.Models;
+@* @using App_Code.Controllers; *@
+@* @using App_Code.Models; *@
 
 @{
     
 }
 
-@using (Html.BeginUmbracoForm<ContactController>(nameof(ContactController.DoRegister)))
+@* @using (Html.BeginUmbracoForm<ContactController>(nameof(ContactController.DoRegister)))
 {
     @Html.AntiForgeryToken()
 
@@ -32,4 +32,4 @@
             </div>
         </div>
     </div>
-}
+} *@
