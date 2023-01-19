@@ -46,8 +46,6 @@ window.onscroll = function () {
 };
 
 $(function(){
-    var current = location.pathname;
-    // const pageNumber = $("#navbar .navbar-list").attr("data-page-number");
     const pageNumber = document.querySelector("meta[name=page-number]").content;
     const navList = document.querySelectorAll(".navbar-menu .navbar-list a")
 
@@ -76,48 +74,34 @@ $(function(){
             navList[6].classList.add('active')
             break;
     }
-
-    $('.navbar-menu .navbar-list a').each(function(){
-        var $this = $(this);
-
-
-        // console.log($this.text())
-        // console.log(current)
-        // if the current path is like this link, make it active
-        // if(current == "/" && $this.text() == "Home"){
-        //     $this.addClass('active');
-        // }else if(current.includes('/tentang-kami/') && $this.text() == "Tentang Kami"){
-        //     $this.addClass('active')
-        // }else if(current.includes('/bisnis/') && $this.text() == "Bisnis"){
-        //     $this.addClass('active')
-        // }else if((current.includes('/berita/') && $this.text() == "Media & Informasi") || (current.includes('/pengumuman/') && $this.text() == "Media & Informasi"))  {
-        //     $this.addClass('active')
-        // }else if(current != "/" && $this.attr('href').indexOf(current) !== -1){
-        //     $this.addClass('active');
-        // }
-    })
 })
 
 $(function(){
-    var currentSidebar = location.pathname;
-    $('.sidebar-menu .sidebar-list a').each(function(){
-        var $this = $(this);
-
-        // console.log($this.text())
-        // console.log(current)
-        // if the current path is like this link, make it active
-        if(currentSidebar == "/" && $this.text() == "Home"){
-            $this.addClass('active');
-        }else if(currentSidebar.includes('/tentang-kami/') && $this.text() == "Tentang Kami"){
-            $this.addClass('active')
-        }else if(currentSidebar.includes('/bisnis/') && $this.text() == "Bisnis"){
-            $this.addClass('active')
-        }else if((currentSidebar.includes('/berita/') && $this.text() == "Media & Informasi") || (currentSidebar.includes('/pengumuman/') && $this.text() == "Media & Informasi"))  {
-            $this.addClass('active')
-        }else if(currentSidebar != "/" && $this.attr('href').indexOf(currentSidebar) !== -1){
-            $this.addClass('active');
-        }
-    })
+    const pageNumber = document.querySelector("meta[name=page-number]").content;
+    const sideList = document.querySelectorAll(".sidebar-menu .sidebar-list a")
+    switch(pageNumber){
+        case '1':
+            sideList[0].classList.add('active')
+            break;
+        case '2':
+            sideList[1].classList.add('active')
+            break;
+        case '3':
+            sideList[2].classList.add('active')
+            break;
+        case '4':
+            sideList[3].classList.add('active')
+            break;
+        case '5':
+            sideList[4].classList.add('active')
+            break;
+        case '6':
+            sideList[5].classList.add('active')
+            break;
+		case '7':
+            sideList[6].classList.add('active')
+            break;
+    }
 })
 
 // let a = 1;
