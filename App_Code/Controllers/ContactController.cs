@@ -4,15 +4,21 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+// using Microsoft.AspNetCore.Mvc;
+// using Microsoft.Extensions.Logging;
+
 using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Core.Services;
+
+using Umbraco.Web.Models;
+using Umbraco.Web.Mvc;
 
 using App_Code.Models;
 
 namespace App_Code.Controllers
 {
-    public class ContactController : Umbraco.Web.Mvc.SurfaceController
+    public class ContactController : SurfaceController
     {
         private IContentService _contentService;
 
