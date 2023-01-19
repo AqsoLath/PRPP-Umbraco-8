@@ -232,9 +232,9 @@ body{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	/* -webkit-box-pack: justify;
+	    -ms-flex-pack: justify; */
+	        justify-content: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	/*align-items: center;*/
@@ -269,6 +269,8 @@ body{
 	background-color: transparent;
 
 	opacity: 1 !important;
+
+	margin: 0 16px !important;
 }
 
 .swiper-manajemen-container .swiper-pagination-bullet-active,
@@ -371,8 +373,7 @@ a:hover{
 }
 
 .navbar-list a{
-	margin-right: 40px;
-
+	margin-right: 30px;
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
@@ -694,7 +695,7 @@ nav.scrolled .navbar-hamburger{
 .home-main-slider-content{
 	text-align: right;
 	margin-left: auto;
-	max-width: 840px;
+	max-width: 75%;
 
 	padding-right: 48px;
 	padding-bottom: 64px;
@@ -1290,7 +1291,7 @@ a.coklat-prpp:hover{
 
 }
 
-.home-pengadaan .item a, .home-karir-lihat a{
+.home-pengadaan .item a, .home-karir-lihat a, .home-tanggungjawab a{
 	display: inline-block;
 
 	position: relative;
@@ -1316,7 +1317,8 @@ a.coklat-prpp:hover{
 }
 
 .home-pengadaan .item a:before,
-.home-karir-lihat  a:before{
+.home-karir-lihat  a:before,
+.home-tanggungjawab a:before{
 	content: "";
 
 	position: absolute;
@@ -1340,7 +1342,8 @@ a.coklat-prpp:hover{
 
 
 .home-pengadaan .item a:hover:before,
-.home-karir-lihat  a:hover:before{
+.home-karir-lihat  a:hover:before,
+.home-tanggungjawab a:hover:before{
 	width: 100%;
 
 	border-radius: 4px;
@@ -1427,7 +1430,7 @@ a.coklat-prpp:hover{
 	right: 20px;
 }
 
-.home-karir-lihat i{
+.home-karir-lihat i, .home-tanggungjawab i{
 	margin-left: 16px;
 }
 
@@ -3485,12 +3488,19 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-mediasosial .mediasosial-list a{
+	padding-bottom: 4px;  
+
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
-	color: var(--fonte);
+	color: var(--fonte) !important;
+}
+
+.kontak-container .kontak-mediasosial .mediasosial-list a:hover{
+	border-bottom: 2px solid var(--abu700);
+	transition: .3s;
 }
 
 .kontak-container .kontak-mediasosial .mediasosial-list i{
@@ -3809,6 +3819,12 @@ a.coklat-prpp:hover{
 	width: 50%;
 }
 
+.pengumuman-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .berita-section{
 	position: relative;
 
@@ -4016,12 +4032,14 @@ a.coklat-prpp:hover{
 
 	padding: 16px;
 
-	margin-bottom: 24px;
+	margin-bottom: 0;
 }
 
 .pengumuman-headline .gambar{
 	position: relative;
 	border-radius: 10px;
+
+	flex-shrink: 0;
 
 }
 
@@ -4870,7 +4888,7 @@ a.coklat-prpp:hover{
 
 
 .container-artikel img{
-	max-width: 100%;
+	width: 100%;
 }
 
 .container-artikel .artikel-published{
@@ -5489,7 +5507,7 @@ footer .social-media{
 	}
 
 	.home-main-slider-content{
-		max-width: 600px;
+		/* max-width: 600px; */
 
 		padding-bottom: 56px;
 	}
@@ -6184,8 +6202,8 @@ footer .social-media{
 	} */
 
 	.home-main-slider-content{
-		max-width: 550px;
-
+		max-width: 95%;
+		
 		padding-bottom: 52px;
 	}
 
@@ -6977,7 +6995,7 @@ footer .social-media{
 	.home-main-slider-content{
 		padding-right: 16px;
 
-		max-width: 400px;
+		/* max-width: 400px; */
 
 		padding-bottom: 46px;
 	}
