@@ -3752,7 +3752,14 @@ a.coklat-prpp:hover{
 	color: var(--abu300);
 }
 
+
+
 .kontak-container .kontak-form button{
+	position: relative;
+	z-index: 2;
+
+	display: inline-block;
+
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
@@ -3770,7 +3777,35 @@ a.coklat-prpp:hover{
 
 
 	border: none;
-	border-left: 4px solid var(--hijauPRPP);
+
+	/*border-left: 4px solid var(--hijauPRPP);*/
+}
+
+.kontak-container .kontak-form button:before{
+	content: "";
+
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+
+	width: 4px;
+	height: 100%;
+
+	border-radius: 4px 0 0 4px;
+
+	background-color: var(--hijauPRPP);
+
+	-webkit-transition: .5s;
+
+	-o-transition: .5s;
+
+	transition: .5s;
+}
+
+.kontak-container .kontak-form button:hover:before{
+	width: 100%;
+	border-radius: 4px;
 }
 
 .kontak-container .kontak-form i{
