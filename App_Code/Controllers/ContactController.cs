@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Core.Services;
-using Umbraco.Web.Mvc;
+using Umbraco.Core.Web;
 
 using App_Code.Models;
 
 namespace App_Code.Controllers
 {
-    public class ContactController : SurfaceController
+    public class ContactController : Umbraco.Web.Mvc.SurfaceController
     {
         private IContentService _contentService;
 
