@@ -6,7 +6,7 @@
 
 <div class="tentang-jumbotron">
 	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	<img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni">
+
 	<div class="container-fluid content">
 		<h1>@Model.HeroTitle</h1>
 		<h2>@Model.HeroSubtitle</h2>
@@ -14,7 +14,7 @@
 </div>
 
 <div class="container container-karir rich-text-content">
-    @Model.CareerContent
+	@Model.CareerContent
 </div>
 
 
@@ -31,10 +31,11 @@
 		<div class="home-karir-lihat align-self-center">
 			@if (Model.CareerBannerLink != null)
 			{
-				<a href="@Model.CareerBannerLink.Url">@Model.CareerBannerLink.Name <i class="fa-solid fa-arrow-right"></i></a>
+				<a href="@Model.CareerBannerLink.Url">@Model.CareerBannerLink.Name <i
+					class="fa-solid fa-arrow-right"></i></a>
 			}
 		</div>
 	</div>
 
-	@* <img src="/images/pertamina-warnawarni.png" class="pertamina-warnawarni"> *@
+	@*  *@
 </div>
