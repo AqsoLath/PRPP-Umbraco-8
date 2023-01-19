@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7130658469b28991")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "33d5a997e4a3a851")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 
 // FILE: models.generated.cs
@@ -2040,6 +2040,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops CardTanggungjawabImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("cardTanggungjawabImage");
 
 		///<summary>
+		/// Card Tanggungjawab Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("cardTanggungjawabLink")]
+		public virtual global::Umbraco.Web.Models.Link CardTanggungjawabLink => this.Value<global::Umbraco.Web.Models.Link>("cardTanggungjawabLink");
+
+		///<summary>
 		/// Card Tanggungjawab Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -2167,6 +2174,41 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("whoweareContent")]
 		public virtual global::System.Web.IHtmlString WhoweareContent => this.Value<global::System.Web.IHtmlString>("whoweareContent");
+
+		///<summary>
+		/// Whoweare Content Bawah
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContentBawah")]
+		public virtual global::System.Web.IHtmlString WhoweareContentBawah => this.Value<global::System.Web.IHtmlString>("whoweareContentBawah");
+
+		///<summary>
+		/// Whoweare Content Image 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContentImage1")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops WhoweareContentImage1 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("whoweareContentImage1");
+
+		///<summary>
+		/// Whoweare Content Image2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContentImage2")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops WhoweareContentImage2 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("whoweareContentImage2");
+
+		///<summary>
+		/// Whoweare Content Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContentTitle")]
+		public virtual string WhoweareContentTitle => this.Value<string>("whoweareContentTitle");
+
+		///<summary>
+		/// Whoweare Content Title Hijau
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whoweareContentTitleHijau")]
+		public virtual string WhoweareContentTitleHijau => this.Value<string>("whoweareContentTitleHijau");
 
 		///<summary>
 		/// Page Number
@@ -3261,11 +3303,53 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string CareerBannerTitle => this.Value<string>("careerBannerTitle");
 
 		///<summary>
-		/// Career Content
+		/// Career Content 1
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("careerContent")]
-		public virtual global::System.Web.IHtmlString CareerContent => this.Value<global::System.Web.IHtmlString>("careerContent");
+		[ImplementPropertyType("careerContent1")]
+		public virtual global::System.Web.IHtmlString CareerContent1 => this.Value<global::System.Web.IHtmlString>("careerContent1");
+
+		///<summary>
+		/// Career Content 1 Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent1Image")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops CareerContent1Image => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("careerContent1Image");
+
+		///<summary>
+		/// Career Content 1 Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent1Title")]
+		public virtual string CareerContent1Title => this.Value<string>("careerContent1Title");
+
+		///<summary>
+		/// Career Content 1 Title Hijau
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent1TitleHijau")]
+		public virtual string CareerContent1TitleHijau => this.Value<string>("careerContent1TitleHijau");
+
+		///<summary>
+		/// Career Content 2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent2")]
+		public virtual global::System.Web.IHtmlString CareerContent2 => this.Value<global::System.Web.IHtmlString>("careerContent2");
+
+		///<summary>
+		/// Career Content 2 Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent2Title")]
+		public virtual string CareerContent2Title => this.Value<string>("careerContent2Title");
+
+		///<summary>
+		/// Career Content 2 Title Hijau
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerContent2TitleHijau")]
+		public virtual string CareerContent2TitleHijau => this.Value<string>("careerContent2TitleHijau");
 
 		///<summary>
 		/// Page Number
@@ -4127,7 +4211,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("pengadaanContentText")]
-		public virtual string PengadaanContentText => this.Value<string>("pengadaanContentText");
+		public virtual global::System.Web.IHtmlString PengadaanContentText => this.Value<global::System.Web.IHtmlString>("pengadaanContentText");
 
 		///<summary>
 		/// Pengadaan Content Title
@@ -4329,6 +4413,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::System.Web.IHtmlString SustainableBusinessContent => this.Value<global::System.Web.IHtmlString>("sustainableBusinessContent");
 
 		///<summary>
+		/// Sustainable Business Content Title Hijau
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("sustainableBusinessContentTitleHijau")]
+		public virtual string SustainableBusinessContentTitleHijau => this.Value<string>("sustainableBusinessContentTitleHijau");
+
+		///<summary>
 		/// Sustainable Business Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -4422,7 +4513,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("governanceContentText")]
-		public virtual string GovernanceContentText => this.Value<string>("governanceContentText");
+		public virtual global::System.Web.IHtmlString GovernanceContentText => this.Value<global::System.Web.IHtmlString>("governanceContentText");
 
 		///<summary>
 		/// Governance Content Title
@@ -4561,6 +4652,27 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::System.Web.IHtmlString TentangPetrokimiaContent => this.Value<global::System.Web.IHtmlString>("tentangPetrokimiaContent");
 
 		///<summary>
+		/// Tentang Petrokimia Content Image 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("tentangPetrokimiaContentImage1")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops TentangPetrokimiaContentImage1 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("tentangPetrokimiaContentImage1");
+
+		///<summary>
+		/// Tentang Petrokimia Content Image2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("tentangPetrokimiaContentImage2")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops TentangPetrokimiaContentImage2 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("tentangPetrokimiaContentImage2");
+
+		///<summary>
+		/// Tentang Petrokimia Content Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("tentangPetrokimiaContentTitle")]
+		public virtual string TentangPetrokimiaContentTitle => this.Value<string>("tentangPetrokimiaContentTitle");
+
+		///<summary>
 		/// Page Number
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -4674,6 +4786,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("hsseContent")]
 		public virtual global::System.Web.IHtmlString HsseContent => this.Value<global::System.Web.IHtmlString>("hsseContent");
+
+		///<summary>
+		/// Hsse Content Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("hsseContentImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops HsseContentImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("hsseContentImage");
 
 		///<summary>
 		/// Hsse Quotes Text English

@@ -26,7 +26,10 @@
 </div>
 
 <div class="container rich-text-content">
-	@Model.TentangPetrokimiaContent
+	<img src="@Model.TentangPetrokimiaContentImage1.Url()" class="rich-float-left w-50">
+	<h3>@Model.TentangPetrokimiaContentTitle</h3>
+	<p>@Model.TentangPetrokimiaContent</p>
+	<img src="@Model.TentangPetrokimiaContentImage2.Url()" class="">
 </div>
 <div style="background-image:url('@Model.PeranBackgroundImage.Url()')" class="peran-wrapper">
 	<div class="container container-peran">

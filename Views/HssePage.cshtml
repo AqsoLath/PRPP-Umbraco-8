@@ -26,15 +26,16 @@
 </div>
 
 <div class="container rich-text-content">
-    @Model.HsseContent
+    <img src="@Model.HsseContentImage.Url()" class="rich-float-left w-50">
+    <p>@Model.HsseContent</p>
 </div>
 
 
 <div style="background-image: url('@Model.HsseBackgroundImage.Url()')" class="hsse-wrapper">
     <div class="container">
         <div class="hsse-title">
-            <h4>@Model.HsseTitleIndonesia</h4>
-            <h4>@Model.HsseTitleEnglish</h4>
+            <h4 class="hsse-title-indonesia">@Model.HsseTitleIndonesia</h4>
+            <h4 class="hsse-title-english">@Model.HsseTitleEnglish</h4>
         </div>
         <div class="hsse-quotes hsse-quotes-indonesia">
             <h5>@Model.HsseQuotesTitleIndonesia</h5>
