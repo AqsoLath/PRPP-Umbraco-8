@@ -296,7 +296,7 @@ body{
 .home-media .item,
 .home-tanggungjawab .item,
 .home-pengadaan .item{
-	height: auto;
+	height: 100%;
 }
 
 
@@ -466,8 +466,8 @@ a:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	letter-spacing: 0.01em;
 	text-transform: capitalize;
 
@@ -793,8 +793,8 @@ nav.scrolled .navbar-hamburger{
 .home-main-slider-content h1{
 	font-family: 'latoBold';
 	color: #ffffff;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 2.9vw;
 	letter-spacing: 0.02em;
 	/*margin-top: 200px;*/
 }
@@ -803,8 +803,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.6vw;
+	line-height: 1.9vw;
 	color: #ffffff;
 	margin-top: 24px;
 	margin-bottom: 36px;
@@ -814,8 +814,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoSemiBold';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 1.3vw;
+	line-height: 1.6vw;
 	color: var(--biruPRPP) !important;
 	background-color: #F9FAFB;
 
@@ -910,6 +910,10 @@ nav.scrolled .navbar-hamburger{
 	margin-top: 40px;
 }
 
+.home-tentang-row{
+	display:flex;
+}
+
 .home-tentang-pabrik{
 	margin-top: -130px;
 
@@ -928,10 +932,11 @@ nav.scrolled .navbar-hamburger{
 .home-tentang-gambar{
 	position: relative;
 	z-index: 5;
+	padding: 16px;
 }
 
 .home-tentang-content{
-	padding: 60px 0 40px;
+	padding:  0 20px;
 	padding-right: 100px;
 	padding-left: 20px;
 	/*padding-left: 200px;*/
@@ -941,8 +946,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'LatoSemiBold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.4vw;
+	line-height: 1.7vw;
 	/* identical to box height */
 
 	letter-spacing: 0.02em;
@@ -966,8 +971,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 1.3vw;
+	line-height: 1.6vw;
 	margin-bottom: 35px;
 
 
@@ -982,8 +987,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoSemiBold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	letter-spacing: 0.02em;
 
 	/*border: 1px solid var(--merahPRPP) !important;
@@ -1116,7 +1121,7 @@ nav.scrolled .navbar-hamburger{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-
+	justify-content: space-between;
 }
 
 .home-bisnis .item .gambar, .home-media .item .gambar, .home-tanggungjawab .item .gambar, .home-pengadaan .item .gambar{
@@ -1252,7 +1257,7 @@ a.coklat-prpp:hover{
 	text-align: center;
 	padding: 0px 20px;
 
-	height: 80px;
+	/*height: 80px;*/
 
 	color: var(--abu400);
 }
@@ -1306,7 +1311,7 @@ a.coklat-prpp:hover{
 	font-size: 16px;
 	line-height: 19px;
 
-	height: 70px;
+	/*height: 70px;*/
 
 	color: var(--abu50);
 
@@ -1374,7 +1379,7 @@ a.coklat-prpp:hover{
 	line-height: 19px;
 	margin-bottom: 36px;
 
-	height: 70px;
+	/*height: 70px;*/
 
 	color: var(--abu50);
 
@@ -5411,8 +5416,8 @@ footer .social-media{
 	}
 
 	.navbar-list a{
-		font-size: 14px;
-		margin-right: 16px
+		font-size: 1.05vw;
+		margin-right: 1.2vw
 	}
 
 
@@ -5452,7 +5457,7 @@ footer .social-media{
 	}
 
 	.home-tanggungjawab .item{
-		height: 320px;
+		/*height: 320px; */
 		padding: 12px;
 	}
 
@@ -5676,8 +5681,8 @@ footer .social-media{
 	}
 
 	.home-tentang-content{
-		padding: 30px 0;
-		padding-right: 40px;
+		padding: 16px 0;
+		padding-right: 0px;
 	}
 
 	.home-tentang-content h3{
@@ -5728,7 +5733,7 @@ footer .social-media{
 	}
 
 	.home-tanggungjawab .item{
-		padding: 8px;
+		padding: 40px 16px;
 	}
 
 	.home-tanggungjawab .item h3{
@@ -6363,7 +6368,7 @@ footer .social-media{
 	}
 
 	.home-tentang-pabrik{
-		margin-top: 32px !important;
+		margin-top: 0px !important;
 	}
 
 	.home-bisnis .item{
@@ -6402,7 +6407,7 @@ footer .social-media{
 	}
 
 	.home-media .item p{
-		height: 60px;
+		/*height: 60px;*/
 	}
 
 	.home-tanggungjawab{

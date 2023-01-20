@@ -599,7 +599,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
       spaceBetween: 100,
 
       breakpoints:{
-        768:{
+        769:{
             slidesPerView: 3,
             enabled: false, 
             spaceBetween: 32
@@ -623,7 +623,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
       spaceBetween: 100,
 
       breakpoints:{
-        768:{
+        769:{
             slidesPerView: 3,
             enabled: false, 
             spaceBetween: 32
@@ -647,7 +647,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
 
 
       breakpoints:{
-        768:{
+        769:{
             slidesPerView: 3,
             enabled: false, 
             spaceBetween: 32
@@ -671,7 +671,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
       slideWidth:120,
 
       breakpoints:{
-        768:{
+        769:{
             slidesPerView: 3,
             enabled: false, 
             spaceBetween: 32

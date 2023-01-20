@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "33d5a997e4a3a851")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5b2a8d7d3b422b5f")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -4895,7 +4895,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Contact Messages</summary>
 	[PublishedModel("contactMessages")]
-	public partial class ContactMessages : PublishedElementModel
+	public partial class ContactMessages : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -4912,7 +4912,7 @@ namespace Umbraco.Web.PublishedModels
 #pragma warning restore 0109
 
 		// ctor
-		public ContactMessages(IPublishedElement content)
+		public ContactMessages(IPublishedContent content)
 			: base(content)
 		{ }
 
