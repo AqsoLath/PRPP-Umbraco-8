@@ -47,6 +47,7 @@ namespace App_Code.Controllers
                 contactMessage.Properties["contactNama"].SetValue(model.Nama);
                 contactMessage.Properties["contactEmail"].SetValue(model.Email);
                 contactMessage.Properties["contactPesan"].SetValue(model.Pesan);
+                contactMessage.Properties["contactStatus"].SetValue(JsonConvert.SerializeObject(new[] { "Belum Dibaca" }));
 
                 _contentService.SaveAndPublish(contactMessage);
 
