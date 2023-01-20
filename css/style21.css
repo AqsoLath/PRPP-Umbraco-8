@@ -273,6 +273,41 @@ body{
 	border: none;
 }
 
+
+
+.home-bisnis .swiper-wrapper,
+.home-media .swiper-wrapper,
+.home-tanggungjawab .swiper-wrapper,
+.home-pengadaan .swiper-wrapper{
+	align-items: stretch;
+
+}
+
+.home-bisnis .swiper-slide,
+.home-media .swiper-slide,
+.home-tanggungjawab .swiper-slide,
+.home-pengadaan .swiper-slide{
+	height: auto;
+	
+}
+
+
+.home-bisnis .item,
+.home-media .item,
+.home-tanggungjawab .item,
+.home-pengadaan .item{
+	height: auto;
+}
+
+
+.home-tanggungjawab .item p,
+.home-pengadaan .item p{
+	height: auto;
+}
+
+
+
+
 .swiper-manajemen-container .swiper-slide,
 .swiper-manajemen-container-2 .swiper-slide{
 /*	padding-right: 80px;
@@ -1203,10 +1238,10 @@ a.coklat-prpp:hover{
 	margin-top: 100px;
 	padding-bottom: 18px !important;
 }
-
+/* 
 .home-media .item{
 	height: 390px !important;
-}
+} */
 
 .home-media .item p{
 	font-family: 'lato';
