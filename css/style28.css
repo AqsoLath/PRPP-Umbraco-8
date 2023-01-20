@@ -199,8 +199,8 @@ body{
   width: 20px !important;
   height: 20px !important;
   text-align: center;
-  line-height: 20px;
-  font-size: 20px;
+  font-size: 1.4vw;
+  line-height: 1.7vw;
   color: #ffffff;
   opacity: 1 !important;
   background-color: transparent !important;
@@ -216,18 +216,18 @@ body{
 }
 
 .home-main-slider .swiper-pagination-bullet:hover{
-	font-size: 26px;
+	font-size: 1.8vw;
 }
 
 .home-main-slider .swiper-pagination-bullet-active:hover{
-	font-size: 32px;
+	font-size: 2.1vw;
 }
 
 .home-main-slider .swiper-pagination-bullet-active {
 
   margin: 0 50px !important;
 
-	font-size: 32px;
+	font-size: 2.1vw;
   color: #ffffff;
   background-color: transparent !important;
 }
@@ -794,7 +794,7 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoBold';
 	color: #ffffff;
 	font-size: 2.8vw;
-	line-height: 2.9vw;
+	line-height: 3vw;
 	letter-spacing: 0.02em;
 	/*margin-top: 200px;*/
 }
@@ -959,8 +959,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	margin-top: 24px;
 	letter-spacing: 0.02em;
 
@@ -1087,8 +1087,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	margin-bottom: 10px;
 
 	letter-spacing: 0.02em;
@@ -1100,8 +1100,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 1.3vw;
+	line-height: 1.6vw;
 
 	letter-spacing: 0.02em;
 
@@ -1174,8 +1174,8 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.6vw;
+	line-height: 1.9vw;
 	border-radius: 10px;
 
 	letter-spacing: 0.02em;
@@ -1252,8 +1252,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	text-align: center;
 	padding: 0px 20px;
 
@@ -1271,8 +1271,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.6vw;
+	line-height: 1.9vw;
 	border-radius: 10px;
 
 	letter-spacing: 0.02em;
@@ -1297,8 +1297,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 28px;
-	line-height: 40px;
+	font-size: 1.8vw;
+	line-height: 2.2vw;
 
 	letter-spacing: 0.02em;
 	color: var(--abu50);
@@ -1308,8 +1308,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 
 	/*height: 70px;*/
 
@@ -1362,8 +1362,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 28px;
-	line-height: 40px;
+	font-size: 1.8vw;
+	line-height: 2.2vw;
 
 	letter-spacing: 0.02em;
 
@@ -1375,8 +1375,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	margin-bottom: 36px;
 
 	/*height: 70px;*/
@@ -1394,8 +1394,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.05vw;
+	line-height: 1.2vw;
 
 	letter-spacing: 0.02em;
 
@@ -1496,8 +1496,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemiBold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.4vw;
+	line-height: 1.7vw;
 
 	margin-bottom: 24px;
 	letter-spacing: 0.02em;	
@@ -1509,8 +1509,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	margin-right: 20px;
 	/* or 120% */
 
@@ -1564,8 +1564,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	letter-spacing: 0.02em;
 
 	color: #ffffff;
@@ -1575,8 +1575,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.6vw;
+	line-height: 1.9vw;
 	letter-spacing: 0.02em;
 
 	margin-top: 24px;
@@ -1654,8 +1654,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	letter-spacing: 0.01em;
 
 	border-bottom: 4px solid transparent;
@@ -1698,7 +1698,8 @@ a.coklat-prpp:hover{
 }
 
 .fase-wrapper h3{
-	font-size: 40px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	color:#FFFFFF;
 	font-weight: bold;
 }
@@ -1730,8 +1731,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 
 	margin-bottom: 10px;
 	padding: 0 16px;
@@ -5447,9 +5448,9 @@ footer .social-media{
 		padding: 18px 0;
 	}
 
-	.home-media{
+	/* .home-media{
 		padding-bottom: 0px !important;
-	}
+	} */
 
 	.home-media .item a{
 		padding: 18px 0;
