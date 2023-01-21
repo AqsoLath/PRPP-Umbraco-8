@@ -2071,7 +2071,7 @@ a.coklat-prpp:hover{
 	position: relative;
 
 	margin-top: 32px;
-	padding: 16px 0 0;
+	padding: 16px 0 0 !important;
 }
 
 .tentang-manajemen-komisaris{
@@ -3820,6 +3820,11 @@ a.coklat-prpp:hover{
 	border: none;
 
 	/*border-left: 4px solid var(--hijauPRPP);*/
+}
+
+.kontak-container .kontak-form button:disabled{
+	opacity: .5;
+    pointer-events: none;
 }
 
 .kontak-container .kontak-form button:before{
