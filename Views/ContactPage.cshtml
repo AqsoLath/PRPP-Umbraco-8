@@ -10,7 +10,7 @@
 
 <div class="tentang-jumbotron">
 	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	
+
 	<div class="container-fluid content">
 		<h1>@Model.HeroTitle</h1>
 		<h2>@Model.HeroSubtitle</h2>
@@ -49,11 +49,19 @@
 		</div>
 	</div>
 	<div class="kontak-form">
-		@{ Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel()); }
+		@{
+			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel()); 
+		}
 	</div>
 </div>
 
-<div class="modal-pesan-terkirim" style="display: none;">
+
+@{
+	var isModalSuccess = TempData["error"];
+
+	var showModal = isModalSuccess ? "block" : "none";
+}
+<div class="modal-pesan-terkirim" style="display: @showModal;">
 	<div class="modal-pesan-terkirim-popup">
 		<div class="modal-pesan-terkirim-x">
 			<i class="fa-solid fa-x"></i>
@@ -68,8 +76,8 @@
 </div>
 
 <script defer>
-	function enableBtn(){
-        document.getElementById("submit_details").disabled = false;
-    }
+	function enableBtn() {
+		document.getElementById("submit_details").disabled = false;
+	}
 
 </script>
