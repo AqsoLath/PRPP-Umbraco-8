@@ -4857,15 +4857,11 @@ a.coklat-prpp:hover{
 
 	color: var(--abu800);
 
-	max-width: 700px;
+	/*max-width: 700px;
 	height: 36px;
-	/*height: 62px;*/
+	height: 62px;*/
 
-	-o-text-overflow: ellipsis;
-
-	   text-overflow: ellipsis;
-  overflow: hidden; 
-  white-space: pre-line;
+	
 }
 
 .container-informasipengadaan .item .konten a{
