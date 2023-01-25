@@ -105,17 +105,21 @@ body{
 
 
 .rich-text-content h3{
-	font-size: 40px;
+	font-size: 2.8vw;
+	line-height: 3vw;
 	font-family: latoBold;
 }
 
 .rich-text-content h4{
 	color: var(--hijauPRPP);
-	font-size: 20px;
+	font-size: 1.4vw;
+	line-height: 1.9vw;
 	font-family: latoSemibold;
 }
 
 .rich-text-content p{
+	font-size: 1.15vw;
+	line-height: 1.4vw;
 	text-align: justify;
 }
 
@@ -137,14 +141,17 @@ body{
 @media(max-width: 768px){
 	.rich-text-content p{
 		font-size: 14px;
+		line-height: 18px;
 	}
 	
 	.rich-text-content h3{
 		font-size: 28px;
+		line-height: 34px;
 	}
 	
 	.rich-text-content h4{
 		font-size: 18px;
+		line-height: 22px;
 	}
 		
 	.rich-text-content img.rich-float-left{
@@ -1710,6 +1717,7 @@ a.coklat-prpp:hover{
 }
 
 .fase-wrapper p{
+	font-size: 1.15vw;
 	color: #FFFFFF;
 }
 
@@ -2018,8 +2026,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.05vw;
+	/* line-height: 17px; */
 	letter-spacing: 0.02em;
 	min-width: 180px;
 	padding: 16px;
@@ -2132,8 +2140,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.4vw;
+	/* line-height: 24px; */
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 
@@ -2144,15 +2152,15 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 60px;
-	line-height: 56px;
+	font-size: 3.3vw;
+	/* line-height: 56px; */
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
 	color: var(--abu800);
 }
 
-.manajemen-body h5{
+/* .manajemen-body h5{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 700;
@@ -2171,14 +2179,14 @@ a.coklat-prpp:hover{
 	font-size: 16px;
 	line-height: 140%;
 	color: var(--abu800);
-}
+} */
 
 .manajemen-body p{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 140%;
+	font-size: 1.1vw;
+	/* line-height: 140%; */
 	color: var(--abu800);
 }
 
@@ -2256,8 +2264,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.05vw;
+	/* line-height: 17px; */
 	text-align: center;
 	letter-spacing: 0.02em;
 
@@ -2270,8 +2278,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 0.95vw;
+	/* line-height: 14px; */
 	text-align: center;
 	letter-spacing: 0.02em;
 
@@ -2297,6 +2305,8 @@ a.coklat-prpp:hover{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+
+	gap: 20px ;
 	padding: 50px 0;
 }
 
@@ -2330,8 +2340,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	/* line-height: 48px; */
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
@@ -2347,8 +2357,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 1.3vw;
+	/* line-height: 24px; */
 	letter-spacing: 0.02em;
 
 	margin-top: 64px;
@@ -2367,7 +2377,7 @@ a.coklat-prpp:hover{
 	margin: 16px auto;
 	
 	color: var(--abu600);
-	font-size: 20px;
+	font-size: 1.4vw;
 }
 
 .akhlak-logo img{
@@ -2384,6 +2394,7 @@ a.coklat-prpp:hover{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 16px;
 	padding: 0px 0;
 	
 	border-bottom: 1px solid #02929F;
@@ -2397,7 +2408,7 @@ a.coklat-prpp:hover{
 .akhlak-kiri h4{
 	color: #169397;
 
-	font-size: 48px;
+	font-size: 3.1vw;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -2405,7 +2416,7 @@ a.coklat-prpp:hover{
 .akhlak-kiri h4::first-letter{
 	color: #FFFFFF;
 
-	font-size: 80px;
+	font-size: 5.3vw;
 	font-weight: 700;
 
 	padding: 0 8px;
@@ -2420,11 +2431,13 @@ a.coklat-prpp:hover{
 .akhlak-kanan p{
 	color: #FFFFFF;
 
+	font-size: 1.15vw;
+
 	margin: 0;
 }
 
 
-
+/* 
 
 .corevalues{
 	margin-top: 56px;
@@ -2477,7 +2490,6 @@ a.coklat-prpp:hover{
 	font-weight: 800;
 	font-size: 40px;
 	line-height: 48px;
-	/* identical to box height, or 120% */
 
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
@@ -2515,7 +2527,7 @@ a.coklat-prpp:hover{
 
 	color: var(--abu600);
 
-}
+} */
 
 
 
@@ -2622,8 +2634,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 40px;
-	line-height: 48px;
+	font-size: 2.8vw;
+	/* line-height: 48px; */
 	letter-spacing: 0.02em;
 
 	margin-bottom: 72px;
@@ -2642,6 +2654,10 @@ a.coklat-prpp:hover{
 
 .penghargaan-container .penghargaan-card .gambar img{
 	width: 100%;
+}
+
+.pengahargaan-content{
+	padding-right: 32px;
 }
 
 .kilang-satu{
@@ -2664,8 +2680,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 1.6vw;
+	/* line-height: 24px; */
 	letter-spacing: 0.02em;
 
 	margin-bottom: 16px;
@@ -2677,8 +2693,8 @@ a.coklat-prpp:hover{
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.4vw;
+	/* line-height: 24px; */
 	/* or 120% */
 
 	letter-spacing: 0.02em;
@@ -2690,7 +2706,7 @@ a.coklat-prpp:hover{
 .penghargaan-container .penghargaan-card i{
 	position: absolute;
 	right: 80px;
-	font-size: 32px;
+	font-size: 2.1vw;
 
 	color: #ffffff;
 }
@@ -2758,7 +2774,7 @@ a.coklat-prpp:hover{
 	background-color: var(--hijauPRPP);
 
 	padding: 12px 32px;
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: #FFFFFF;
 
 	border-radius: 50px 0;
@@ -2779,12 +2795,12 @@ a.coklat-prpp:hover{
 
 .bbm-produk h3{
 	color: var(--merahPRPP);
-	font-size: 24px;
+	font-size: 1.6vw;
 }
 
 .bbm-produk-list h4{
 	color: var(--biruPRPP);
-	font-size: 24px;
+	font-size: 1.6vw;
 	font-weight: 600;
 
 	padding: 8px;
@@ -2810,7 +2826,7 @@ a.coklat-prpp:hover{
 	background-color: var(--merahPRPP);
 
 	padding: 12px 32px;
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: #FFFFFF;
 
 	border-radius: 50px 0;
@@ -2839,7 +2855,7 @@ a.coklat-prpp:hover{
 
 
 .produk-lainnya-wrapper h3{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--merahPRPP);
 	font-weight: 600;
 }
@@ -2870,7 +2886,7 @@ a.coklat-prpp:hover{
 
 
 
-
+/* 
 .tanda-link{
 	position: absolute;
 	top: -100px;
@@ -2895,7 +2911,6 @@ a.coklat-prpp:hover{
 
 .ourprojects .ourprojects-card .gambar{
 	width: 500px !important;
-	/*height: 350px;*/
 
 }
 
@@ -2939,7 +2954,6 @@ a.coklat-prpp:hover{
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
-	/* or 133% */
 
 	letter-spacing: 0.02em;
 
@@ -2970,7 +2984,6 @@ a.coklat-prpp:hover{
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
-	/* or 133% */
 
 	letter-spacing: 0.02em;
 
@@ -2989,8 +3002,7 @@ a.coklat-prpp:hover{
 	line-height: 19px;
 	letter-spacing: 0.02em;
 
-	/*border: 1px solid var(--merahPRPP) !important;
-	border-left: 5px solid var(--biruPRPP) !important;*/
+	
 	-webkit-box-shadow: 0 0 0 2px var(--merahPRPP);
 	        box-shadow: 0 0 0 2px var(--merahPRPP);
 	border-left: 4px solid var(--biruPRPP);
@@ -3013,7 +3025,7 @@ a.coklat-prpp:hover{
 
 .ourprojects-card .content i{
 	margin-left: 15px;
-}
+} */
 
 
 /*=================================*/
@@ -3044,7 +3056,7 @@ a.coklat-prpp:hover{
 
 .peran-wrapper h4{
 	text-align: center;
-	font-size: 28px;
+	font-size: 1.8vw;
 	color: #FFFFFF;
 
 	text-transform: uppercase;
@@ -3085,7 +3097,7 @@ a.coklat-prpp:hover{
 	margin: 0;
 
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 1.4vw;
 }
 
 
@@ -3162,13 +3174,13 @@ a.coklat-prpp:hover{
 }
 
 .hsse-wrapper .hsse-title-indonesia{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--abu800);
 	font-weight: 700;
 }
 
 .hsse-wrapper .hsse-title-english{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--hijauPRPP);
 }
 
@@ -3177,14 +3189,14 @@ a.coklat-prpp:hover{
 }
 
 .hsse-quotes h5{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--abu700);
 	font-weight: 700;
 }
 
 
 .hsse-quotes h6{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--abu700);
 	font-weight: 400;
 }
@@ -3194,7 +3206,7 @@ a.coklat-prpp:hover{
 }
 
 .hsse-structure h6{
-	font-size: 24px;
+	font-size: 1.6vw;
 	color: var(--abu700);
 	font-weight: 700;
 }
@@ -3237,7 +3249,7 @@ a.coklat-prpp:hover{
 	
 	color: var(--abu800);
 	font-family: lato ;
-	font-size: 16px;
+	font-size: 1.15vw;
 	
 }
 
@@ -3256,7 +3268,7 @@ a.coklat-prpp:hover{
 
 .sustainable-sub-content h4{
 	color: var(--fonte);
-	font-size: 24px;
+	font-size: 1.6vw;
 	font-family: latoBold;
 }
 
@@ -3539,8 +3551,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 23px;
+	font-size: 1.15vw;
+	/* line-height: 23px; */
 	letter-spacing: 0.095em;
 
 	color: var(--fonte);
@@ -3556,8 +3568,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1.15vw;
+	/* line-height: 25px; */
 	letter-spacing: 0.02em;
 	color: var(--fonte);
 }
@@ -3568,8 +3580,8 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1.15vw;
+	/* line-height: 25px; */
 	letter-spacing: 0.02em;
 	color: var(--fonte);
 }
@@ -3588,8 +3600,8 @@ a.coklat-prpp:hover{
 	font-family: 'latoSemibold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1.05vw;
+	/* line-height: 17px; */
 	color: var(--fonte) !important;
 }
 
@@ -3604,7 +3616,7 @@ a.coklat-prpp:hover{
 	margin-right: 20px;
 }
 
-
+/* 
 .kontak-container .kontak-form .umbraco-forms-field{
 	display: flex;
 	flex-direction: column;
@@ -3713,7 +3725,7 @@ a.coklat-prpp:hover{
 .kontak-container .kontak-form input[type="submit"]:hover:before{
 	width: 100%;
 	border-radius: 4px;
-}
+} */
 
 .kontak-container .kontak-form .form-input{
 	display: -webkit-box;
@@ -5261,8 +5273,8 @@ footer h3{
 	font-family: 'latoSemiBold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.6vw;
+	/* line-height: 29px; */
 
 	color: var(--abu800);
 }
@@ -5295,8 +5307,8 @@ footer .footer-kontak{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 1.05vw;
+	/* line-height: 24px; */
 
 	margin-bottom: 5px;
 
@@ -5337,7 +5349,7 @@ footer .social-media{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	font-size: 28px;
+	font-size: 1.6vw;
 }
 
 .socmed-item a{
@@ -5348,8 +5360,8 @@ footer .social-media{
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 1.05vw;
+	/* line-height: 24px; */
 	color: var(--abu600) !important;
 }
 
@@ -5364,7 +5376,7 @@ footer .social-media{
 }
 
 .copyright{
-	font-size: 16px;
+	font-size: 1.15vw;
 	padding-top: 20px;
 	padding-bottom: 1px;
 	background-color: var(--biruPRPP);
@@ -5387,7 +5399,7 @@ footer .social-media{
 
 .arrow-up i{
 	color: #ffffff;
-	font-size: 28px;
+	font-size: 1.8vw;
 	font-weight: bold;
 }
 
@@ -5858,6 +5870,13 @@ footer .social-media{
 	/*=========================*/
 	/*=== TENTANG | VISIMISI===*/
 	/*=========================*/
+
+	
+	.akhlak-logo p{
+		font-size: 16px;
+	}
+
+
 
 	.visimisi h2{
 		font-size: 28px;
@@ -6607,6 +6626,7 @@ footer .social-media{
 	.akhlak-logo img{
 		max-width: 80%;
 	}
+
 
 	.akhlak-kiri, .akhlak-kanan{
 		width: 50%;
