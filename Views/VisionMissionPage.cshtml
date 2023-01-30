@@ -7,10 +7,10 @@
 
 <div class="tentang-jumbotron">
 	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	
+
 	<div class="container-fluid content">
 		<h1>@Model.HeroTitle</h1>
-		<h2>@Model.HeroSubtitle</h2>
+		@*<h2>@Model.HeroSubtitle</h2>*@
 	</div>
 </div>
 <div class="tentang-navbar">
@@ -26,20 +26,20 @@
 </div>
 
 <div class="visimisi-wrapper">
-		<div class="visimisi container" data-aos="fade-up">
-			<div class="visi">
-				<div class="visimisi-title">
-					<h2>@Model.VisionTitle</h2>
-					<img src="/images/visi-mata.png" alt="visi mata">
-				</div>
-				<p>@Model.VisionText</p>
+	<div class="visimisi container" data-aos="fade-up">
+		<div class="visi">
+			<div class="visimisi-title">
+				<h2>@Model.VisionTitle</h2>
+				<img src="/images/visi-mata.png" alt="visi mata">
 			</div>
-			<div class="misi">
-				<div class="visimisi-title">
-					<h2>@Model.MissionTitle</h2>
-					<img src="/images/misi-target.png" alt="visi target">
-				</div>
-				<p>@Model.MissionText</p>
+			<p>@Model.VisionText</p>
+		</div>
+		<div class="misi">
+			<div class="visimisi-title">
+				<h2>@Model.MissionTitle</h2>
+				<img src="/images/misi-target.png" alt="visi target">
+			</div>
+			<p>@Model.MissionText</p>
 		</div>
 	</div>
 </div>
@@ -52,17 +52,17 @@
 <div class="akhlak-list">
 	<div class="container">
 		@foreach (var item in Model.AkhlakList)
-			{
-				<div class="akhlak-item">
-					<div class="akhlak-kiri">
-						<h4>@item.AkhlakTitle</h4>
-					</div>
-					<div class="akhlak-kanan">
-						<p>@item.AkhlakDescription</p>
-					</div>
+		{
+			<div class="akhlak-item">
+				<div class="akhlak-kiri">
+					<h4>@item.AkhlakTitle</h4>
 				</div>
-			}
-		
-		
+				<div class="akhlak-kanan">
+					<p>@item.AkhlakDescription</p>
+				</div>
+			</div>
+		}
+
+
 	</div>
 </div>

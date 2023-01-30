@@ -1,28 +1,28 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HssePage>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = "master.cshtml";
+    Layout = "master.cshtml";
 }
 
 
 <div class="tentang-jumbotron">
-	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	
-	<div class="container-fluid content">
-		<h1>@Model.HeroTitle</h1>
-		<h2>@Model.HeroSubtitle</h2>
-	</div>
+    <img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+
+    <div class="container-fluid content">
+        <h1>@Model.HeroTitle</h1>
+        @*<h2>@Model.HeroSubtitle</h2>*@
+    </div>
 </div>
 <div class="bisnis-navbar">
-	<div class="container bisnis-navbar-list">
+    <div class="container bisnis-navbar-list">
 
-		@Html.Partial("~/Views/Partials/navbarResponsibility.cshtml")
-		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
-			<a class="active">@Model.Name</a>
-			<i class="fa-solid fa-chevron-down panah-bawah"></i>
-			<i class="fa-solid fa-chevron-up panah-atas"></i>
-		</div>
-	</div>
+        @Html.Partial("~/Views/Partials/navbarResponsibility.cshtml")
+        <div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+            <a class="active">@Model.Name</a>
+            <i class="fa-solid fa-chevron-down panah-bawah"></i>
+            <i class="fa-solid fa-chevron-up panah-atas"></i>
+        </div>
+    </div>
 </div>
 
 <div class="container rich-text-content">
@@ -41,7 +41,7 @@
             <h5>@Model.HsseQuotesTitleIndonesia</h5>
             <h5>@Model.HsseQuotesTextIndonesia</h5>
         </div>
-        
+
         <div class="hsse-quotes hsse-quotes-indonesia">
             <h5>@Model.HsseQuotesTitleEnglish</h5>
             <h5>@Model.HsseQuotesTextEnglish</h5>
