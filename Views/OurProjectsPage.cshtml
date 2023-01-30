@@ -7,10 +7,10 @@
 
 <div class="tentang-jumbotron">
 	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	
+
 	<div class="container-fluid content">
 		<h1>@Model.HeroTitle</h1>
-		<h2>@Model.HeroSubtitle</h2>
+		@*<h2>@Model.HeroSubtitle</h2>*@
 	</div>
 </div>
 <div class="bisnis-navbar">
@@ -26,30 +26,31 @@
 </div>
 
 <div class="container container-projects-image">
-    <img class="project-location" src="@Model.ProjectsLocation.Url()">
-    <img src="@Model.ProjectsFeatures.Url()">
+	<img class="project-location" src="@Model.ProjectsLocation.Url()">
+	<img src="@Model.ProjectsFeatures.Url()">
 </div>
 
 <div class="container">
-    <div class="bbm">
-        <h2>@Model.BbmTitle</h2>
-        <div class="bbm-flex">
-            <div class="bbm-produk">
-                <h3>@Model.BbmProductTitle</h3>
-                <div class="bbm-produk-list">
-                    @foreach(var item in Model.BbmProducts){
-                        <h4>@item</h4>
-                    }
-                </div>
-            </div>
-            <div class="bbm-image">
-                <img src="@Model.BbmImage.Url()">
-            </div>
-        </div>
-    </div>
-    
-    <div class="produk-lainnya">
-        <h2>@Model.ProdukLainnyaTitle</h2>
+	<div class="bbm">
+		<h2>@Model.BbmTitle</h2>
+		<div class="bbm-flex">
+			<div class="bbm-produk">
+				<h3>@Model.BbmProductTitle</h3>
+				<div class="bbm-produk-list">
+					@foreach (var item in Model.BbmProducts)
+					{
+						<h4>@item</h4>
+					}
+				</div>
+			</div>
+			<div class="bbm-image">
+				<img src="@Model.BbmImage.Url()">
+			</div>
+		</div>
+	</div>
+
+	<div class="produk-lainnya">
+		<h2>@Model.ProdukLainnyaTitle</h2>
 		<div class="produk-lainnya-image">
 			<img src="@Model.ProdukLainnyaImage.Url()">
 		</div>
@@ -58,7 +59,8 @@
 				<h3>@Model.ProdukLainnyaProdukTitle</h3>
 				<h3>@Model.ProdukLainnyaTotalTitle</h3>
 			</div>
-			@foreach(var item in Model.ProdukLainnyaList){
+			@foreach (var item in Model.ProdukLainnyaList)
+			{
 				<div class="produk-lainnya-list">
 					<h4>@item.ProductsKey</h4>
 					<h4>@item.ProductsValue</h4>
@@ -69,7 +71,7 @@
 				<h3>@Model.ProdukLainnyaTotalValue</h3>
 			</div>
 		</div>
-    </div>
+	</div>
 </div>
 
 

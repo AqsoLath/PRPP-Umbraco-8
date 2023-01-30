@@ -13,7 +13,7 @@
 
 	<div class="container-fluid content">
 		<h1>@Model.HeroTitle</h1>
-		<h2>@Model.HeroSubtitle</h2>
+		@*<h2>@Model.HeroSubtitle</h2>*@
 	</div>
 </div>
 <div class="container kontak-container" data-aos="fade-up">
@@ -29,28 +29,28 @@
 				@if (Model.ContactFacebookLink != null)
 				{
 					<a href="@Model.ContactFacebookLink.Url"><i
-						class="fa-brands fa-facebook"></i>@Model.ContactFacebookLink.Name</a>
+							class="fa-brands fa-facebook"></i>@Model.ContactFacebookLink.Name</a>
 				}
 			</div>
 			<div class="mediasosial-list">
 				@if (Model.ContactInstagramLink != null)
 				{
 					<a href="@Model.ContactInstagramLink.Url"><i
-						class="fa-brands fa-instagram"></i>@Model.ContactInstagramLink.Name</a>
+							class="fa-brands fa-instagram"></i>@Model.ContactInstagramLink.Name</a>
 				}
 			</div>
 			<div class="mediasosial-list">
 				@if (Model.ContactTwitterLink != null)
 				{
 					<a href="@Model.ContactTwitterLink.Url"><i
-						class="fa-brands fa-twitter"></i>@Model.ContactTwitterLink.Name</a>
+							class="fa-brands fa-twitter"></i>@Model.ContactTwitterLink.Name</a>
 				}
 			</div>
 		</div>
 	</div>
 	<div class="kontak-form">
 		@{
-			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel()); 
+			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel());
 		}
 	</div>
 </div>
