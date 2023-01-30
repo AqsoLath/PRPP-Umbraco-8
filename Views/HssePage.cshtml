@@ -34,21 +34,16 @@
 <div style="background-image: url('@Model.HsseBackgroundImage.Url()')" class="hsse-wrapper">
     <div class="container">
         <div class="hsse-title">
-            <h4 class="hsse-title-indonesia">@Model.HsseTitleIndonesia</h4>
-            <h4 class="hsse-title-english">@Model.HsseTitleEnglish</h4>
+            <h4 class="hsse-title-english">@Model.HsseTitle</h4>
         </div>
-        <div class="hsse-quotes hsse-quotes-indonesia">
-            <h5>@Model.HsseQuotesTitleIndonesia</h5>
-            <h5>@Model.HsseQuotesTextIndonesia</h5>
+		
+		<div class="hsse-quotes hsse-quotes-indonesia">
+            <h5>@Model.HsseQuotesTitle</h5>
+            <h5>@Model.HsseQuotesText</h5>
         </div>
-        
-        <div class="hsse-quotes hsse-quotes-indonesia">
-            <h5>@Model.HsseQuotesTitleEnglish</h5>
-            <h5>@Model.HsseQuotesTextEnglish</h5>
-        </div>
+		
         <div class="hsse-structure">
-            <h6>@Model.HsseStructureTitleIndonesia</h6>
-            <h6>@Model.HsseStructureTitleEnglish</h6>
+            <h6>@Model.HsseStructureTitle</h6>
             <img src="@Model.HsseStructureImage.Url()">
         </div>
     </div>

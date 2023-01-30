@@ -31,21 +31,18 @@
     <p>@Model.WhoweareContent</p>
     <img src="@Model.WhoweareContentImage2.Url()" class="w-100">
     <p>@Model.WhoweareContentBawah</p>
+	<div class="mt-5">
+		<p >
+			@Model.FaseContent
+		</p>
+	</div>
 </div>
-
-@*
-<div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper">
-	fakk
-</div>
-*@
 
 		
 	<div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper">
 		<div class="container">
 			<h3>@Model.FaseTitle</h3>
 			<img src="@Model.FaseImage.Url()" alt="fase">
-			<p>
-				@Model.FaseContent
-			</p>
+			
 		</div>
 	</div>

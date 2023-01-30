@@ -59,7 +59,7 @@
 @{
 	var isModalSuccess = TempData["error"];
 
-	var showModal = isModalSuccess ? "block" : "none";
+	var showModal = Convert.ToBoolean(isModalSuccess) ? "block" : "none";
 }
 <div class="modal-pesan-terkirim" style="display: @showModal;">
 	<div class="modal-pesan-terkirim-popup">

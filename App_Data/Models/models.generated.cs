@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b9fa4eb0ebb356ad")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f033a9bb4eec92")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -4361,7 +4361,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("subContent1")]
-		public virtual string SubContent1 => this.Value<string>("subContent1");
+		public virtual global::System.Web.IHtmlString SubContent1 => this.Value<global::System.Web.IHtmlString>("subContent1");
 
 		///<summary>
 		/// Sub Content 1 Image
@@ -4382,7 +4382,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("subContent2")]
-		public virtual string SubContent2 => this.Value<string>("subContent2");
+		public virtual global::System.Web.IHtmlString SubContent2 => this.Value<global::System.Web.IHtmlString>("subContent2");
 
 		///<summary>
 		/// Sub Content 2 Image
@@ -4788,32 +4788,18 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops HsseContentImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("hsseContentImage");
 
 		///<summary>
-		/// Hsse Quotes Text English
+		/// Hsse Quotes Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseQuotesTextEnglish")]
-		public virtual string HsseQuotesTextEnglish => this.Value<string>("hsseQuotesTextEnglish");
+		[ImplementPropertyType("hsseQuotesText")]
+		public virtual string HsseQuotesText => this.Value<string>("hsseQuotesText");
 
 		///<summary>
-		/// Hsse Quotes Text Indonesia
+		/// Hsse Quotes Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseQuotesTextIndonesia")]
-		public virtual string HsseQuotesTextIndonesia => this.Value<string>("hsseQuotesTextIndonesia");
-
-		///<summary>
-		/// Hsse Quotes Title English
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseQuotesTitleEnglish")]
-		public virtual string HsseQuotesTitleEnglish => this.Value<string>("hsseQuotesTitleEnglish");
-
-		///<summary>
-		/// Hsse Quotes Title Indonesia
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseQuotesTitleIndonesia")]
-		public virtual string HsseQuotesTitleIndonesia => this.Value<string>("hsseQuotesTitleIndonesia");
+		[ImplementPropertyType("hsseQuotesTitle")]
+		public virtual string HsseQuotesTitle => this.Value<string>("hsseQuotesTitle");
 
 		///<summary>
 		/// Hsse Structure Image
@@ -4823,32 +4809,18 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops HsseStructureImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("hsseStructureImage");
 
 		///<summary>
-		/// Hsse Structure Title English
+		/// Hsse Structure Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseStructureTitleEnglish")]
-		public virtual string HsseStructureTitleEnglish => this.Value<string>("hsseStructureTitleEnglish");
+		[ImplementPropertyType("hsseStructureTitle")]
+		public virtual string HsseStructureTitle => this.Value<string>("hsseStructureTitle");
 
 		///<summary>
-		/// Hsse Structure Title Indonesia
+		/// Hsse Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseStructureTitleIndonesia")]
-		public virtual string HsseStructureTitleIndonesia => this.Value<string>("hsseStructureTitleIndonesia");
-
-		///<summary>
-		/// Hsse Title English
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseTitleEnglish")]
-		public virtual string HsseTitleEnglish => this.Value<string>("hsseTitleEnglish");
-
-		///<summary>
-		/// Hsse Title Indonesia
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseTitleIndonesia")]
-		public virtual string HsseTitleIndonesia => this.Value<string>("hsseTitleIndonesia");
+		[ImplementPropertyType("hsseTitle")]
+		public virtual string HsseTitle => this.Value<string>("hsseTitle");
 
 		///<summary>
 		/// Page Number

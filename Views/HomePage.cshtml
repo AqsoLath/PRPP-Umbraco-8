@@ -125,7 +125,7 @@
 							}
 
 						</div>
-						<p>@item.CardMediaDescription</p>
+						@*<p>@item.CardMediaDescription</p>*@
 
 						@{
 							var pickedColor = item.CardMediaColor;
@@ -161,8 +161,9 @@
 	<div>
 		<img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
 	</div>
-
 </div>
+
+@Html.Partial("~/Views/Partials/listBerita.cshtml")
 
 <div class="swiper container home-tanggungjawab" id="hometanggungjawab" data-aos="fade-up">
 	<div class="home-tanggungjawab-head">
