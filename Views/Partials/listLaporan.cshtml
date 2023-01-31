@@ -12,7 +12,8 @@
 @{
 	var selection = Umbraco.Content(Guid.Parse("22440b10-b891-4a8f-8399-6b5d841b3354"))
     .Children()
-    .Where(x => x.IsVisible());
+    .Where(x => x.IsVisible())
+	.OrderByDescending(x => x.CreateDate);
 }
 	@foreach (var item in selection)
 	{

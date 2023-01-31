@@ -1456,7 +1456,7 @@ a.coklat-prpp:hover{
 
 
 .home-karir{
-	height: 250px;
+	/*height: 250px;*/
 	width: 100%;
 	background: -o-linear-gradient(356.43deg, #2F8ECB 21.76%, #AEC23C 88.3%);
 	background: linear-gradient(93.57deg, #2F8ECB 21.76%, #AEC23C 88.3%);
@@ -1491,12 +1491,13 @@ a.coklat-prpp:hover{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding: 32px 0;
 }
 
 .home-karir-konten{
 	position: relative;
 
-	width: 420px;
+	width: 620px;
 }
 
 .home-karir-konten h2{
@@ -1562,7 +1563,7 @@ a.coklat-prpp:hover{
 .tentang-jumbotron .content{
 	padding-top: 80px;
 	padding-bottom: 80px;
-	padding-left: 180px;
+	/* padding-left: 180px; */
 	position: relative;
 	z-index: 1;
 }
@@ -4322,7 +4323,7 @@ a.coklat-prpp:hover{
 	border-radius: 10px;
 }
 
-.berita-slider, .pengumuman-slider, .laporantahunan-slider{
+.berita-slider, .pengumuman-slider, .laporantahunan-slider, .pengadaan-slider{
 	margin-bottom: 70px;
 }
 
@@ -5494,7 +5495,8 @@ footer .social-media{
 		line-height: 24px;
 	}
 
-	.home-pengadaan .item a{
+	.home-pengadaan .item a, 
+	.home-tanggungjawab .item a{
 		font-size: 12px;
 		padding: 12px;
 	}
@@ -5508,7 +5510,7 @@ footer .social-media{
 	}
 
 	.tentang-jumbotron .content{
-		padding-left: 80px;
+		/*padding-left: 80px;*/
 	}
 
 	.tentang-manajemen{
@@ -5781,7 +5783,7 @@ footer .social-media{
 
 
 	.home-karir{
-		height: 170px;
+		/*height: 170px;*/
 		margin-top: 200px;
 	}
 
@@ -6873,7 +6875,7 @@ footer .social-media{
 		margin-bottom: 8px;
 	}
 
-	.berita-slider, .pengumuman-slider, .laporantahunan-slider{
+	.berita-slider, .pengumuman-slider, .laporantahunan-slider, .pengadaan-slider{
 		margin-bottom: 32px;
 	}
 
@@ -7267,7 +7269,7 @@ footer .social-media{
 	/*=================*/
 
 	.tentang-jumbotron .content{
-		padding-left: 36px;
+		/*padding-left: 36px;*/
 	}
 
 	.tentang-navbar .tentang-navbar-link,

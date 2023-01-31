@@ -619,7 +619,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
     const swiperHomePengadaan = new Swiper('.home-pengadaan', {
       // Optional parameters
       // slidesPerView: 1,
-      loop: true,
+      loop: false,
       spaceBetween: 100,
 
       breakpoints:{
@@ -926,6 +926,80 @@ const swiperLaporantahunanSlider = new Swiper('.laporantahunan-slider', {
       },
 
     });
+
+
+const swiperPengadaanSlider = new Swiper('.pengadaan-slider', {
+      // Optional parameters
+      slidesPerView: 1.2,
+      // loop: true,
+      spaceBetween: 32,
+
+      breakpoints:{
+        280:{
+            slidesPerView: 1.3,
+        },
+        300:{
+            slidesPerView: 1.4,
+        },
+        320:{
+            slidesPerView: 1.5,
+        },
+        340:{
+            slidesPerView: 1.6,
+        },
+        360:{
+            slidesPerView: 1.7,
+        },
+        380:{
+            slidesPerView: 1.8,
+        },
+        400:{
+            slidesPerView: 1.9,
+        },
+        420:{
+            slidesPerView: 2,
+        },
+        440:{
+            slidesPerView: 2.1,
+        },
+        460:{
+            slidesPerView: 2.2,
+        },
+        480:{
+            slidesPerView: 2.3,
+        },
+        500:{
+            slidesPerView: 2.4,
+        },
+        530:{
+            slidesPerView: 2.5,
+        },
+        576:{
+            slidesPerView: 2.5,
+        },
+        768:{
+            slidesPerView: 3.3,
+        },
+        992:{
+            slidesPerView: 3.5
+        },
+        1200:{
+            slidesPerView: 4.2
+        }
+      },
+
+
+
+
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+
 
 
 
