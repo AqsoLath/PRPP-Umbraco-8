@@ -13,23 +13,23 @@
 
     <div class=" ">
         <div class="form-input">
-            <label class="" for="contactNama">Name</label>
-            <input id="contactNama" class="" type="text" name="Nama"  placeholder="Input Your Name" required />
+            <label class="" for="contactNama">@Model.Parent.Value("AddressTitle")</label>
+            <input id="contactNama" class="" type="text" name="Nama"  placeholder='@Umbraco.GetDictionaryValue("placeholder nama")' required />
         </div>
         <div class="form-input">
-            <label class="" for="contactEmail">Email</label>
-            <input id="contactEmail" class="" type="text" name="Email"  placeholder="Input Your Email" required />
+            <label class="" for="contactEmail">@Umbraco.GetDictionaryValue("label email")</label>
+            <input id="contactEmail" class="" type="text" name="Email"  placeholder='@Umbraco.GetDictionaryValue("placeholder email")' required />
         </div>
         <div class="form-input">
-            <label class="" for="contactPesan">Your Message</label>
-            <textarea id="contactPesan" class="" name="Pesan"  placeholder="Write your message, and we will contact you as soon as possible" required></textarea>
+            <label class="" for="contactPesan">@Umbraco.GetDictionaryValue("label pesan")</label>
+            <textarea id="contactPesan" class="" name="Pesan"  placeholder='@Umbraco.GetDictionaryValue("placeholder pesan")' required></textarea>
         </div>
     </div>
     <div class="">
         <div class="">
 			<div class="g-recaptcha" data-sitekey="6LdcQs0iAAAAAHBwGIOsrLKeXcHrs9MklbRGmyDA" data-callback="enableBtn">></div>
             <div class="">
-                <button id="submit_details" class="action" type="submit" disabled>Send <i class="fa-solid fa-arrow-right"></i></button>
+                <button id="submit_details" class="action" type="submit" disabled>@Umbraco.GetDictionaryValue("button kirim") <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
