@@ -106,20 +106,20 @@ body{
 
 .rich-text-content h3{
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	font-family: latoBold;
 }
 
 .rich-text-content h4{
 	color: var(--hijauPRPP);
 	font-size: 1.4vw;
-	line-height: 1.9vw;
+	/* line-height: 1.9vw; */
 	font-family: latoSemibold;
 }
 
 .rich-text-content p{
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	text-align: justify;
 }
 
@@ -207,7 +207,7 @@ body{
   height: 20px !important;
   text-align: center;
   font-size: 1.4vw;
-  line-height: 1.7vw;
+  /* line-height: 1.7vw; */
   color: #ffffff;
   opacity: 1 !important;
   background-color: transparent !important;
@@ -474,7 +474,7 @@ a:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	letter-spacing: 0.01em;
 	text-transform: capitalize;
 
@@ -801,7 +801,7 @@ nav.scrolled .navbar-hamburger{
 	font-family: 'latoBold';
 	color: #ffffff;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	letter-spacing: 0.02em;
 	/*margin-top: 200px;*/
 }
@@ -811,7 +811,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6vw;
-	line-height: 1.9vw;
+	/* line-height: 1.9vw; */
 	color: #ffffff;
 	margin-top: 24px;
 	margin-bottom: 36px;
@@ -822,7 +822,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
-	line-height: 1.6vw;
+	/* line-height: 1.6vw; */
 	color: var(--biruPRPP) !important;
 	background-color: #F9FAFB;
 
@@ -875,7 +875,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 17px;
+	/* line-height: 17px; */
 	letter-spacing: 0.02em;
 
 	margin: 0 4px;
@@ -954,7 +954,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.4vw;
-	line-height: 1.7vw;
+	/* line-height: 1.7vw; */
 	/* identical to box height */
 
 	letter-spacing: 0.02em;
@@ -967,7 +967,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	margin-top: 24px;
 	letter-spacing: 0.02em;
 
@@ -979,7 +979,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
-	line-height: 1.6vw;
+	/* line-height: 1.6vw; */
 	margin-bottom: 35px;
 
 
@@ -995,7 +995,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	letter-spacing: 0.02em;
 
 	/*border: 1px solid var(--merahPRPP) !important;
@@ -1095,7 +1095,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	margin-bottom: 10px;
 
 	letter-spacing: 0.02em;
@@ -1108,7 +1108,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
-	line-height: 1.6vw;
+	/* line-height: 1.6vw; */
 
 	letter-spacing: 0.02em;
 
@@ -1182,7 +1182,7 @@ nav.scrolled .navbar-hamburger{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.6vw;
-	line-height: 1.9vw;
+	/* line-height: 1.9vw; */
 	border-radius: 10px;
 
 	letter-spacing: 0.02em;
@@ -1260,7 +1260,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	text-align: center;
 	padding: 0px 20px;
 
@@ -1279,7 +1279,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.6vw;
-	line-height: 1.9vw;
+	/* line-height: 1.9vw; */
 	border-radius: 10px;
 
 	letter-spacing: 0.02em;
@@ -1295,8 +1295,9 @@ a.coklat-prpp:hover{
 
 
 .home-tanggungjawab .item{
-	padding: 28px 16px;
+	padding: 28px 16px 100px;
 	border-radius: 10px;
+	position: relative;
 }
 
 
@@ -1305,7 +1306,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8vw;
-	line-height: 2.2vw;
+	/* line-height: 2.2vw; */
 
 	letter-spacing: 0.02em;
 	color: var(--abu50);
@@ -1316,7 +1317,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 
 	/*height: 70px;*/
 
@@ -1361,8 +1362,9 @@ a.coklat-prpp:hover{
 }
 
 .home-pengadaan .item{
-	padding: 40px 28px;
+	padding: 40px 28px 100px;
 	border-radius: 10px;
+	position: relative;
 }
 
 .home-pengadaan .item h3{
@@ -1370,7 +1372,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8vw;
-	line-height: 2.2vw;
+	/* line-height: 2.2vw; */
 
 	letter-spacing: 0.02em;
 
@@ -1383,7 +1385,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	margin-bottom: 36px;
 
 	/*height: 70px;*/
@@ -1402,7 +1404,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.05vw;
-	line-height: 1.2vw;
+	/* line-height: 1.2vw; */
 
 	letter-spacing: 0.02em;
 
@@ -1415,6 +1417,22 @@ a.coklat-prpp:hover{
 	        box-shadow: 0 0 0 2px #ffffff;
 
 	/*border-left: 4px solid var(--hijauPRPP);*/
+}
+
+/* .home-pengadaan .item, .home-tanggungjawab .item{
+	padding-bottom: 100px !important;
+}  */
+
+ .home-tanggungjawab a{
+	position: absolute !important;
+	bottom: 32px;
+	left: 16px;
+} 
+
+.home-pengadaan a{
+	position: absolute !important;
+	bottom: 32px;
+	left: 28px;
 }
 
 .home-pengadaan .item a:before,
@@ -1497,7 +1515,7 @@ a.coklat-prpp:hover{
 .home-karir-konten{
 	position: relative;
 
-	width: 620px;
+	width: 70%;
 }
 
 .home-karir-konten h2{
@@ -1505,7 +1523,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.4vw;
-	line-height: 1.7vw;
+	/* line-height: 1.7vw; */
 
 	margin-bottom: 24px;
 	letter-spacing: 0.02em;	
@@ -1518,7 +1536,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	margin-right: 20px;
 	/* or 120% */
 
@@ -1573,7 +1591,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	letter-spacing: 0.02em;
 
 	color: #ffffff;
@@ -1584,7 +1602,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6vw;
-	line-height: 1.9vw;
+	/* line-height: 1.9vw; */
 	letter-spacing: 0.02em;
 
 	margin-top: 24px;
@@ -1663,7 +1681,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
-	line-height: 1.4vw;
+	/* line-height: 1.4vw; */
 	letter-spacing: 0.01em;
 
 	border-bottom: 4px solid transparent;
@@ -1707,7 +1725,7 @@ a.coklat-prpp:hover{
 
 .fase-wrapper h3{
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 	color:#FFFFFF;
 	font-weight: bold;
 }
@@ -1741,7 +1759,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
-	line-height: 3vw;
+	/* line-height: 3vw; */
 
 	margin-bottom: 10px;
 	padding: 0 16px;
@@ -1781,7 +1799,7 @@ a.coklat-prpp:hover{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 24px;
+	/* line-height: 24px; */
 	letter-spacing: 0.02em;
 
 
@@ -5474,6 +5492,7 @@ footer .social-media{
 	.home-tanggungjawab .item{
 		/*height: 320px; */
 		padding: 12px;
+		padding-bottom: 80px;
 	}
 
 	.home-tanggungjawab .item h3{
@@ -5749,7 +5768,7 @@ footer .social-media{
 	}
 
 	.home-tanggungjawab .item{
-		padding: 40px 16px;
+		padding: 40px 16px 80px;
 	}
 
 	.home-tanggungjawab .item h3{
@@ -5763,7 +5782,7 @@ footer .social-media{
 	}
 
 	.home-pengadaan .item{
-		padding: 40px 16px ;
+		padding: 40px 16px 80px ;
 	}
 
 	.home-pengadaan .item h3{
@@ -5779,6 +5798,7 @@ footer .social-media{
 	.home-pengadaan .item a{
 		font-size: 12px;
 		padding: 12px;
+		left: 16px;
 	}
 
 
@@ -5792,7 +5812,7 @@ footer .social-media{
 	}
 
 	.home-karir-konten{
-	width: 250px;
+	width: 60%;
 }
 
 	.home-karir-konten h2{

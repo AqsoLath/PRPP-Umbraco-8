@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d515f7ab5d5c06c4")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f033a9bb4eec92")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -1017,13 +1017,6 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("contactTwitterLink")]
 		public virtual global::Umbraco.Web.Models.Link ContactTwitterLink => this.Value<global::Umbraco.Web.Models.Link>("contactTwitterLink");
-
-		///<summary>
-		/// Label Name
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("labelName")]
-		public virtual string LabelName => this.Value<string>("labelName");
 
 		///<summary>
 		/// Modal Contact Subtitle
@@ -2877,20 +2870,6 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string BbmTitle => this.Value<string>("bbmTitle");
 
 		///<summary>
-		/// Produk Lainnya Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("produkLainnyaContent")]
-		public virtual global::System.Web.IHtmlString ProdukLainnyaContent => this.Value<global::System.Web.IHtmlString>("produkLainnyaContent");
-
-		///<summary>
-		/// Produk Lainnya Content Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("produkLainnyaContentTitle")]
-		public virtual string ProdukLainnyaContentTitle => this.Value<string>("produkLainnyaContentTitle");
-
-		///<summary>
 		/// Produk Lainnya Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -2945,20 +2924,6 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("projectsLocation")]
 		public virtual global::Umbraco.Core.Models.MediaWithCrops ProjectsLocation => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("projectsLocation");
-
-		///<summary>
-		/// Projects Location Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("projectsLocationContent")]
-		public virtual global::System.Web.IHtmlString ProjectsLocationContent => this.Value<global::System.Web.IHtmlString>("projectsLocationContent");
-
-		///<summary>
-		/// Projects Location Content Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("projectsLocationContentTitle")]
-		public virtual string ProjectsLocationContentTitle => this.Value<string>("projectsLocationContentTitle");
 
 		///<summary>
 		/// Page Number
@@ -4821,13 +4786,6 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("hsseContentImage")]
 		public virtual global::Umbraco.Core.Models.MediaWithCrops HsseContentImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("hsseContentImage");
-
-		///<summary>
-		/// Hsse Content Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("hsseContentTitle")]
-		public virtual string HsseContentTitle => this.Value<string>("hsseContentTitle");
 
 		///<summary>
 		/// Hsse Quotes Text
