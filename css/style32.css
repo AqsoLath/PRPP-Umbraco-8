@@ -206,8 +206,8 @@ body{
   width: 20px !important;
   height: 20px !important;
   text-align: center;
-  font-size: 1.4vw;
-  /* line-height: 1.7vw; */
+  font-size: 20px;
+  line-height: 20px;
   color: #ffffff;
   opacity: 1 !important;
   background-color: transparent !important;
@@ -223,18 +223,18 @@ body{
 }
 
 .home-main-slider .swiper-pagination-bullet:hover{
-	font-size: 1.8vw;
+	font-size: 26px;
 }
 
 .home-main-slider .swiper-pagination-bullet-active:hover{
-	font-size: 2.1vw;
+	font-size: 32px;
 }
 
 .home-main-slider .swiper-pagination-bullet-active {
 
   margin: 0 50px !important;
 
-	font-size: 2.1vw;
+	font-size: 32px;
   color: #ffffff;
   background-color: transparent !important;
 }

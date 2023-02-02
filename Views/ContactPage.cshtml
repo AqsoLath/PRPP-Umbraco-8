@@ -77,7 +77,12 @@
 
 <script defer>
 	function enableBtn() {
-		document.getElementById("submit_details").disabled = false;
+		var response = grecaptcha.getResponse();
+
+		if (!response.length == 0) {
+			document.getElementById("contactRecaptcha").value = response;
+			document.getElementById("submit_details").disabled = false;
+		}
 	}
 
 </script>
