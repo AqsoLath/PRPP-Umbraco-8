@@ -37,8 +37,8 @@
 			</div>
 			<div class="artikel-konten">
 				<p>@Model.NewsRichTextContent</p>
-				@if(!string.IsNullOrWhiteSpace(@Model.ProcurementFile)){
-					<a class="button-file" href="@Model.ProcurementFile" download="">File pengadaan
+				@if(@Model.ProcurementFile != null){
+					<a class="button-file" href="@Model.ProcurementFile.Url()" download="">File pengadaan
 					<i class="fa-solid fa-download"></i> </a>
 				}
 				
