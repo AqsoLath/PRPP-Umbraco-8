@@ -13,7 +13,7 @@
 
     <div class=" ">
         <div class="form-input">
-            <label class="" for="contactNama">@Model.Parent.Value("AddressTitle")</label>
+            <label class="" for="contactNama">@Umbraco.GetDictionaryValue("label nama")</label>
             <input id="contactNama" class="" type="text" name="Nama"  placeholder='@Umbraco.GetDictionaryValue("placeholder nama")' required />
         </div>
         <div class="form-input">
@@ -27,7 +27,7 @@
     </div>
     <div class="">
         <div class="">
-			<div class="g-recaptcha" data-sitekey="6LdcQs0iAAAAAHBwGIOsrLKeXcHrs9MklbRGmyDA" data-callback="enableBtn">></div>
+			<div class="g-recaptcha" id="contactRecaptcha" data-sitekey="6LdcQs0iAAAAAHBwGIOsrLKeXcHrs9MklbRGmyDA" data-callback="enableBtn"></div>
             <div class="">
                 <button id="submit_details" class="action" type="submit" disabled>@Umbraco.GetDictionaryValue("button kirim") <i class="fa-solid fa-arrow-right"></i></button>
             </div>

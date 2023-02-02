@@ -12,7 +12,7 @@
 				foreach (var item in Model.HomeMainSlider)
 				{
 					<div class="swiper-slide  home-main-slider-bg"
-				style="background-image: url('@item.SliderBackgroundImage.Url()');">
+						style="background-image: url('@item.SliderBackgroundImage.Url()');">
 						<div class="fluid-container home-main-slider-content">
 							<h1>@item.SliderTitle</h1>
 							<h2>@item.SliderSubtitle</h2>
@@ -163,7 +163,7 @@
 	</div>
 </div>
 
-@Html.Partial("~/Views/Partials/listBerita.cshtml")
+@* @Html.Partial("~/Views/Partials/listBerita.cshtml") *@
 
 <div class="swiper container home-tanggungjawab" id="hometanggungjawab" data-aos="fade-up">
 	<div class="home-tanggungjawab-head">
@@ -185,7 +185,8 @@
 						</div>
 						<h3>@item.CardTanggungjawabTitle</h3>
 						<p>@item.CardTanggungjawabDescription</p>
-						<a href="@item.CardTanggungjawabLink.Url">@item.CardTanggungjawabLink.Name <i class="fa-solid fa-arrow-right"></i></a>
+						<a href="@item.CardTanggungjawabLink.Url">@item.CardTanggungjawabLink.Name <i
+								class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			}
@@ -204,7 +205,7 @@
 		<div class="background-gambarpabrik"></div>
 		<div class="background-pabrikbiru"></div>
 	</div>
-	@*  *@
+	@* *@
 </div>
 
 <div class="swiper container home-pengadaan" id="homepengadaan" data-aos="fade-up">
@@ -212,7 +213,7 @@
 		<h2>@Model.PengadaanTitle</h2>
 		<p>@Model.PengadaanDescription</p>
 	</div>
-	<div class="swiper-wrapper  justify-content-center">
+	<div class="swiper-wrapper">
 		@if (Model.PengadaanCards != null)
 		{
 			foreach (var item in Model.PengadaanCards)
@@ -230,7 +231,7 @@
 						@if (item.CardPengadaanLink != null)
 						{
 							<a href="@item.CardPengadaanLink.Url">@item.CardPengadaanLink.Name<i
-						class="fa-solid fa-arrow-right"></i></a>
+									class="fa-solid fa-arrow-right"></i></a>
 						}
 					</div>
 				</div>
@@ -264,5 +265,5 @@
 		</div>
 	</div>
 
-	@*  *@
+	@* *@
 </div>

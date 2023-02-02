@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d515f7ab5d5c06c4")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ff35da3565da0900")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 
 // FILE: models.generated.cs
@@ -4328,7 +4328,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("procurementFile")]
-		public virtual string ProcurementFile => this.Value<string>("procurementFile");
+		public virtual global::Umbraco.Core.Models.MediaWithCrops ProcurementFile => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("procurementFile");
 
 		///<summary>
 		/// Page Number
