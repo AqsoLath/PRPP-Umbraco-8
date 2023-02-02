@@ -2045,7 +2045,7 @@ a.coklat-prpp:hover{
 	font-family: 'lato';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 1.05vw;
+	font-size: 16px;
 	/* line-height: 17px; */
 	letter-spacing: 0.02em;
 	min-width: 180px;
@@ -5419,6 +5419,7 @@ footer .social-media{
 }
 
 
+
 @media(min-width: 1920px){
 	/*=====================*/
 	/*=== HEADER BANNER ===*/
@@ -5432,6 +5433,15 @@ footer .social-media{
 		height: 560px;
 	} */
 }
+
+
+@media(min-width: 992px){
+	.manajemen-body{
+		max-height: 320px;
+		overflow-y: auto;
+	}
+}
+
 
 @media(max-width: 1200px){
 
@@ -5996,6 +6006,7 @@ footer .social-media{
 
 	.bapakbapak-list{
 		padding: 16px 50px ;
+		margin-top: 0 !important;
 	}
 
 	.bapak-list{
@@ -6313,6 +6324,10 @@ footer .social-media{
 
 	.footer-list p{
 		font-size: 12px;
+	}
+
+	.social-media h4{
+		font-size: 18px;
 	}
 
 	.socmed-item {
@@ -6733,7 +6748,7 @@ footer .social-media{
 	}
 
 	.penghargaan-container .penghargaan-card{
-		height: 130px;
+		min-height: 130px;
 
 		margin-bottom: 40px;
 	}
