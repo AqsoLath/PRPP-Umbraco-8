@@ -456,10 +456,10 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
     // let menu = ["01", "02", "03"]
 
      const swiperHomeMainSlider = new Swiper('.swiper-home-main-slider', {
-      speed:1000,
+      speed:1500,
       loop: true,
       autoplay:{
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false
       },
       pagination: {
@@ -619,12 +619,12 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
     const swiperHomePengadaan = new Swiper('.home-pengadaan', {
       // Optional parameters
       // slidesPerView: 1,
-      loop: false,
+      loop: true,
       spaceBetween: 100,
 
       breakpoints:{
         769:{
-            slidesPerView: 3,
+            slidesPerView: 2,
             enabled: false, 
             spaceBetween: 32
         }
