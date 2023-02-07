@@ -1,5 +1,6 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Web;
+@using Umbraco.Web.Models;
 
 <div class="container slider-container ">
     @* <div class="tanda-link" id="berita">a</div>
@@ -7,9 +8,13 @@
     <div class="pengadaan-slider swiper">
         <div class="berita-head">
             <img src="/images/vector-paper.svg">
-            <a href="/">
-                <h2>@Umbraco.GetDictionaryValue("judul pengadaan")</h2>
-            </a>
+            @{
+                var link = Model.Value<Link>("linkToPengadaan");
+                
+            }
+                <a href='@link.Url'>
+                    <h2>@Umbraco.GetDictionaryValue("judul pengadaan")</h2>
+                </a>
         </div>
         <div class="swiper-wrapper">
             
@@ -51,7 +56,7 @@
 
         @if (selection == null || !selection.Any())
         {
-            <h3 class="text-center">Item Belum Tersedia Untuk Saat Ini</h3>
+            <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
         }
     </div>
 </div>

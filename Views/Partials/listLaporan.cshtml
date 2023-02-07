@@ -1,18 +1,23 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Web;
+@using Umbraco.Web.Models;
+
 
 <div class="container slider-container ">
     <div class="laporantahunan-slider swiper">
         <div class="berita-head">
             <img src="/images/vector-network.svg">
-            <a href="/">
-                <h2>@Umbraco.GetDictionaryValue("judul laporan")</h2>
-            </a>
+            @{
+                var link = Model.Value<Link>("linkToLaporan");
+            }
+                <a href='@link.Url'>
+                    <h2>@Umbraco.GetDictionaryValue("judul laporan")</h2>
+                </a>
         </div>
         <div class="swiper-wrapper">
 
             @{
-                var selection = Umbraco.Content(Guid.Parse("22440b10-b891-4a8f-8399-6b5d841b3354"))
+                var selection = Umbraco.Content(Guid.Parse("63184ab7-8b47-4f7a-9904-bf3c815abad3"))
                 .Children()
                 .Where(x => x.IsVisible())
                 .OrderByDescending(x => x.CreateDate);
@@ -52,7 +57,7 @@
 
         @if (selection == null || !selection.Any())
         {
-            <h3 class="text-center">Item Belum Tersedia Untuk Saat Ini</h3>
+            <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
         }
     </div>
 </div>

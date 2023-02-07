@@ -38,7 +38,7 @@
 			<div class="artikel-konten">
 				<p>@Model.NewsRichTextContent</p>
 				@if(@Model.ProcurementFile != null){
-					<a class="button-file" href="@Model.ProcurementFile.Url()" download="">File pengadaan
+					<a class="button-file" href="@Model.ProcurementFile.Url()" download="">Download @Model.ProcurementFile.Name
 					<i class="fa-solid fa-download"></i> </a>
 				}
 				

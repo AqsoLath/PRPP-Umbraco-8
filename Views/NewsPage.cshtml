@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
+
+	<div class="container content">
+		<h1>@Model.HeroTitle</h1>
+		@*<h2>@Model.HeroSubtitle</h2>*@
+	</div>
+</div>
+
+@if(string.IsNullOrWhiteSpace(Model.BeritaContentTitle) == false){
+	<div class="pengadaan-wrapper">
+		<div class="container rich-text-content">
+			
+			<h4>@Model.BeritaContentTitle</h4>
+			<p>@Model.BeritaContentText</p>
+			
+		</div>
+	</div>
+}
+
+
+@Html.Partial("~/Views/Partials/listBeritaVertikal.cshtml")

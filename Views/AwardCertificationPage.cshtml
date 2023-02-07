@@ -34,7 +34,7 @@
 		{
 			<a href="@Model.AwardLink.Url">
 				<div class="penghargaan-card">
-					<div class="gambar"><img src="/images/penghargaan-pabrik.png"></div>
+					<div class="gambar"><img src="@Model.AwardImage.Url()"></div>
 					<div class="penghargaan-content">
 						<h3>@Model.AwardSubtitle</h3>
 						@* <p>@Model.AwardDescription</p> *@
@@ -54,7 +54,7 @@
 			<a href="@Model.CertificationLink.Url">
 				<div class="penghargaan-card">
 					<div class="gambar">
-						<img src="/images/penghargaan-pabrik.png">
+						<img src="@Model.CertificationImage.Url()">
 						@* <img src="/images/penghargaan-kilang.png" class="kilang-satu"> *@
 						@* <img src="/images/penghargaan-kilang.png" class="kilang-dua"> *@
 					</div>

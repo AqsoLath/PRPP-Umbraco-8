@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+<div class="container-informasipengadaan container">
+
+    @{
+        var selection = Umbraco.Content(Guid.Parse("a6ca9a44-f574-4aaa-b653-760f2e8b6401"))
+        .Children()
+        .Where(x => x.IsVisible())
+        .OrderByDescending(x => x.CreateDate);
+    }
+
+    @if (selection != null)
+    {
+        foreach (var item in selection)
+        {
+            <div class="item" data-aos="fade-up">
+                @{
+                    var image = item.Value<IPublishedContent>("NewsImage");
+                }
+                <div class="gambar">
+                    <img src="@image.Url()">
+                </div>
+                <div class="konten">
+                    <h2>@item.Value("NewsTitle")</h2>
+                    <div class="pengadaan-konten-singkat">
+                        <p>@item.Value("NewsContentPreview")</p>
+                    </div>
+                    <a href="@item.Url()">
+                        <span>@Umbraco.GetDictionaryValue("lihat selengkapnya")</span>
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        }
+    }
+
+    @if (selection == null || !selection.Any())
+    {
+        <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+    }
+</div>

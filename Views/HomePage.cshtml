@@ -163,7 +163,9 @@
 	</div>
 </div>
 
-@Html.Partial("~/Views/Partials/listBerita.cshtml")
+@if(Model.MediaShowNews == true){
+    @Html.Partial("~/Views/Partials/listBerita.cshtml")
+}
 
 <div class="swiper container home-tanggungjawab" id="hometanggungjawab" data-aos="fade-up">
 	<div class="home-tanggungjawab-head">

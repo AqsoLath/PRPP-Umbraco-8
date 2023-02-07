@@ -8,8 +8,11 @@
 <div class="container-artikel container">
 	<div class="container-breadcrumb">
 		<a href="/"><img src="/images/vector-home.svg" class="breadcrumb-home"></a>
-		@* <div class="batas-breadcrumb"><i class="fa-solid fa-chevron-right"></i></div>
-			<a href="@Model.Parent.Url()" class="previous-breadcrumb">@Model.Parent.Name</a> *@
+		<div class="batas-breadcrumb"><i class="fa-solid fa-chevron-right"></i></div>
+		@if (Model.Parent != null)
+		{
+			<a href="@Model.Parent.Url()" class="previous-breadcrumb">@Model.Parent.Name</a>
+		}
 		<div class="batas-breadcrumb"><i class="fa-solid fa-chevron-right"></i></div>
 		<a href="@Model.Url()" class="currentpage-breadcrumb">@Model.NewsTitle</a>
 	</div>
