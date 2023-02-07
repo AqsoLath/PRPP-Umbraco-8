@@ -16,10 +16,12 @@
 <div class="container container-karir rich-text-content">
 	<h4>@Model.CareerContent1TitleHijau</h4>
 	<h3>@Model.CareerContent1Title</h3>
-	<p>@Model.CareerContent1</p>
-	<img src="@Model.CareerContent1Image.Url()" class="w-100">
-	<h4 class="mt-5">@Model.CareerContent2TitleHijau</h4>
-	<h3>@Model.CareerContent2Title</h3>
+	<img src="@Model.CareerContent1Image.Url()" class="rich-float-right w-50">
+	<div>
+		<p>@Model.CareerContent1</p>
+	</div>
+	@* <h4 class="mt-5">@Model.CareerContent2TitleHijau</h4> *@
+	<h3 class="mt-5">@Model.CareerContent2Title</h3>
 	<p>@Model.CareerContent2</p>
 </div>
 

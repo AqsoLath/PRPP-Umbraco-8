@@ -716,7 +716,7 @@ bisnisNavbarArrowdown && bisnisNavbarArrowdown.addEventListener("click", functio
       // Optional parameters
       slidesPerView: 1.2,
       // loop: true,
-      spaceBetween: 32,
+      spaceBetween: 50,
 
       breakpoints:{
         280:{
@@ -787,7 +787,7 @@ const swiperPengumumanSlider = new Swiper('.pengumuman-slider', {
       // Optional parameters
       slidesPerView: 1.2,
       // loop: true,
-      spaceBetween: 32,
+      spaceBetween: 50,
 
       breakpoints:{
         280:{
@@ -859,7 +859,7 @@ const swiperLaporantahunanSlider = new Swiper('.laporantahunan-slider', {
       // Optional parameters
       slidesPerView: 1.2,
       // loop: true,
-      spaceBetween: 32,
+      spaceBetween: 50,
 
       breakpoints:{
         280:{
@@ -932,7 +932,7 @@ const swiperPengadaanSlider = new Swiper('.pengadaan-slider', {
       // Optional parameters
       slidesPerView: 1.2,
       // loop: true,
-      spaceBetween: 32,
+      spaceBetween: 50,
 
       breakpoints:{
         280:{

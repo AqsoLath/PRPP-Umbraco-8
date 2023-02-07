@@ -66,20 +66,20 @@ select, select:active, select:focus{
 }
 
 @font-face {
-  font-family: 'latoBold';
-  src: url('/fonts/Lato-Black.ttf') format("truetype");
+  font-family: 'futuraBold';
+  src: url('/fonts/Futura-Black.ttf') format("truetype");
   font-weight: 900;
 }
 
 @font-face {
-  font-family: 'lato';
-  src: url('/fonts/Lato-Regular.ttf') format("truetype");
+  font-family: 'futura';
+  src: url('/fonts/Futura-Book.ttf') format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'latoSemiBold';
-  src: url('/fonts/Lato-Bold.ttf') format("truetype");
+  font-family: 'futuraSemiBold';
+  src: url('/fonts/Futura-Bold.ttf') format("truetype");
   font-weight: 700;
 }
 html{
@@ -100,21 +100,23 @@ body{
 	margin: 20px 0;
 	padding: 16px;
 	color: var(--abu800);
-	font-family: lato;
+	font-family: futura;
+
+	overflow: auto;
 }
 
 
 .rich-text-content h3{
-	font-size: 2.8vw;
+	font-size: 1.4vw;
 	/* line-height: 3vw; */
-	font-family: latoBold;
+	font-family: futuraBold;
 }
 
 .rich-text-content h4{
 	color: var(--hijauPRPP);
 	font-size: 1.4vw;
 	/* line-height: 1.9vw; */
-	font-family: latoSemibold;
+	font-family: futuraSemibold;
 }
 
 .rich-text-content p{
@@ -127,7 +129,7 @@ body{
 .rich-text-content img{
 	max-width: 100%;
 	height: auto;
-	padding: 16px;
+	padding: 0 16px;
 }
 
 .rich-text-content img.rich-float-left{
@@ -145,7 +147,7 @@ body{
 	}
 	
 	.rich-text-content h3{
-		font-size: 28px;
+		font-size: 18px;
 		line-height: 34px;
 	}
 	
@@ -202,7 +204,7 @@ body{
 
 .home-main-slider .swiper-pagination-bullet {
 	position: relative;
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
   width: 20px !important;
   height: 20px !important;
   text-align: center;
@@ -470,7 +472,7 @@ a:hover{
 
 .navbar-list a{
 	margin-right: 30px;
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -490,7 +492,7 @@ a:hover{
 .navbar-list a.active,
 .sidebar-list a.active{
 	border-bottom: 3px solid var(--merahPRPP);
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 }
 
 .navbar-language{
@@ -535,7 +537,7 @@ nav.scrolled .navbar-language .dropdown-item{
 	font-size: 20px;
 	border: none;
 
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	color: var(--abu600);
 
 	cursor: pointer;
@@ -638,7 +640,7 @@ nav.scrolled .navbar-hamburger{
 .sidebar-menu .sidebar-list a{
 	margin-bottom: 24px;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -798,7 +800,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-main-slider-content h1{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	color: #ffffff;
 	font-size: 2.8vw;
 	/* line-height: 3vw; */
@@ -807,7 +809,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-main-slider-content h2{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6vw;
@@ -818,7 +820,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-main-slider-content a{
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
@@ -871,7 +873,7 @@ nav.scrolled .navbar-hamburger{
 	background-color: transparent;
 	border: none;
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -885,7 +887,7 @@ nav.scrolled .navbar-hamburger{
 
 .home-main-slider .page-button .page.active button{
 	font-size: 24px;
-	font-family: latoSemiBold;
+	font-family: futuraSemiBold;
 	font-weight: 700;
 }
 
@@ -950,7 +952,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-tentang h3{
-	font-family: 'LatoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.4vw;
@@ -963,7 +965,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-tentang h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -975,7 +977,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-tentang p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
@@ -991,7 +993,7 @@ nav.scrolled .navbar-hamburger{
 .home-tentang a{
 	display: inline-block;
 	position: relative;
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.15vw;
@@ -1091,7 +1093,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-bisnis-head h2, .home-media-head h2, .home-tanggungjawab-head h2, .home-pengadaan h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -1104,7 +1106,7 @@ nav.scrolled .navbar-hamburger{
 }
 
 .home-bisnis-head p, .home-media-head p, .home-tanggungjawab p, .home-pengadaan p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
@@ -1178,7 +1180,7 @@ nav.scrolled .navbar-hamburger{
 	color: #ffffff !important;
 	margin-top: 25px;
 
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.6vw;
@@ -1256,7 +1258,7 @@ a.coklat-prpp:hover{
 } */
 
 .home-media .item p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -1275,7 +1277,7 @@ a.coklat-prpp:hover{
 	color: #ffffff !important;
 	margin-top: 25px;
 
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.6vw;
@@ -1302,7 +1304,7 @@ a.coklat-prpp:hover{
 
 
 .home-tanggungjawab .item h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8vw;
@@ -1313,7 +1315,7 @@ a.coklat-prpp:hover{
 }
 
 .home-tanggungjawab .item p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -1368,7 +1370,7 @@ a.coklat-prpp:hover{
 }
 
 .home-pengadaan .item h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.8vw;
@@ -1381,7 +1383,7 @@ a.coklat-prpp:hover{
 }
 
 .home-pengadaan .item p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -1400,7 +1402,7 @@ a.coklat-prpp:hover{
 	position: relative;
 	z-index: 2;
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.05vw;
@@ -1478,7 +1480,7 @@ a.coklat-prpp:hover{
 	width: 100%;
 	background: -o-linear-gradient(356.43deg, #2F8ECB 21.76%, #AEC23C 88.3%);
 	background: linear-gradient(93.57deg, #2F8ECB 21.76%, #AEC23C 88.3%);
-	margin-top: 200px;
+	margin-top: 120px;
 
 	position: relative;
 }
@@ -1519,7 +1521,7 @@ a.coklat-prpp:hover{
 }
 
 .home-karir-konten h2{
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.4vw;
@@ -1532,7 +1534,7 @@ a.coklat-prpp:hover{
 }
 
 .home-karir-konten h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -1587,7 +1589,7 @@ a.coklat-prpp:hover{
 }
 
 .tentang-jumbotron .content h1{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -1598,7 +1600,7 @@ a.coklat-prpp:hover{
 }
 
 .tentang-jumbotron .content h2{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.6vw;
@@ -1677,7 +1679,7 @@ a.coklat-prpp:hover{
 
 .tentang-navbar .tentang-navbar-list a, 
 .bisnis-navbar .bisnis-navbar-list a{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -1755,7 +1757,7 @@ a.coklat-prpp:hover{
 }
 
 .tentang-journey h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -1795,7 +1797,7 @@ a.coklat-prpp:hover{
 
 	display: inline-block;
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
@@ -1911,7 +1913,7 @@ a.coklat-prpp:hover{
 	list-style-position: inside;
 
 	border: none;
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 32px;
@@ -2008,7 +2010,7 @@ a.coklat-prpp:hover{
 }
 
 .journey-content-year h4{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -2042,7 +2044,7 @@ a.coklat-prpp:hover{
 	display: inline-block;
 	position: relative;
 	z-index: 2;
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -2156,7 +2158,7 @@ a.coklat-prpp:hover{
 }
 
 .manajemen-content .manajemen-head h4{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 1.4vw;
@@ -2168,7 +2170,7 @@ a.coklat-prpp:hover{
 }
 
 .manajemen-content .manajemen-head h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 3.3vw;
@@ -2180,7 +2182,7 @@ a.coklat-prpp:hover{
 }
 
 /* .manajemen-body h5{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -2192,7 +2194,7 @@ a.coklat-prpp:hover{
 }
 
 .manajemen-body h6{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -2201,7 +2203,7 @@ a.coklat-prpp:hover{
 } */
 
 .manajemen-body p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.1vw;
@@ -2280,7 +2282,7 @@ a.coklat-prpp:hover{
 }
 
 .bapak-list h4{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.05vw;
@@ -2294,7 +2296,7 @@ a.coklat-prpp:hover{
 }
 
 .bapak-list h5{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 300;
 	font-size: 0.95vw;
@@ -2356,7 +2358,7 @@ a.coklat-prpp:hover{
 }
 
 .visimisi h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -2373,7 +2375,7 @@ a.coklat-prpp:hover{
 }
 
 .visimisi p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.3vw;
@@ -2417,7 +2419,7 @@ a.coklat-prpp:hover{
 	padding: 0px 0;
 	
 	border-bottom: 1px solid #02929F;
-	font-family: lato;
+	font-family: futura;
 }
 
 .akhlak-kiri{
@@ -2439,7 +2441,7 @@ a.coklat-prpp:hover{
 	font-weight: 700;
 
 	padding: 0 8px;
-	font-family: latoBold;
+	font-family: futuraBold;
 }
 
 .akhlak-kanan{
@@ -2467,7 +2469,7 @@ a.coklat-prpp:hover{
 }
 
 .corevalues h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -2480,7 +2482,7 @@ a.coklat-prpp:hover{
 }
 
 .corevalues p{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -2504,7 +2506,7 @@ a.coklat-prpp:hover{
 }
 
 .sixc-lists .list .content h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -2535,7 +2537,7 @@ a.coklat-prpp:hover{
 }
 
 .sixc-lists .list .content p{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -2573,7 +2575,7 @@ a.coklat-prpp:hover{
 
 .table-shareholders .table-shareholders-head {
 	text-align: center;
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -2596,7 +2598,7 @@ a.coklat-prpp:hover{
 	background-color: var(--biruPRPP);
 	color: #ffffff;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -2610,7 +2612,7 @@ a.coklat-prpp:hover{
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
 	        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 13px;
@@ -2650,7 +2652,7 @@ a.coklat-prpp:hover{
 }
 
 .penghargaan-container h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 2.8vw;
@@ -2696,7 +2698,7 @@ a.coklat-prpp:hover{
 }
 
 .penghargaan-container .penghargaan-card h3{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.6vw;
@@ -2709,7 +2711,7 @@ a.coklat-prpp:hover{
 }
 
 .penghargaan-container .penghargaan-card p{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.4vw;
@@ -2772,7 +2774,7 @@ a.coklat-prpp:hover{
 
 .container-projects-image{
 	text-align: center;
-	padding: 50px 16px;
+	padding: 16px 16px 50px;
 	border-bottom: 1px solid var(--abu300);
 }
 
@@ -2856,7 +2858,7 @@ a.coklat-prpp:hover{
 }
 
 .produk-lainnya img{
-	max-width: 60%;
+	max-width: 40%;
 	margin: 10px auto;
 	text-align: center;
 }
@@ -2954,7 +2956,7 @@ a.coklat-prpp:hover{
 }
 
 .ourprojects .ourprojects-card .content h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 32px;
@@ -2968,7 +2970,7 @@ a.coklat-prpp:hover{
 }
 
 .ourprojects .ourprojects-card .content h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
@@ -2980,7 +2982,7 @@ a.coklat-prpp:hover{
 }
 
 .ourprojects .ourprojects-card .content p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -2998,7 +3000,7 @@ a.coklat-prpp:hover{
 }
 
 .ourprojects .ourprojects-card .content ul li{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -3014,7 +3016,7 @@ a.coklat-prpp:hover{
 	bottom: 32px;
 	left: 70px;
 
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -3127,7 +3129,7 @@ a.coklat-prpp:hover{
 .container-tata-kelola{
 	padding: 32px 0;
 	border-bottom: 1px solid var(--abu200);
-	font-family: lato;
+	font-family: futura;
 }
 
 .container-tata-kelola h4{
@@ -3187,6 +3189,7 @@ a.coklat-prpp:hover{
 .hsse-wrapper{
 	background-position: center;
 	background-size: cover;
+	margin-top: 1px;
 	padding: 50px 16px;
 
 	text-align: center;
@@ -3267,14 +3270,14 @@ a.coklat-prpp:hover{
 	margin: 64px 0;
 	
 	color: var(--abu800);
-	font-family: lato ;
+	font-family: futura ;
 	font-size: 1.15vw;
 	
 }
 
 .sustainable-sub-content img{
 	width: 50%;
-	margin: 32px;
+	margin: 0 16px;
 }
 
 .sustainable-sub-content-1 img{
@@ -3288,7 +3291,7 @@ a.coklat-prpp:hover{
 .sustainable-sub-content h4{
 	color: var(--fonte);
 	font-size: 1.6vw;
-	font-family: latoBold;
+	font-family: futuraBold;
 }
 
 
@@ -3315,7 +3318,7 @@ a.coklat-prpp:hover{
 
 
 .karir .karir-head h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -3328,7 +3331,7 @@ a.coklat-prpp:hover{
 }
 
 .karir .karir-head h3{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
@@ -3339,7 +3342,7 @@ a.coklat-prpp:hover{
 }
 
 .karir .karir-head p{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -3370,7 +3373,7 @@ a.coklat-prpp:hover{
 
 
 .karir .item h3{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 40px;
@@ -3382,7 +3385,7 @@ a.coklat-prpp:hover{
 }
 
 .karir .item p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -3399,7 +3402,7 @@ a.coklat-prpp:hover{
 
 	z-index: 2;
 
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -3504,7 +3507,7 @@ a.coklat-prpp:hover{
 .kontak-alamat a{
 	display: inline-block;
 	position: relative;
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -3567,7 +3570,7 @@ a.coklat-prpp:hover{
 
 
 .kontak-container .kontak-content h3{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.15vw;
@@ -3584,7 +3587,7 @@ a.coklat-prpp:hover{
 .kontak-container .kontak-content h4{
 	margin: 12px 0 0 0;
 	padding: 0;
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.15vw;
@@ -3596,7 +3599,7 @@ a.coklat-prpp:hover{
 .kontak-container .kontak-content p{
 	margin: 0;
 	padding: 0;
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.15vw;
@@ -3616,7 +3619,7 @@ a.coklat-prpp:hover{
 .kontak-container .kontak-mediasosial .mediasosial-list a{
 	padding-bottom: 4px;  
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.05vw;
@@ -3658,7 +3661,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .umbraco-forms-field label{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -3685,7 +3688,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .umbraco-forms-field ::placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3700,7 +3703,7 @@ a.coklat-prpp:hover{
 
 	display: inline-block;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -3759,7 +3762,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input label{
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -3775,7 +3778,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input ::-webkit-input-placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3785,7 +3788,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input ::-moz-placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3795,7 +3798,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input :-ms-input-placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3805,7 +3808,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input ::-ms-input-placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3815,7 +3818,7 @@ a.coklat-prpp:hover{
 }
 
 .kontak-container .kontak-form .form-input ::placeholder{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -3832,7 +3835,7 @@ a.coklat-prpp:hover{
 
 	display: inline-block;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -3972,13 +3975,17 @@ a.coklat-prpp:hover{
 /*===BERITA===*/
 /*============*/
 
+.headline-title{
+	margin-top: 70px;
+}
+
 .beritapengumuman-headline{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 
  	height: 400px;
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
 .berita-section, .pengumuman-section{
@@ -4042,14 +4049,16 @@ a.coklat-prpp:hover{
 .berita-headline .headline-date{
 	position: absolute;
 
-	top: 35%;
-	left: 50%;
+	top: 5%;
+	right: 5%;
 
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 
-	width: 100%;
+	width: 50%;
 
 	padding: 16px 0;
+
+	border-radius: 100px;
 
 	opacity: 0;
 
@@ -4062,14 +4071,15 @@ a.coklat-prpp:hover{
 .pengumuman-headline .headline-date{
 	position: absolute;
 
-	top: 35%;
-	left: 50%;
+	top: 5%;
+	right: 5%;
 
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 
-	width: 100%;
+	width: 80%;
 
 	padding: 8px 0;
+	border-radius: 100px;
 
 	opacity: 0;
 
@@ -4086,7 +4096,7 @@ a.coklat-prpp:hover{
 .berita-headline .headline-date h6{
 	margin-bottom: 0;
 
-	font-size: 24px;
+	font-size: 20px;
 
 	color: #ffffff;
 	font-weight: bold;
@@ -4095,7 +4105,7 @@ a.coklat-prpp:hover{
 .pengumuman-headline .headline-date h6{
 	margin-bottom: 0;
 
-	font-size: 18px;
+	font-size: 14px;
 
 	color: #ffffff;
 	font-weight: bold;
@@ -4111,7 +4121,7 @@ a.coklat-prpp:hover{
 
 	width: fit-content;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -4156,7 +4166,7 @@ a.coklat-prpp:hover{
 }
 
 .berita-section .berita-headline h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 32px;
@@ -4234,7 +4244,7 @@ a.coklat-prpp:hover{
 
 	width: fit-content;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -4251,7 +4261,7 @@ a.coklat-prpp:hover{
 }
 
 .pengumuman-headline .body h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
@@ -4289,8 +4299,9 @@ a.coklat-prpp:hover{
 	border-bottom: 4px solid var(--hijauPRPP);
 }
 
-.berita-head h2{
-	font-family: 'latoBold';
+.berita-head h2,
+.headline-title h2{
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -4349,12 +4360,12 @@ a.coklat-prpp:hover{
 .slider-container .slider-card .slider-date{
 	/*height: 100%;*/
 
-	width: 100%;
+	width: 50%;
 	position: absolute;
 
-	top: 35%;
-	left: 50%;
-	transform: translateX(-50%);
+	top: 5%;
+	right: 5%;
+	/* transform: translateX(-50%); */
 
 	z-index: 12;
 
@@ -4362,7 +4373,9 @@ a.coklat-prpp:hover{
 
 	opacity: 0;
 
-	padding: 16px 0;
+	padding: 8px 0;
+
+	border-radius: 100px;
 
 	text-align: center;
 
@@ -4372,7 +4385,7 @@ a.coklat-prpp:hover{
 .slider-container .slider-card .slider-date h6{
 	margin-bottom: 0;
 
-	font-size: 24px;
+	font-size: 14px;
 
 	color: #ffffff;
 	font-weight: bold;
@@ -4395,11 +4408,11 @@ a.coklat-prpp:hover{
 	position: relative;
   z-index: 2;
 
-  font-family: 'Lato';
+  font-family: 'futura';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 14px;
+	/* line-height: 24px; */
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 
@@ -4420,7 +4433,7 @@ a.coklat-prpp:hover{
 	position: relative;
 	z-index: 2;
 
-	font-family: 'latoSemibold';
+	font-family: 'futuraSemibold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -4494,7 +4507,7 @@ a.coklat-prpp:hover{
 }
 
 .petaindonesia-container h2{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 40px;
@@ -4539,7 +4552,7 @@ a.coklat-prpp:hover{
 	padding: 5px 32px;
 	border-radius: 4px;
 
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 12px;
@@ -4670,7 +4683,7 @@ a.coklat-prpp:hover{
 
 
 .kantor-perwakilan h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
@@ -4695,7 +4708,7 @@ a.coklat-prpp:hover{
 .kantor-perwakilan-content p{
 	margin: 0;
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -4757,7 +4770,7 @@ a.coklat-prpp:hover{
 
 .container-detailpenghargaan .item .konten h2,
 .container-detailsertifikasi .item .konten h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 20px;
@@ -4771,7 +4784,7 @@ a.coklat-prpp:hover{
 
 .container-detailpenghargaan .item .konten p,
 .container-detailsertifikasi .item .konten p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -4785,7 +4798,7 @@ a.coklat-prpp:hover{
 
 .container-detailpenghargaan .item .konten h3,
 .container-detailsertifikasi .item .konten h3{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 14px;
@@ -4863,7 +4876,7 @@ a.coklat-prpp:hover{
 
 
 .container-informasipengadaan .item .konten h2{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 20px;
@@ -4877,7 +4890,7 @@ a.coklat-prpp:hover{
 }
 
 .container-informasipengadaan .item .konten p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -4901,7 +4914,7 @@ a.coklat-prpp:hover{
 	position: relative;
 	z-index: 2;
 
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -4997,7 +5010,7 @@ a.coklat-prpp:hover{
 } 
 
 .container-breadcrumb .previous-breadcrumb{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -5008,7 +5021,7 @@ a.coklat-prpp:hover{
 }
 
 .container-breadcrumb .currentpage-breadcrumb{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -5028,7 +5041,7 @@ a.coklat-prpp:hover{
 
 .artikel-jenis{
 	display: inline-block;
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -5054,7 +5067,7 @@ a.coklat-prpp:hover{
 }
 
 .container-artikel .artikel-published{
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -5065,7 +5078,7 @@ a.coklat-prpp:hover{
 }
 
 .container-artikel .artikel-header h1{
-	font-family: 'latoBold';
+	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 900;
 	font-size: 40px;
@@ -5082,7 +5095,7 @@ a.coklat-prpp:hover{
 }
 
 .container-artikel .artikel-konten{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -5102,7 +5115,7 @@ a.coklat-prpp:hover{
 .container-artikel .artikel-konten .button-file{
 	display: inline-block;
 	position: relative;
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -5183,7 +5196,7 @@ a.coklat-prpp:hover{
 }
 
 .artikel-share h5{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -5285,7 +5298,7 @@ footer {
 }
 
 footer h3{
-	font-family: 'latoSemiBold';
+	font-family: 'futuraSemiBold';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.6vw;
@@ -5319,7 +5332,7 @@ footer .footer-kontak{
 }
 
 .footer-list p{
-	font-family: 'lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.05vw;
@@ -5372,7 +5385,7 @@ footer .social-media{
 }
 
 .social-media h4{
-	font-family: 'Lato';
+	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.05vw;
@@ -5814,7 +5827,7 @@ footer .social-media{
 
 	.home-karir{
 		/*height: 170px;*/
-		margin-top: 200px;
+		/* margin-top: 200px; */
 	}
 
 	.home-karir-vektor{
@@ -6228,7 +6241,8 @@ footer .social-media{
 		margin-bottom: 16px;
 	}
 
-	.berita-head h2{
+	.berita-head h2,
+	.headline-title h2{
 		font-size: 24px;
 	}
 
@@ -6253,7 +6267,7 @@ footer .social-media{
 	}
 
 	.slider-container .slider-card .slider-date h6{
-		font-size: 20px;
+		font-size: 12px;
 	}
 
 	.slider-container .slider-card h3{
@@ -6482,6 +6496,12 @@ footer .social-media{
 	.home-pengadaan{
 		margin-top: 48px;
 	}
+
+	.home-karir{
+		/*height: 170px;*/
+		margin-top: 200px;
+	}
+
 
 	.home-karir-vektor{
 		position: absolute;
@@ -6875,6 +6895,10 @@ footer .social-media{
 	/*==== BERITA ====*/
 	/*================*/	
 
+	.headline-title{
+		margin-top: 32px;
+	}
+
 	.beritapengumuman-headline{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -6883,7 +6907,7 @@ footer .social-media{
 
 		height: auto;
 
-		margin-top: 32px;
+		margin-top: 16px;
 	}
 
 	.berita-section, .pengumuman-section{
@@ -6896,10 +6920,8 @@ footer .social-media{
 	}
 
 	.berita-section .berita-headline{
-		/* -webkit-box-pack: start;
-		    -ms-flex-pack: start;
-		        justify-content: flex-start; */
-		/*align-items: flex-start;*/
+		padding-right: 16px;
+		padding-left: 16px;
 	}
 
 	.slider-container{
@@ -6918,7 +6940,6 @@ footer .social-media{
 	/*==== BISNIS | OUR PROJECTS ====*/
 	/*===============================*/	
 	
-	
 	.bbm h2, .produk-lainnya h2{
 		font-size: 16px;
 		padding:8px 16px;
@@ -6931,6 +6952,10 @@ footer .social-media{
 	.bbm-produk-list h4, .produk-lainnya-list h4{
 		font-size: 15px;
 
+	}
+
+	.produk-lainnya img{
+		max-width: 75%;
 	}
 
 	.produk-lainnya-list .value{
