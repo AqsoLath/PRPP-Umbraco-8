@@ -4,17 +4,19 @@
 
 
 <div class="container slider-container ">
-    @* <div class="tanda-link" id="berita">a</div>
-    <div class="tanda-link" id="news">a</div> *@
     <div class="berita-slider swiper">
         <div class="berita-head">
             <img src="/images/vector-paper.svg">
-            @{
-                var link = Model.Value<Link>("linkToBerita");
-            }
-                <a href='@link.Url'>
-                    <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
-                </a>
+                @{
+                    if(Model.Value<Link>("linkToBerita") != null){
+                        var link = Model.Value<Link>("linkToBerita");
+                        <a href='@link.Url'>
+                            <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
+                        </a>
+                    }else{
+                        <h2>@Umbraco.GetDictionaryValue("judul berita")</h2>
+                    }
+                }
         </div>
         <div class="swiper-wrapper">
             @{
