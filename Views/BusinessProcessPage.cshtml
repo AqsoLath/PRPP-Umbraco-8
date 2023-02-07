@@ -6,11 +6,11 @@
 
 
 <div class="tentang-jumbotron">
-	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-	
-	<div class="container content">
-		<h1>@Model.HeroTitle</h1>
-		@*<h2>@Model.HeroSubtitle</h2>*@
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
 	</div>
 </div>
 <div class="bisnis-navbar">
@@ -26,5 +26,5 @@
 </div>
 
 <div class="container businessprocess-container" data-aos="fade-up">
-    <img src="@Model.BusinessProcessImage.Url()" alt="business process">
+	<img src="@Model.BusinessProcessImage.Url()" alt="business process">
 </div>

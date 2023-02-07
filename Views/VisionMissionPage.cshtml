@@ -4,13 +4,12 @@
 	Layout = "master.cshtml";
 }
 
-
 <div class="tentang-jumbotron">
-	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-
-	<div class="container content">
-		<h1>@Model.HeroTitle</h1>
-		@*<h2>@Model.HeroSubtitle</h2>*@
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
 	</div>
 </div>
 <div class="tentang-navbar">
