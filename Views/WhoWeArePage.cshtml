@@ -3,13 +3,12 @@
 @{
 	Layout = "master.cshtml";
 }
-
 <div class="tentang-jumbotron">
-	<img src="@Model.HeroBackgroundImage.Url()" class="blueprint">
-
-	<div class="container content">
-		<h1>@Model.HeroTitle</h1>
-		@*<h2>@Model.HeroSubtitle</h2>*@
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
 	</div>
 </div>
 <div class="tentang-navbar">
@@ -25,20 +24,20 @@
 </div>
 
 <div class="container whoweare-content rich-text-content">
-    <img src="@Model.WhoweareContentImage1.Url()" class="w-50 rich-float-left">
-    <h4>@Model.WhoweareContentTitleHijau</h4>
-    <h3>@Model.WhoweareContentTitle</h3>
-    <p>@Model.WhoweareContent</p>
-    <img src="@Model.WhoweareContentImage2.Url()" class="w-100">
-    <p>@Model.WhoweareContentBawah</p>
+	<img src="@Model.WhoweareContentImage1.Url()" class="w-50 rich-float-left">
+	<h4>@Model.WhoweareContentTitleHijau</h4>
+	<h3>@Model.WhoweareContentTitle</h3>
+	<p>@Model.WhoweareContent</p>
+	<img src="@Model.WhoweareContentImage2.Url()" class="w-100">
+	<p>@Model.WhoweareContentBawah</p>
 	<div class="mt-5">
-		<p >
+		<p>
 			@Model.FaseContent
 		</p>
 	</div>
 </div>
 
-		
+
 <div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper">
 	<div class="container">
 		<h3>@Model.FaseTitle</h3>
