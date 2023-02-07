@@ -5,36 +5,43 @@
     <div class="laporantahunan-slider swiper">
         <div class="berita-head">
             <img src="/images/vector-network.svg">
-            <h2>@Umbraco.GetDictionaryValue("judul laporan")</h2>
-        </div>
-        <div class="swiper-wrapper">
-            
-@{
-	var selection = Umbraco.Content(Guid.Parse("22440b10-b891-4a8f-8399-6b5d841b3354"))
-    .Children()
-    .Where(x => x.IsVisible())
-	.OrderByDescending(x => x.CreateDate);
-}
-	@foreach (var item in selection)
-	{
-		<div class="swiper-slide">
-            <a href="@item.Url()" class="slider-card-link">
-            @{var image = item.Value<IPublishedContent>("NewsImage");}
-                <div class="slider-card" style='background-image: url(@image.Url())'>
-                    <div class="slider-date">
-                        <h6>@(item.Value<DateTime>("NewsPostDate").ToString("dd - MM - yyyy"))</h6>
-                    </div>
-                    <div class="slider-content">
-                        <h3>@item.Value("NewsShortTitle")</h3>
-                            <span>@Umbraco.GetDictionaryValue("lihat selengkapnya")
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                    </div>
-                    <div class="bg-gradient-biru"></div>
-                </div>
+            <a href="/">
+                <h2>@Umbraco.GetDictionaryValue("judul laporan")</h2>
             </a>
         </div>
-	}  
+        <div class="swiper-wrapper">
+
+            @{
+                var selection = Umbraco.Content(Guid.Parse("22440b10-b891-4a8f-8399-6b5d841b3354"))
+                .Children()
+                .Where(x => x.IsVisible())
+                .OrderByDescending(x => x.CreateDate);
+            }
+            @if (selection != null)
+            {
+                foreach (var item in selection)
+                {
+                    <div class="swiper-slide">
+                        <a href="@item.Url()" class="slider-card-link">
+                            @{
+                                var image = item.Value<IPublishedContent>("NewsImage");
+                            }
+                            <div class="slider-card" style='background-image: url(@image.Url())'>
+                                <div class="slider-date">
+                                    <h6>@(item.Value<DateTime>("NewsPostDate").ToString("dd - MM - yyyy"))</h6>
+                                </div>
+                                <div class="slider-content">
+                                    <h3>@item.Value("NewsShortTitle")</h3>
+                                    <span>@Umbraco.GetDictionaryValue("lihat selengkapnya")
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                                <div class="bg-gradient-biru"></div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            }
         </div>
         <div>
             <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
@@ -42,5 +49,10 @@
         <div>
             <img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
         </div>
+
+        @if (selection == null || !selection.Any())
+        {
+            <h3 class="text-center">Item Belum Tersedia Untuk Saat Ini</h3>
+        }
     </div>
 </div>
