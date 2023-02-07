@@ -9,12 +9,15 @@
         <div class="berita-head">
             <img src="/images/vector-paper.svg">
             @{
-                var link = Model.Value<Link>("linkToPengadaan");
-                
-            }
-                <a href='@link.Url'>
+                if(Model.Value<Link>("linkToPengadaan") != null){
+                    var link = Model.Value<Link>("linkToPengadaan");
+                    <a href='@link.Url'>
+                        <h2>@Umbraco.GetDictionaryValue("judul pengadaan")</h2>
+                    </a>
+                }else{
                     <h2>@Umbraco.GetDictionaryValue("judul pengadaan")</h2>
-                </a>
+                }
+            }
         </div>
         <div class="swiper-wrapper">
             
