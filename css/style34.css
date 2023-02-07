@@ -5382,6 +5382,7 @@ footer .social-media{
 
 .socmed-item a{
 	color: var(--biruPRPP) !important;
+	margin-right: 16px;
 }
 
 .social-media h4{
