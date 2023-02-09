@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<div class="container rich-text-content">
+<div class="container rich-text-content" data-aos="fade-up">
     <img src="@Model.HsseContentImage.Url()" class="rich-float-left w-50">
     <h3>@Model.HsseContentTitle</h3>
     <div>
@@ -36,16 +36,16 @@
 
 <div style="background-image: url('@Model.HsseBackgroundImage.Url()')" class="hsse-wrapper">
     <div class="container">
-        <div class="hsse-title">
+        <div class="hsse-title" data-aos="fade-up">
             <h4 class="hsse-title-english">@Model.HsseTitle</h4>
         </div>
 
-		<div class="hsse-quotes hsse-quotes-indonesia">
+		<div class="hsse-quotes hsse-quotes-indonesia" data-aos="fade-up">
             <h5>@Model.HsseQuotesTitle</h5>
             <h5>@Model.HsseQuotesText</h5>
 
 		
-        <div class="hsse-structure">
+        <div class="hsse-structure" data-aos="fade-up">
             <h6>@Model.HsseStructureTitle</h6>
             <img src="@Model.HsseStructureImage.Url()">
         </div>

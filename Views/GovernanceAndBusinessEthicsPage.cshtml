@@ -26,19 +26,19 @@
 
 
 
-<div class="container container-tata-kelola rich-text-content">
+    <div class="container container-tata-kelola rich-text-content" data-aos="fade-up">
         <h4>@Model.GovernanceContentTitle</h4>
         <p>@Model.GovernanceContentText</p>
     </div>
     
-    <div class="container container-kode-etik">
+    <div class="container container-kode-etik" data-aos="fade-up">
         <div class="ethics-code-wrapper">
             <p>@Model.EthicsCodeDescription</p>
         </div>
 
         <div class="ethics-code-list-wrapper">
 		@foreach (var item in Model.EthicsCodeList){
-			<div class="ethics-code-list">
+			<div class="ethics-code-list" data-aos="fade-up">
                 <div class="gambar">
                     <img src="@item.EthicsCodeImage.Url()" alt="ethics code">
                 </div>

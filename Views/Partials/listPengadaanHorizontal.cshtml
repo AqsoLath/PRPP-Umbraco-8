@@ -2,7 +2,7 @@
 @using Umbraco.Web;
 @using Umbraco.Web.Models;
 
-<div class="container slider-container ">
+<div class="container slider-container " data-aos="fade-up">
     @* <div class="tanda-link" id="berita">a</div>
     <div class="tanda-link" id="news">a</div> *@
     <div class="pengadaan-slider swiper">
@@ -59,7 +59,9 @@
 
         @if (selection == null || !selection.Any())
         {
-            <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+            <div class="item-kosong">
+				<h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+			</div>
         }
     </div>
 </div>
