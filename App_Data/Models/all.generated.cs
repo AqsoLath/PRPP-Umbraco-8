@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fc47ab335cb94d3c")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1e91386acf237b40")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -1012,11 +1012,11 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string AddressTitle => this.Value<string>("addressTitle");
 
 		///<summary>
-		/// Contact Email Address
+		/// Contact Email Link: contoh: https://mail.google.com/mail/?view=cm&fs=1&to=pertamina.rosneft@pertamina.com
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("contactEmailAddress")]
-		public virtual string ContactEmailAddress => this.Value<string>("contactEmailAddress");
+		[ImplementPropertyType("contactEmailLink")]
+		public virtual global::Umbraco.Web.Models.Link ContactEmailLink => this.Value<global::Umbraco.Web.Models.Link>("contactEmailLink");
 
 		///<summary>
 		/// Contact Facebook Link
