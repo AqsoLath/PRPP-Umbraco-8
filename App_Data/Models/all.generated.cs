@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d4949d36de82dbbf")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fc47ab335cb94d3c")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -965,7 +965,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual bool UmbracoNavihide => global::Umbraco.Web.PublishedModels.NavigationBase.GetUmbracoNavihide(this);
 	}
 
-	/// <summary>Contact Page</summary>
+	/// <summary>7 Contact Page</summary>
 	[PublishedModel("contactPage")]
 	public partial class ContactPage : PublishedContentModel, IHeader, IHero
 	{
@@ -1012,6 +1012,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string AddressTitle => this.Value<string>("addressTitle");
 
 		///<summary>
+		/// Contact Email Address
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("contactEmailAddress")]
+		public virtual string ContactEmailAddress => this.Value<string>("contactEmailAddress");
+
+		///<summary>
 		/// Contact Facebook Link
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -1031,13 +1038,6 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("contactTwitterLink")]
 		public virtual global::Umbraco.Web.Models.Link ContactTwitterLink => this.Value<global::Umbraco.Web.Models.Link>("contactTwitterLink");
-
-		///<summary>
-		/// Label Name
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("labelName")]
-		public virtual string LabelName => this.Value<string>("labelName");
 
 		///<summary>
 		/// Modal Contact Subtitle
@@ -1089,7 +1089,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>0 Home Page</summary>
+	/// <summary>1 Home Page</summary>
 	[PublishedModel("homePage")]
 	public partial class HomePage : PublishedContentModel, IFooter, IHeader, INavbarAbout, INavbarBusiness, INavbarResponsibility, INavigationList
 	{
@@ -2122,7 +2122,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string CardPengadaanTitle => this.Value<string>("cardPengadaanTitle");
 	}
 
-	/// <summary>Who We Are Page</summary>
+	/// <summary>2 Who We Are Page</summary>
 	[PublishedModel("whoWeArePage")]
 	public partial class WhoWeArePage : PublishedContentModel, IHeader, IHero
 	{
@@ -2445,7 +2445,7 @@ namespace Umbraco.Web.PublishedModels
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.Models.Link> GetNavbarResponsibilityLinks(INavbarResponsibility that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.Models.Link>>("navbarResponsibilityLinks");
 	}
 
-	/// <summary>Vision Mission Page</summary>
+	/// <summary>2 Vision Mission Page</summary>
 	[PublishedModel("visionMissionPage")]
 	public partial class VisionMissionPage : PublishedContentModel, IHeader, IHero
 	{
@@ -2548,7 +2548,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Managements Page</summary>
+	/// <summary>2 Managements Page</summary>
 	[PublishedModel("managementsPage")]
 	public partial class ManagementsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -2616,7 +2616,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Shareholders Page</summary>
+	/// <summary>2 Shareholders Page</summary>
 	[PublishedModel("shareholdersPage")]
 	public partial class ShareholdersPage : PublishedContentModel, IHeader, IHero
 	{
@@ -2677,7 +2677,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Award Certification Page</summary>
+	/// <summary>2 Award Certification Page</summary>
 	[PublishedModel("awardCertificationPage")]
 	public partial class AwardCertificationPage : PublishedContentModel, IHeader, IHero
 	{
@@ -2787,7 +2787,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Our Projects Page</summary>
+	/// <summary>3 Our Projects Page</summary>
 	[PublishedModel("ourProjectsPage")]
 	public partial class OurProjectsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -2953,7 +2953,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Business Process Page</summary>
+	/// <summary>3 Business Process Page</summary>
 	[PublishedModel("businessProcessPage")]
 	public partial class BusinessProcessPage : PublishedContentModel, IHeader, IHero
 	{
@@ -3014,47 +3014,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Responsibility Page</summary>
-	[PublishedModel("responsibilityPage")]
-	public partial class ResponsibilityPage : PublishedContentModel, IHero
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "responsibilityPage";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ResponsibilityPage, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public ResponsibilityPage(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Hero Background Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("heroBackgroundImage")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroBackgroundImage => global::Umbraco.Web.PublishedModels.Hero.GetHeroBackgroundImage(this);
-
-		///<summary>
-		/// Hero Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("heroTitle")]
-		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
-	}
-
-	/// <summary>Media Information Page</summary>
+	/// <summary>6 Media Information Page</summary>
 	[PublishedModel("mediaInformationPage")]
 	public partial class MediaInformationPage : PublishedContentModel, IHeader, IHero
 	{
@@ -3248,7 +3208,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Career Page</summary>
+	/// <summary>5 Career Page</summary>
 	[PublishedModel("careerPage")]
 	public partial class CareerPage : PublishedContentModel, IHeader, IHero
 	{
@@ -3365,7 +3325,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Certifications Page</summary>
+	/// <summary>2 Certifications Page</summary>
 	[PublishedModel("certificationsPage")]
 	public partial class CertificationsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -3426,7 +3386,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Awards Page</summary>
+	/// <summary>2 Awards Page</summary>
 	[PublishedModel("awardsPage")]
 	public partial class AwardsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -3487,114 +3447,6 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Managements Commisioners</summary>
-	[PublishedModel("managementsCommisioners")]
-	public partial class ManagementsCommisioners : PublishedElementModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "managementsCommisioners";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ManagementsCommisioners, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public ManagementsCommisioners(IPublishedElement content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Management Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementContent")]
-		public virtual global::System.Web.IHtmlString ManagementContent => this.Value<global::System.Web.IHtmlString>("managementContent");
-
-		///<summary>
-		/// Management Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementImage")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops ManagementImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("managementImage");
-
-		///<summary>
-		/// Management Name
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementName")]
-		public virtual string ManagementName => this.Value<string>("managementName");
-
-		///<summary>
-		/// Management Position
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementPosition")]
-		public virtual string ManagementPosition => this.Value<string>("managementPosition");
-	}
-
-	/// <summary>Managements Directors</summary>
-	[PublishedModel("managementsDirectors")]
-	public partial class ManagementsDirectors : PublishedElementModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "managementsDirectors";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ManagementsDirectors, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public ManagementsDirectors(IPublishedElement content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Management Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementContent")]
-		public virtual global::System.Web.IHtmlString ManagementContent => this.Value<global::System.Web.IHtmlString>("managementContent");
-
-		///<summary>
-		/// Management Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementImage")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops ManagementImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("managementImage");
-
-		///<summary>
-		/// Management Name
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementName")]
-		public virtual string ManagementName => this.Value<string>("managementName");
-
-		///<summary>
-		/// Management Position
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		[ImplementPropertyType("managementPosition")]
-		public virtual string ManagementPosition => this.Value<string>("managementPosition");
-	}
-
 	/// <summary>Managements</summary>
 	[PublishedModel("managements")]
 	public partial class Managements : PublishedElementModel
@@ -3649,33 +3501,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string ManagementPosition => this.Value<string>("managementPosition");
 	}
 
-	/// <summary>News</summary>
-	[PublishedModel("news")]
-	public partial class News : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "news";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<News, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public News(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-	}
-
-	/// <summary>News Item</summary>
+	/// <summary>6 News Item</summary>
 	[PublishedModel("newsItem")]
 	public partial class NewsItem : PublishedContentModel, IHeader, INewsContent
 	{
@@ -3878,33 +3704,7 @@ namespace Umbraco.Web.PublishedModels
 		public static string GetNewsTitle(INewsContent that) => that.Value<string>("newsTitle");
 	}
 
-	/// <summary>Announcement</summary>
-	[PublishedModel("announcement")]
-	public partial class Announcement : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "announcement";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Announcement, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public Announcement(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-	}
-
-	/// <summary>Announcement Item</summary>
+	/// <summary>6 Announcement Item</summary>
 	[PublishedModel("announcementItem")]
 	public partial class AnnouncementItem : PublishedContentModel, IHeader, INewsContent
 	{
@@ -3993,33 +3793,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
 	}
 
-	/// <summary>Report</summary>
-	[PublishedModel("report")]
-	public partial class Report : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const string ModelTypeAlias = "report";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Report, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public Report(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-	}
-
-	/// <summary>Report Item</summary>
+	/// <summary>6 Report Item</summary>
 	[PublishedModel("reportItem")]
 	public partial class ReportItem : PublishedContentModel, IHeader, INewsContent
 	{
@@ -4195,7 +3969,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string AkhlakTitle => this.Value<string>("akhlakTitle");
 	}
 
-	/// <summary>Procurements Page</summary>
+	/// <summary>6 Procurements Page</summary>
 	[PublishedModel("procurementsPage")]
 	public partial class ProcurementsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -4263,7 +4037,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Procurement Item</summary>
+	/// <summary>6 Procurement Item</summary>
 	[PublishedModel("procurementItem")]
 	public partial class ProcurementItem : PublishedContentModel, IHeader, INewsContent
 	{
@@ -4352,7 +4126,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string NewsTitle => global::Umbraco.Web.PublishedModels.NewsContent.GetNewsTitle(this);
 	}
 
-	/// <summary>Sustainable Business Page</summary>
+	/// <summary>4 Sustainable Business Page</summary>
 	[PublishedModel("sustainableBusinessPage")]
 	public partial class SustainableBusinessPage : PublishedContentModel, IHeader, IHero
 	{
@@ -4476,7 +4250,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Governance And Business Ethics  Page</summary>
+	/// <summary>4 Governance And Business Ethics  Page</summary>
 	[PublishedModel("governanceAndBusinessEthicsPage")]
 	public partial class GovernanceAndBusinessEthicsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -4598,7 +4372,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops EthicsCodeImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ethicsCodeImage");
 	}
 
-	/// <summary>About Petrokimia Page</summary>
+	/// <summary>3 About Petrokimia Page</summary>
 	[PublishedModel("aboutPetrokimiaPage")]
 	public partial class AboutPetrokimiaPage : PublishedContentModel, IHeader, IHero
 	{
@@ -4741,7 +4515,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops PeranImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("peranImage");
 	}
 
-	/// <summary>Hsse Page</summary>
+	/// <summary>4 Hsse Page</summary>
 	[PublishedModel("hssePage")]
 	public partial class HssePage : PublishedContentModel, IHeader, IHero
 	{
@@ -4912,7 +4686,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string ContactStatus => this.Value<string>("contactStatus");
 	}
 
-	/// <summary>Page 404</summary>
+	/// <summary>0 Page 404</summary>
 	[PublishedModel("page404")]
 	public partial class Page404 : PublishedContentModel, IHeader
 	{
@@ -5013,7 +4787,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string ProductsValue => this.Value<string>("productsValue");
 	}
 
-	/// <summary>News Page</summary>
+	/// <summary>6 News Page</summary>
 	[PublishedModel("newsPage")]
 	public partial class NewsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -5081,7 +4855,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Reports Page</summary>
+	/// <summary>6 Reports Page</summary>
 	[PublishedModel("reportsPage")]
 	public partial class ReportsPage : PublishedContentModel, IHeader, IHero
 	{
@@ -5149,7 +4923,7 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 	}
 
-	/// <summary>Announcements Page</summary>
+	/// <summary>6 Announcements Page</summary>
 	[PublishedModel("announcementsPage")]
 	public partial class AnnouncementsPage : PublishedContentModel, IHeader, IHero
 	{

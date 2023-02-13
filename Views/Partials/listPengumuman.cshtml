@@ -3,7 +3,7 @@
 @using Umbraco.Web.Models;
 
 
-<div class="container slider-container ">
+<div class="container slider-container " data-aos="fade-up">
     <div class="pengumuman-slider swiper">
         <div class="berita-head">
             <img src="/images/vector-message.svg">
@@ -61,7 +61,9 @@
 
         @if (selection == null || !selection.Any())
         {
-            <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+            <div class="item-kosong">
+				<h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+			</div>
         }
     </div>
 </div>

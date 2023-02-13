@@ -140,6 +140,11 @@ body{
 	float: right;
 }
 
+.item-kosong h3{
+	color: var(--biruPRPP);
+	font-size: 24px;
+}
+
 @media(max-width: 768px){
 	.rich-text-content p{
 		font-size: 14px;
@@ -168,6 +173,10 @@ body{
 		display:block;
 		padding: 16px auto;
 		width: 100% !important;
+	}
+	
+	.item-kosong h3{
+		font-size: 18px;
 	}
 }
 
@@ -4169,7 +4178,7 @@ a.coklat-prpp:hover{
 	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
@@ -6200,7 +6209,7 @@ footer .social-media{
 	}
 
 	.berita-section .berita-headline h3{
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 
 		/* padding-left: 24px ;

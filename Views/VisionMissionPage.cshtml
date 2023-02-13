@@ -24,7 +24,7 @@
 	</div>
 </div>
 
-<div class="visimisi-wrapper">
+<div class="visimisi-wrapper" data-aos="fade-up">
 	<div class="visimisi container" data-aos="fade-up">
 		<div class="visi">
 			<div class="visimisi-title">
@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<div class="akhlak-logo container">
+<div class="akhlak-logo container" data-aos="fade-up">
 	<p>@Model.AkhlakDescription </p>
 	<img src="@Model.AkhlakLogo.Url()" alt="logo akhlak">
 </div>
@@ -52,7 +52,7 @@
 	<div class="container">
 		@foreach (var item in Model.AkhlakList)
 		{
-			<div class="akhlak-item">
+			<div class="akhlak-item" data-aos="fade-up">
 				<div class="akhlak-kiri">
 					<h4>@item.AkhlakTitle</h4>
 				</div>

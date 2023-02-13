@@ -1,7 +1,7 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Web;
 
-<div class="container-informasipengadaan container">
+<div class="container-informasipengadaan container" data-aos="fade-up">
 
     @{
         var selection = Umbraco.Content(Guid.Parse("f94cbf2f-4840-4b10-ad14-b19567f4ad36"))
@@ -36,6 +36,8 @@
 
     @if (selection == null || !selection.Any())
     {
-        <h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+        <div class="item-kosong">
+			<h3 class="text-center">@Umbraco.GetDictionaryValue("item kosong")</h3>
+		</div>
     }
 </div>
