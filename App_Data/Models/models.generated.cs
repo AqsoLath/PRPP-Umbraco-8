@@ -18,7 +18,7 @@ using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
 [assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fc47ab335cb94d3c")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.10")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.11")]
 
 namespace Umbraco.Web.PublishedModels
 {
