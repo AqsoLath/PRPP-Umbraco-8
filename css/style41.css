@@ -1178,8 +1178,12 @@ nav.scrolled .navbar-hamburger{
 	}
 }
 
-.home-bisnis .item .gambar img, .home-media .item .gambar img, .home-tanggungjawab .item .gambar img, .home-pengadaan .item .gambar img{
+.home-bisnis .item .gambar img, .home-media .item .gambar img, .home-tanggungjawab .item .gambar img{
 	height: 180px;
+}
+
+.home-pengadaan .item .gambar img{
+    height: 240px;
 }
 
 .home-bisnis .item a {
@@ -1382,7 +1386,7 @@ a.coklat-prpp:hover{
 	font-family: 'futuraBold';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 1.8vw;
+	font-size: 2.1vw;
 	/* line-height: 2.2vw; */
 
 	letter-spacing: 0.02em;
@@ -1395,7 +1399,7 @@ a.coklat-prpp:hover{
 	font-family: 'futura';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.15vw;
+	font-size: 1.4vw;
 	/* line-height: 1.4vw; */
 	margin-bottom: 36px;
 
@@ -4302,6 +4306,7 @@ a.coklat-prpp:hover{
 
 .berita-head img{
 	width: 50px;
+	height: 44px;
 	padding-right: 16px;
 	padding-bottom: 10px;
 
@@ -4317,8 +4322,15 @@ a.coklat-prpp:hover{
 	line-height: 48px;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
+	
+	border-bottom: 4px solid transparent;
 
 	color: var(--biruPRPP);
+}
+
+.berita-head h2:hover{
+    transition: .2s;
+    border-bottom: 4px solid var(--hijauPRPP);
 }
 
 .slider-container .slider-card{
@@ -5501,8 +5513,12 @@ footer .social-media{
 		height: 160px;
 	}
 
-	.home-bisnis .item .gambar img, .home-media .item .gambar img, .home-tanggungjawab .item .gambar img, .home-pengadaan .item .gambar img{
+	.home-bisnis .item .gambar img, .home-media .item .gambar img, .home-tanggungjawab .item .gambar img{
 		height: 140px;
+	}
+	
+	.home-pengadaan .item .gambar img{
+	    height: 190px;
 	}
 
 	.home-bisnis .item a{
@@ -6251,6 +6267,14 @@ footer .social-media{
 	.berita-head h2,
 	.headline-title h2{
 		font-size: 24px;
+	}
+	
+	.berita-head h2{
+	    border-bottom-width: 2px;
+	}
+	
+	.berita-head h2:hover{
+	    border-bottom-width: 2px;
 	}
 
 	.berita-head img{

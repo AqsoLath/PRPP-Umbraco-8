@@ -45,9 +45,12 @@
 							class="fa-brands fa-twitter"></i>@Model.ContactTwitterLink.Name</a>
 				}
 			</div>
-			<div class="mediasosial-list d-flex">
-			    <i class="fa-regular fa-envelope"></i>
-                <p class="font-weight-bold">@Model.ContactEmailAddress</p>
+			<div class="mediasosial-list">
+				@if (Model.ContactEmailLink != null)
+				{
+					<a href="@Model.ContactEmailLink.Url"><i
+							class="fa-regular fa-envelope"></i>@Model.ContactEmailLink.Name</a>
+				}
 			</div>
 		</div>
 	</div>
