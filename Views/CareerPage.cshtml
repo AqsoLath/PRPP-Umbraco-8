@@ -15,13 +15,46 @@
 <div class="container container-karir rich-text-content" data-aos="fade-up">
 	<h4>@Model.CareerContent1TitleHijau</h4>
 	<h3>@Model.CareerContent1Title</h3>
-	<img src="@Model.CareerContent1Image.Url()" class="rich-float-right w-50">
+	<!-- <img src="@Model.CareerContent1Image.Url()" class="rich-float-right w-50"> -->
 	<div>
 		<p>@Model.CareerContent1</p>
 	</div>
 	@* <h4 class="mt-5">@Model.CareerContent2TitleHijau</h4> *@
 	<h3 class="mt-5">@Model.CareerContent2Title</h3>
-	<p>@Model.CareerContent2</p>
+	<!-- <p>@Model.CareerContent2</p> -->
+	<div class="table-wrapper my-3 container">
+		<table class="w-100">
+				<thead>
+					<tr>
+					<th scope="col" style="width:15%"><div class="px-3 py-2 w-full bg-danger text-center rounded me-3">Posisi</div></th>
+					<th scope="col" class="w-25"><div class="px-3 py-2 w-full bg-danger text-center rounded">Lokasi</div></th>
+					<th scope="col"class="w-25">Fungsi</th>
+					<th scope="col"class="w-25"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<th scope="row">Analyst HR </th>
+					<td>Tuban </td>
+					<td>Human Resources</td>
+					<td>Keterangan</td>
+					</tr>
+					<tr>
+					<th scope="row">Analyst Engineer</th>
+					<td>Tuban </td>
+					<td>General Design</td>
+					<td>Keterangan</td>
+					</tr>
+					<tr>
+					<th scope="row">IT Support Analyst</th>
+					<td>Tuban </td>
+					<td>IT</td>
+					<td>Keterangan</td>
+					</tr>
+					<tr>
+				</tbody>
+		</table>
+	</div>
 </div>
 
 
