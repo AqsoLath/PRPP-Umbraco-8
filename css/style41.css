@@ -94,6 +94,26 @@ body{
 	color: #AEC23C!important;
 }
 
+.text-primary{
+	color: var(--biruPRPP)!important;
+}
+
+.bg-primary{
+	background-color: var(--biruPRPP)!important;
+}
+
+.fw-bold{
+	font-weight: bold;
+}
+
+.bg-green {
+	background-color:#AEC23C!important;
+}
+
+.border-green{
+	border: solid 1px #AEC23C!important
+}
+
 .pointer{
 	cursor: pointer!important;	
 }

@@ -24,39 +24,56 @@
 	<!-- <p>@Model.CareerContent2</p> -->
 	<div class="table-wrapper my-3 container">
 		<table class="w-100">
-				<thead>
+				<thead class="text-white">
 					<tr>
-					<th scope="col" style="width:15%"><div class="px-3 py-2 w-full bg-danger text-center rounded me-3">Posisi</div></th>
-					<th scope="col" class="w-25"><div class="px-3 py-2 w-full bg-danger text-center rounded">Lokasi</div></th>
-					<th scope="col"class="w-25">Fungsi</th>
+					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded me-3">Posisi</div></th>
+					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">Lokasi</div></th>
+					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">Fungsi</div></th>
 					<th scope="col"class="w-25"></th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-					<th scope="row">Analyst HR </th>
-					<td>Tuban </td>
-					<td>Human Resources</td>
-					<td>Keterangan</td>
-					</tr>
-					<tr>
-					<th scope="row">Analyst Engineer</th>
-					<td>Tuban </td>
-					<td>General Design</td>
-					<td>Keterangan</td>
-					</tr>
-					<tr>
-					<th scope="row">IT Support Analyst</th>
-					<td>Tuban </td>
-					<td>IT</td>
-					<td>Keterangan</td>
-					</tr>
-					<tr>
+				<tbody class="body-table-karir">
+					<!-- <tr>
+					<th scope="row">
+						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">Analyst HR</div>
+					</th>
+					<td>
+						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">Tuban</div>
+					</td>
+					<td>
+						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">Human Resource</div>
+					</td>
+					<td>
+						<div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" data-toggle="modal" data-target="#karir-keterangan">Keterangan</div>
+					</td>
+					</tr> -->
 				</tbody>
 		</table>
-	</div>
-</div>
+			<div id="pagination" class="w-100 d-flex justify-content-end p-3" style="">
+		<div class="d-flex justify-content-between align-items-center" style="width: 40vw">
+			<div class="d-flex align-items-center w-50">
+				<div class="text-sm text-secondary w-50">Jumlah Baris</div>
+				<select class="form-select mx-3 w-50" aria-label="Default select example">
+					<option selected value=10>10</option>
+					<option value=20>20</option>
+					<option value=30>30</option>
+				</select>
 
+			</div>
+			<div class="d-flex align-items-center w-50 ms-3">
+				<div class="text-sm text-secondary me-3">1-10 of 134</div>
+				<div class="d-flex align-items-center">
+					<div class="px-3 py-1 rounded rounded-5 bg-gray text-secondary pointer"> < </div>
+					<div class="bg-white px-3 py-1 rounded rounded-5 text-secondary mx-3"> 1 </div>
+					<div class="bg-white px-3 py-1 rounded rounded-5 text-secondary pointer"> > </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+</div>
 
 <div class="fluid-container home-karir d-flex " data-aos="fade-up">
 	<div class="home-karir-vektor">
@@ -75,7 +92,22 @@
 						class="fa-solid fa-arrow-right"></i></a>
 			}
 		</div>
-	</div>
-
-	@* *@
 </div>
+</div>
+
+<!-- MODAL -->
+@* *@
+
+	<div class="modal fade" id="karir-keterangan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body body-karir-keterangan text-white bg-primary">
+					<h4>Kualifikasi</h4>
+					<p>Analyst HR, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+					totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+					explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, 
+					qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum,</p>
+				</div>
+			</div>
+		</div>
+	</div>
