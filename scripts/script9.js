@@ -453,18 +453,18 @@ const showModal = (index) => {
   // );
   // myModal.hide();
   jQuery.noConflict();
-  $("#karir-keterangan").modal("show")
+  $("#karir-keterangan").modal("show");
   document.querySelector(".body-karir-keterangan").innerHTML = `
       <h4>Kualifikasi</h4>
       <p>${data.posisi}, ${data.keterangan}</p>
   `;
 };
 
-  const renderKarir = () => {
-    const bodyKarir = document.querySelector(".body-table-karir");
-    dataKarir.map((item, index) => {
-      if (bodyKarir) {
-        document.querySelector(".body-table-karir").innerHTML += `
+const renderKarir = () => {
+  const bodyKarir = document.querySelector(".body-table-karir");
+  dataKarir.map((item, index) => {
+    if (bodyKarir) {
+      document.querySelector(".body-table-karir").innerHTML += `
                   <tr>
                   <th scope="row">
                       <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.posisi}</div>
@@ -480,12 +480,11 @@ const showModal = (index) => {
                   </td>
                   </tr>
                   `;
-      }
-    });
-  };
+    }
+  });
+};
 
-  renderKarir();
-
+renderKarir();
 
 // ============
 // === GSAP ===
@@ -677,6 +676,53 @@ const swiperHomeMedia = new Swiper(".home-media", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+const swiperOurProjectLower = new Swiper(".our-project-slider-lower", {
+  // Optional parameters
+  // slidesPerView: 1,
+  loop: true,
+  spaceBetween: 100,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
+const swiperOurProjectUpper = new Swiper(".our-project-slider-upper", {
+  // Optional parameters
+  // slidesPerView: 1,
+  loop: true,
+  spaceBetween: 100,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
 });
 
