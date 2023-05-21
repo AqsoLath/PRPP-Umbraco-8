@@ -1,0 +1,115 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.GalleryPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url(/images/hero-bg-image.png); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>News & Events</h1>
+		</div>
+	</div>
+</div>
+
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarNews.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">Galeri</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<main class="bg-white w-full">
+	<div class="container">
+		<div class="container-main-swiper">
+			<img src="/images/galeri-swiper-img.png" alt="" style="width: 100%; height: 55%">
+		</div>
+		<div class="swiper-galeri my-5 bg-gray swiper container">
+		<div class="swiper-wrapper align-items-center">
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-7.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-8.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-9.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-10.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-11.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-12.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-13.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-14.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-15.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-16.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img  src="/images/our-project-slide-17.png">
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+</main>

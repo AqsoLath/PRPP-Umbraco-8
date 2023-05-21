@@ -1102,3 +1102,27 @@ const swiperBapakbapakList = new Swiper(".bapakbapak-list", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const swiperGaleri = new Swiper(".swiper-galeri", {
+  // Optional parameters
+  // slidesPerView: 1,
+  loop: true,
+  spaceBetween: 100,
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+
+  slidesPerView: 3,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
