@@ -1,0 +1,94 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContactPage>
+
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using App_Code.Models;
+
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+<div class="container kontak-container" data-aos="fade-up">
+	<div class="kontak-content">
+		<div class="kontak-alamat">
+			<h3>@Model.AddressTitle</h3>
+			<p>@Model.AddressAddress</p>
+			<a href="@Model.AddressLink.Url">@Model.AddressLink.Name</a>
+		</div>
+		<div class="kontak-mediasosial">
+			<h3>@Model.SocmedTitle</h3>
+			<div class="mediasosial-list">
+				@if (Model.ContactFacebookLink != null)
+				{
+					<a href="@Model.ContactFacebookLink.Url"><i
+							class="fa-brands fa-facebook"></i>@Model.ContactFacebookLink.Name</a>
+				}
+			</div>
+			<div class="mediasosial-list">
+				@if (Model.ContactInstagramLink != null)
+				{
+					<a href="@Model.ContactInstagramLink.Url"><i
+							class="fa-brands fa-instagram"></i>@Model.ContactInstagramLink.Name</a>
+				}
+			</div>
+			<div class="mediasosial-list">
+				@if (Model.ContactTwitterLink != null)
+				{
+					<a href="@Model.ContactTwitterLink.Url"><i
+							class="fa-brands fa-twitter"></i>@Model.ContactTwitterLink.Name</a>
+				}
+			</div>
+			<div class="mediasosial-list">
+				@if (Model.ContactEmailLink != null)
+				{
+					<a href="@Model.ContactEmailLink.Url"><i
+							class="fa-regular fa-envelope"></i>@Model.ContactEmailLink.Name</a>
+				}
+			</div>
+		</div>
+	</div>
+	<div class="kontak-form">
+		@{
+			Html.RenderPartial("~/Views/Partials/Forms/Contact/Messages.cshtml", new ContactFormModel());
+		}
+	</div>
+</div>
+
+
+@{
+	var isModalSuccess = TempData["error"];
+
+	var showModal = Convert.ToBoolean(isModalSuccess) ? "block" : "none";
+}
+<div class="modal-pesan-terkirim" style="display: @showModal;">
+	<div class="modal-pesan-terkirim-popup">
+		<div class="modal-pesan-terkirim-x">
+			<i class="fa-solid fa-x"></i>
+		</div>
+		<img src="/images/vector-upload.svg">
+		<div class="konten">
+			<h3>@Model.ModalContactTitle</h3>
+			<h4>@Model.ModalContactSubtitle</h4>
+		</div>
+	</div>
+	<div class="bg-hitam-transparent-modal" id="bg-hitam"></div>
+</div>
+
+<script defer>
+	function enableBtn() {
+		var response = grecaptcha.getResponse();
+
+		if (!response.length == 0) {
+			document.getElementById("contactRecaptcha").value = response;
+			document.getElementById("submit_details").disabled = false;
+		}
+	}
+
+</script>

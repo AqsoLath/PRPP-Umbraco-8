@@ -1,0 +1,12 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+}
+
+<div style="" class="bisnis-navbar-link" id="bisnis-navbar-link">
+        <a href="/news">News & Events</a>
+        <a href="/galeri/">Galeri</a>
+</div>

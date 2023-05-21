@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Page404>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="container text-center py-5 not-found-container">
+    <img src="@Model.NotFoundImage.Url()">
+    <h1>@Model.NotFoundContent</h1>
+    <a href="@Model.NotFoundLink.Url">@Model.NotFoundLink.Name</a>
+</div>

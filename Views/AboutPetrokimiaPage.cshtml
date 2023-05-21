@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.AboutPetrokimiaPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarBusiness.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<div class="container rich-text-content" data-aos="fade-up">
+	<img src="@Model.TentangPetrokimiaContentImage1.Url()" class="rich-float-left w-50">
+	<h3>@Model.TentangPetrokimiaContentTitle</h3>
+	<p>@Model.TentangPetrokimiaContent</p>
+	<hr class="text-secondary my-5" />
+	<!-- MASIH HARDCODE -->
+	<h3>Produk GRR Tuban </h3>
+	<p>
+	Kilang Grass Root Refinery (GRR) Tuban merupakan kilang BBM dengan teknologi terkini dengan kapasitas pengolahan crude oil mencapai 300 ribu barel per hari.
+	<br/>
+	<br/>
+	Kilang GRR Tuban mampu memproduksi total BBM sejumlah 10,921 kilo ton per tahun serta 5060 kilo ton produk petrokimia dan turunan petrokimia lainnya per tahun
+	</p>
+	<img src="/images/our-product-img.png" class="">
+	<div class="my-3" style="color:white">batas</div>
+	<img src="@Model.TentangPetrokimiaContentImage2.Url()" class="">
+</div>
+<div style="background-image:url('@Model.PeranBackgroundImage.Url()')" class="peran-wrapper">
+	<div class="container container-peran">
+		<h4 data-aos="fade-up">@Model.PeranTitle</h4>
+		<div class="peran-grid">
+			@foreach (var item in Model.PeranList)
+			{
+				<div class="peran-list" data-aos="fade-up">
+					<div class="gambar">
+						<img src="@item.PeranImage.Url()">
+					</div>
+					<div class="konten">
+						<p>@item.PeranContent</p>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</div>

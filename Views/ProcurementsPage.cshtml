@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProcurementsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+
+@if(string.IsNullOrWhiteSpace(Model.PengadaanContentTitle) == false)
+{
+	<div class="pengadaan-wrapper" data-aos="fade-up">
+		<div class="container rich-text-content">
+			<h4>@Model.PengadaanContentTitle</h4>
+			<p>@Model.PengadaanContentText</p>
+		</div>
+	</div>
+}
+
+@Html.Partial("~/Views/Partials/listPengadaan.cshtml")

@@ -1,0 +1,53 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.WhoWeArePage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+<div class="tentang-navbar">
+	<div class="container tentang-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarAbout.cshtml")
+		<div class="tentang-navbar-arrowdown" id="tentang-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<div class="container whoweare-content rich-text-content" data-aos="fade-up">
+	<img src="@Model.WhoweareContentImage1.Url()" class="w-50 rich-float-left">
+	<h4>@Model.WhoweareContentTitleHijau</h4>
+	<h3>@Model.WhoweareContentTitle</h3>
+	<p>@Model.WhoweareContent</p>
+	<img src="@Model.WhoweareContentImage2.Url()" class="w-100">
+	<p>@Model.WhoweareContentBawah</p>
+	<div class="mt-5">
+		<p>
+			@Model.FaseContent
+		</p>
+	</div>
+</div>
+
+
+<div style="background-image: url('@Model.FaseBackgroundImage.Url()')" class="fase-wrapper" data-aos="fade-up">
+	<div class="container">
+		<h3>@Model.FaseTitle</h3>
+		<img src="@Model.FaseImage.Url()" alt="fase">
+		<!-- MASIH HARDCODE -->
+		<p class="text-white">
+			Fase proyek GRR Tuban oleh PRPP telah dimulai sejak tahun 2016 yang ditandai dengan aktivitas Bankable Feasibility Study. Pada tahun 2019, PRPP berkolaborasi dengan Tecnicas Reunidas S.A (Tecnicas Reunidas) selaku kontraktor penyusun GED yang berbasis di Madrid, Spanyol memulai fase General Engineering Design untuk PRPP.
+			<br/>
+			<br/>
+			Pekerjaan GED terdiri dari 2 (dua) tahap, yaitu Basic Engineering Design (BED) dan Front End Engineering Design (FEED). Tahap BED diselesaikan pada 31 Maret 2021 dan langsung dilanjutkan dengan tahap FEED yang berakhir pada 31 Mei 2022		
+			</p>
+	</div>
+</div>

@@ -1,0 +1,86 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.MediaInformationPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+
+<div class="container headline-title" data-aos="fade-up">
+	<h2>@Model.HeadlineTitle</h2>
+</div>
+<div class="container beritapengumuman-headline" data-aos="fade-up">
+	@if (Model.Headline1Image != null)
+	{
+		<div class="berita-section" style="background-image: url('@Model.Headline1Image.Url()');">
+			@if (Model.Headline1Link != null)
+			{
+				<a href="@Model.Headline1Link.Url" class="headline-link">
+					<div class="berita-headline">
+						<div class="headline-date">
+							<h6>@Model.Headline1Date.ToString("dd - MM - yyyy")</h6>
+						</div>
+						<h3>@Model.Headline1Title</h3>
+						<p>@Model.Headline1Type</p>
+						<div class="bg-gradient-biru"></div>
+					</div>
+				</a>
+			}
+		</div>
+	}
+	<div class="pengumuman-section">
+		@if (Model.Headline2Link != null)
+		{
+			<a href="@Model.Headline2Link.Url" class="headline-link">
+				<div class="pengumuman-headline">
+					@if (Model.Headline2Image != null)
+					{
+						<div class="gambar" style="background-image: url('@Model.Headline2Image.Url()');">
+							<div class="headline-date">
+								<h6>@Model.Headline2Date.ToString("dd - MM - yyyy")</h6>
+							</div>
+						</div>
+					}
+					<div class="body">
+						<span>@Model.Headline2Type</span>
+						<h3>@Model.Headline2Title</h3>
+					</div>
+				</div>
+			</a>
+		}
+		@if (Model.Headline3Link != null)
+		{
+			<a href="@Model.Headline3Link.Url" class="headline-link">
+				<div class="pengumuman-headline">
+					@if (Model.Headline3Image != null)
+					{
+						<div class="gambar" style="background-image: url('@Model.Headline3Image.Url()');">
+							<div class="headline-date">
+								<h6>@Model.Headline3Date.ToString("dd - MM - yyyy")</h6>
+							</div>
+						</div>
+					}
+					<div class="body">
+						<span>@Model.Headline3Type</span>
+						<h3>@Model.Headline3Title</h3>
+					</div>
+				</div>
+			</a>
+		}
+	</div>
+</div>
+
+@Html.Partial("~/Views/Partials/listBerita.cshtml")
+
+@Html.Partial("~/Views/Partials/listPengumuman.cshtml")
+
+@Html.Partial("~/Views/Partials/listLaporan.cshtml")
+
+@Html.Partial("~/Views/Partials/listPengadaanHorizontal.cshtml")

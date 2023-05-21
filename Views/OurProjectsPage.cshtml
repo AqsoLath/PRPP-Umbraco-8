@@ -1,0 +1,292 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.OurProjectsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarBusiness.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">@Model.Name</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="container rich-text-content" data-aos="fade-up">
+	<h3>@Model.ProjectsLocationContentTitle</h3>
+	<p>@Model.ProjectsLocationContent</p>
+</div> -->
+
+<div class="container container-projects-image" data-aos="fade-up">
+	<img class="project-location" src="@Model.ProjectsLocation.Url()">
+	<!-- <img src="@Model.ProjectsFeatures.Url()"> -->
+</div>
+
+<div class="bg-gray my-5 p-3 d-flex flex-column justify-content-between align-items-center container-licensor">
+	<h3 class="text-green">Licensors and The Associated Units</h3>
+	<div class="our-project-slider-upper swiper container py-5">
+		<div class="swiper-wrapper align-items-center">
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%" src="/images/our-project-slide-1.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%"  src="/images/our-project-slide-2.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%" src="/images/our-project-slide-3.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%"  src="/images/our-project-slide-4.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%"  src="/images/our-project-slide-5.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item text-center">
+						<div class="gambar">
+								<img width="40%"  src="/images/our-project-slide-6.png">
+						</div>
+					</div>
+				</div>
+		</div>
+        <div>
+            <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
+        </div>
+        <div>
+            <img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+        </div>
+		<div class="swiper-pagination mt-5"></div>		
+	</div>
+</div>
+
+<div class="container container-third-parties mt-5" data-aos="fade-up">
+	<h3 class="text-green text-center">Completed Studies and Third Parties Involvement</div>
+	<div class="our-project-slider-lower swiper container py-5">
+		<div class="swiper-wrapper align-items-center">
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-7.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-8.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-9.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-10.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-11.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-12.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-13.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-14.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-15.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img src="/images/our-project-slide-16.png">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
+						<div class="gambar">
+								<img  src="/images/our-project-slide-17.png">
+						</div>
+					</div>
+				</div>
+		</div>
+        <div>
+            <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
+        </div>
+        <div>
+            <img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+        </div>
+		<div class="swiper-pagination mt-5"></div>		
+	</div>
+</div>
+
+<div class="container container-engineering-activities my-5" data-aos="fade-up">
+	<h3 class="text-green">Engineering Activities</h3>
+	<p>Amidst pandemic situation, Basic Engineering Design that was started in Q4 2019 has been completed in April 2021, and continued to 
+		Front-end Engineering Design that has been completed in May 2022</p>
+	<div class="d-flex justify-content-between align-items-end">
+		<div style="width:49%;position:relative">
+			<img width="100%" src="/images/our-project-mid-1.png" alt="">
+			<div class="gradient-container w-100 h-100 d-flex flex-column align-items-center justify-content-end p-3 fw-bold" style="position:absolute;bottom:0;left:0;z-index:2;background: url(/images/our-project-gradient.png)center bottom no-repeat; background-size: 100%;">
+				CDU & Saturated Gas Plant
+			</div>
+		</div>
+		<div style="width:49%;position:relative">
+			<img width="100%" src="/images/our-project-mid-2.png" alt="">
+			<div class="gradient-container w-100 h-100 text-center d-flex flex-column align-items-center justify-content-end py-3 fw-bold" style="position:absolute;bottom:0;left:0;z-index:2;background: url(/images/our-project-gradient.png)center bottom no-repeat; background-size: 100%;">
+				Desalination Plant and Waste Water Treatment Plant
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container container-campus-overview my-5" data-aos="fade-up">
+	<h3 class="text-green text-center">Campus Overview</h3>
+	<div class="image-list d-flex justify-content-between align-items-end flex-wrap">
+		<img src="/images/our-project-midlow-1.png" width="49%" style="margin: 1rem 0" alt="">
+		<img src="/images/our-project-midlow-2.png" width="49%" style="margin: 1rem 0" alt="">
+		<img src="/images/our-project-midlow-3.png" width="49%" style="margin: 1rem 0" alt="">
+		<img src="/images/our-project-midlow-4.png" width="49%" style="margin: 1rem 0" alt="">
+	</div>
+	<div class="image-main mt-2">
+		<img width="100%" height="52%" src="/images/our-project-midlow-5.png" alt="">
+	</div>
+</div>
+
+<div class="container-site-activities bg-gray my-5 p-3" data-aos="fade-up">
+	<div class="container">
+		<h3 class="text-green text-center">Site Activities</h3>
+		<div class="d-flex justify-content-between align-items-end flex-wrap">
+			<img src="/images/our-project-lower-1.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-2.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-3.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-4.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-1.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-2.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-3.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-4.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-1.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-2.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-3.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+			<img src="/images/our-project-lower-4.png" width="24%" height="24%" style="margin: 1rem 0" alt="">
+		</div>
+	</div>
+</div>
+
+<div class="container-prpp-funfact" data-aos="fade-up"> 
+	<img src="/images/our-project-lowlow.png" width="100%" alt="">
+</div>
+
+<!-- NANTI PINDAH KE TENTANG-PETROKIMIA -->
+<!-- <div class="container">
+	<div class="rich-text-content" data-aos="fade-up">
+		<h3>@Model.ProdukLainnyaContentTitle</h3>
+		<p>@Model.ProdukLainnyaContent</p>
+	</div>
+	<div class="bbm" data-aos="fade-up">
+		<h2>@Model.BbmTitle</h2>
+		<div class="bbm-flex">
+			<div class="bbm-produk">
+				<h3>@Model.BbmProductTitle</h3>
+				<div class="bbm-produk-list">
+					@foreach (var item in Model.BbmProducts)
+					{
+						<h4>@item</h4>
+					}
+				</div>
+			</div>
+			<div class="bbm-image">
+				<img src="@Model.BbmImage.Url()">
+			</div>
+		</div>
+	</div>
+
+	<div class="produk-lainnya" data-aos="fade-up">
+		<h2>@Model.ProdukLainnyaTitle</h2>
+		<div class="produk-lainnya-image">
+			<img src="@Model.ProdukLainnyaImage.Url()">
+		</div>
+		<div class="produk-lainnya-wrapper">
+			<div class="produk-lainnya-produk-title-flex">
+				<h3>@Model.ProdukLainnyaProdukTitle</h3>
+				<h3>@Model.ProdukLainnyaTotalTitle</h3>
+			</div>
+			@foreach (var item in Model.ProdukLainnyaList)
+			{
+				<div class="produk-lainnya-list">
+					<h4>@item.ProductsKey</h4>
+					<h4>@item.ProductsValue</h4>
+				</div>
+			}
+			<div class="produk-lainnya-total-flex">
+				<h3>Total</h3>
+				<h3>@Model.ProdukLainnyaTotalValue</h3>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+

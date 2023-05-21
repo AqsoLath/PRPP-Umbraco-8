@@ -1,0 +1,77 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+    var children = homePage.NavigationListLinks;
+    var navbarLogo = homePage.NavbarLogo;
+}
+
+
+<nav id="navbar" class="">
+    <img src="/images/bg-navbarlogo.png" class="bg-navbar-logo">
+    <div class="container-fluid navbar-container">
+        <div class="navbar-logo">
+            <a href="@Model.Root().Url()">
+                <img src="@navbarLogo.Url()">
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-list">
+                @foreach (var item in children)
+                {
+                    <a href="@item.Url">@item.Name</a>
+                }
+            </div>
+            <div class="navbar-language">
+                <div class="dropdown">
+                    <button class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-globe"></i>
+                        <h4>@Umbraco.GetDictionaryValue("Language Code")</h4>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href='/'>ID</a>
+                        <a class="dropdown-item" href='/en'>EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-hitam-transparent" id="bg-hitam"></div>
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-logo">
+        <img src="/images/logo-prpp.png">
+    </div>
+    <div class="sidebar-menu">
+        <div class="sidebar-list">
+            @foreach (var item in children)
+            {
+                <a href="@item.Url">@item.Name</a>
+            }
+        </div>
+        <div class="sidebar-language">
+            <div class="dropdown">
+                <button class="dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-globe"></i>
+					<h4>@Umbraco.GetDictionaryValue("Language Code")</h4>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/">ID</a>
+                    <a class="dropdown-item" href="/en">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-x">
+        <i class="fa-solid fa-x"></i>
+    </div>
+</div>

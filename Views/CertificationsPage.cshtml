@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.CertificationsPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>@Model.HeroTitle</h1>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-detailpenghargaan container">
+	@if (Model.CertificationsDetailList != null)
+	{
+		foreach (var item in Model.CertificationsDetailList)
+		{
+			<div class="item">
+				<div class="gambar">
+					@if (item.AwardsCertificationsDetailImage != null)
+					{
+						<img src="@item.AwardsCertificationsDetailImage.Url()" alt="@item.AwardsCertificationsDetailTitle">
+					}
+				</div>
+				<div class="konten">
+					<h2>@item.AwardsCertificationsDetailTitle</h2>
+					<p>@item.AwardsCertificationsDetailDescription</p>
+				</div>
+			</div>
+		}
+	}
+</div>

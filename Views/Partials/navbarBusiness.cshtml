@@ -1,0 +1,15 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+
+
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+    var children = homePage.NavbarBusinessLinks;
+}
+
+<div style="" class="bisnis-navbar-link" id="bisnis-navbar-link">
+    @foreach (var item in children)
+    {
+        <a href="@item.Url">@item.Name</a>
+    }
+</div>
