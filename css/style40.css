@@ -5938,7 +5938,7 @@ footer .social-media{
 	}
 
 	.tentang-navbar .tentang-navbar-list a,
-	.bisnis-navbar .bisnis-navbar-list a{
+	.bisnis-navbar, .news-navbar .bisnis-navbar-list a{
 		font-size: 14px;
 	}
 
