@@ -1,4 +1,4 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsPage>
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsPage>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
 	Layout = "master.cshtml";
@@ -11,6 +11,19 @@
 		</div>
 	</div>
 </div>
+
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarNews.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">News & Events</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
 
 @if (string.IsNullOrWhiteSpace(Model.BeritaContentTitle) == false)
 {

@@ -1,0 +1,50 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.GalleryPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+<div class="tentang-jumbotron">
+	<div
+		style="background-image: url(/images/hero-bg-image.png); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<div class="container content">
+			<h1>News & Events</h1>
+		</div>
+	</div>
+</div>
+
+<div class="bisnis-navbar">
+	<div class="container bisnis-navbar-list">
+
+		@Html.Partial("~/Views/Partials/navbarNews.cshtml")
+		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
+			<a class="active">Galeri</a>
+			<i class="fa-solid fa-chevron-down panah-bawah"></i>
+			<i class="fa-solid fa-chevron-up panah-atas"></i>
+		</div>
+	</div>
+</div>
+
+<main class="bg-white w-full">
+	<div class="container mt-5">
+		<div id="main-image-swiper">
+		</div>
+	</div>
+<div class="swiper-galeri my-5 bg-gray swiper">
+	<div class="swiper-wrapper swiper-wrapper-galeri align-items-center py-5">
+	</div>
+	<div>
+		<img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
+	</div>
+	<div>
+		<img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+	</div>
+	@* <div class="swiper-pagination mt-5"></div>		 *@
+</div>
+
+<div class="container bg-white py-5 border-top d-flex justify-content-between align-items-end flex-wrap container-album">
+</div>
+
+</div>
+
+</main>
