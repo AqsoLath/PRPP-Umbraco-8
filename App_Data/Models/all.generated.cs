@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f29a76745ba49e7f")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.6")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "bff35838a45289d7")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 
 // FILE: models.generated.cs
@@ -2841,6 +2841,104 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string BbmTitle => this.Value<string>("bbmTitle");
 
 		///<summary>
+		/// Banner Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectBannerBottomImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectBannerBottomImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectBannerBottomImage");
+
+		///<summary>
+		/// Image #1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCampusImage1")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectCampusImage1 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectCampusImage1");
+
+		///<summary>
+		/// Image #2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCampusImage2")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectCampusImage2 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectCampusImage2");
+
+		///<summary>
+		/// Image #3
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCampusImage3")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectCampusImage3 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectCampusImage3");
+
+		///<summary>
+		/// Image #4
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCampusImage4")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectCampusImage4 => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectCampusImage4");
+
+		///<summary>
+		/// Image Bottom
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCampusImageBottom")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectCampusImageBottom => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectCampusImageBottom");
+
+		///<summary>
+		/// Completed Involvement List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectCompletedInvolvementList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CompletedInvolvement> OurProjectCompletedInvolvementList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CompletedInvolvement>>("ourProjectCompletedInvolvementList");
+
+		///<summary>
+		/// Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectEngineeringContent")]
+		public virtual global::System.Web.IHtmlString OurProjectEngineeringContent => this.Value<global::System.Web.IHtmlString>("ourProjectEngineeringContent");
+
+		///<summary>
+		/// Image Left
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectEngineeringImageLeft")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectEngineeringImageLeft => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectEngineeringImageLeft");
+
+		///<summary>
+		/// Image Left Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectEngineeringImageLeftTitle")]
+		public virtual string OurProjectEngineeringImageLeftTitle => this.Value<string>("ourProjectEngineeringImageLeftTitle");
+
+		///<summary>
+		/// Image Right
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectEngineeringImageRight")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops OurProjectEngineeringImageRight => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("ourProjectEngineeringImageRight");
+
+		///<summary>
+		/// Image Right Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectEngineeringImageRightTitle")]
+		public virtual string OurProjectEngineeringImageRightTitle => this.Value<string>("ourProjectEngineeringImageRightTitle");
+
+		///<summary>
+		/// Licensor And The Associated List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectLicensorAssociatedList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.LicensorAssociated> OurProjectLicensorAssociatedList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.LicensorAssociated>>("ourProjectLicensorAssociatedList");
+
+		///<summary>
+		/// Image List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("ourProjectSiteActivitiesImage")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.SiteActivitiesList> OurProjectSiteActivitiesImage => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.SiteActivitiesList>>("ourProjectSiteActivitiesImage");
+
+		///<summary>
 		/// Produk Lainnya Content
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -3295,6 +3393,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("careerContent2Title")]
 		public virtual string CareerContent2Title => this.Value<string>("careerContent2Title");
+
+		///<summary>
+		/// Career Item
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListItem")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.KarirList> CareerListItem => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.KarirList>>("careerListItem");
 
 		///<summary>
 		/// Page Number
@@ -4290,6 +4395,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.EthicsCode> EthicsCodeList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.EthicsCode>>("ethicsCodeList");
 
 		///<summary>
+		/// File
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("fileCodeConductPrpp")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops FileCodeConductPrpp => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("fileCodeConductPrpp");
+
+		///<summary>
 		/// Governance Content Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -4302,6 +4414,41 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("governanceContentTitle")]
 		public virtual string GovernanceContentTitle => this.Value<string>("governanceContentTitle");
+
+		///<summary>
+		/// Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanContent")]
+		public virtual global::System.Web.IHtmlString PedomanKepatuhanContent => this.Value<global::System.Web.IHtmlString>("pedomanKepatuhanContent");
+
+		///<summary>
+		/// Files
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanFiles")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.PedomanKepatuhan> PedomanKepatuhanFiles => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.PedomanKepatuhan>>("pedomanKepatuhanFiles");
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops PedomanKepatuhanImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("pedomanKepatuhanImage");
+
+		///<summary>
+		/// Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whisleBlowingSystemContent")]
+		public virtual global::System.Web.IHtmlString WhisleBlowingSystemContent => this.Value<global::System.Web.IHtmlString>("whisleBlowingSystemContent");
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("whistleBlowingSystemImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops WhistleBlowingSystemImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("whistleBlowingSystemImage");
 
 		///<summary>
 		/// Page Number
@@ -5015,6 +5162,286 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Gallery Item
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("galleryListItem")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.GalleryList> GalleryListItem => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.GalleryList>>("galleryListItem");
+	}
+
+	/// <summary>Karir List</summary>
+	[PublishedModel("karirList")]
+	public partial class KarirList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "karirList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<KarirList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public KarirList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Fungsi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("karirListFungsi")]
+		public virtual string KarirListFungsi => this.Value<string>("karirListFungsi");
+
+		///<summary>
+		/// Keterangan
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("karirListKeterangan")]
+		public virtual global::System.Web.IHtmlString KarirListKeterangan => this.Value<global::System.Web.IHtmlString>("karirListKeterangan");
+
+		///<summary>
+		/// Lokasi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("karirListLokasi")]
+		public virtual string KarirListLokasi => this.Value<string>("karirListLokasi");
+
+		///<summary>
+		/// Posisi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("karirListPosisi")]
+		public virtual string KarirListPosisi => this.Value<string>("karirListPosisi");
+	}
+
+	/// <summary>Gallery List</summary>
+	[PublishedModel("galleryList")]
+	public partial class GalleryList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "galleryList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<GalleryList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public GalleryList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Album List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("galleryListAlbumList")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.GalleryAlbumList> GalleryListAlbumList => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.GalleryAlbumList>>("galleryListAlbumList");
+
+		///<summary>
+		/// Gambar Cover
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("galleryListCover")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops GalleryListCover => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("galleryListCover");
+
+		///<summary>
+		/// Judul Album
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("galleryListTitle")]
+		public virtual string GalleryListTitle => this.Value<string>("galleryListTitle");
+	}
+
+	/// <summary>Gallery Album List</summary>
+	[PublishedModel("galleryAlbumList")]
+	public partial class GalleryAlbumList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "galleryAlbumList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<GalleryAlbumList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public GalleryAlbumList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Gambar
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("galleryAlbumListImageList")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops GalleryAlbumListImageList => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("galleryAlbumListImageList");
+	}
+
+	/// <summary>Site Activities List</summary>
+	[PublishedModel("siteActivitiesList")]
+	public partial class SiteActivitiesList : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "siteActivitiesList";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SiteActivitiesList, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public SiteActivitiesList(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("siteActivitiesImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops SiteActivitiesImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("siteActivitiesImage");
+	}
+
+	/// <summary>Completed Involvement</summary>
+	[PublishedModel("completedInvolvement")]
+	public partial class CompletedInvolvement : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "completedInvolvement";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CompletedInvolvement, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public CompletedInvolvement(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("completedInvolvementImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops CompletedInvolvementImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("completedInvolvementImage");
+	}
+
+	/// <summary>Licensors and The Associated Units</summary>
+	[PublishedModel("licensorAssociated")]
+	public partial class LicensorAssociated : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "licensorAssociated";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<LicensorAssociated, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public LicensorAssociated(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("licensorAssociatedImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops LicensorAssociatedImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("licensorAssociatedImage");
+	}
+
+	/// <summary>Pedoman Kepatuhan Files</summary>
+	[PublishedModel("pedomanKepatuhan")]
+	public partial class PedomanKepatuhan : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "pedomanKepatuhan";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PedomanKepatuhan, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public PedomanKepatuhan(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// File
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanFile")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops PedomanKepatuhanFile => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("pedomanKepatuhanFile");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanTitle")]
+		public virtual string PedomanKepatuhanTitle => this.Value<string>("pedomanKepatuhanTitle");
 	}
 
 	/// <summary>Folder</summary>

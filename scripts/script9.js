@@ -422,69 +422,17 @@ $(document).ready(function () {
 // === KARIR PAGE ===
 // ============
 
-const dataKarir = [
-  {
-    posisi: "HR Analyst",
-    lokasi: "Tuban",
-    fungsi: "Human Resource",
-    keterangan:
-      "unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum,",
-  },
-  {
-    posisi: "IT Analyst",
-    lokasi: "Tuban",
-    fungsi: "IT",
-    keterangan:
-      "unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum,",
-  },
-  {
-    posisi: "IT Engineer",
-    lokasi: "Jakarta",
-    fungsi: "IT",
-    keterangan:
-      "unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum,",
-  },
-];
-
-const showModal = (index) => {
-  const data = dataKarir[index];
-  // const myModal = bootstrap.Modal.getInstance(
-  //   document.getElementById("karir-keterangan")
-  // );
-  // myModal.hide();
+$(".btn-careerlist-keterangan").click(function() {
+  var vKeterangan = $(this).attr("data-keterangan");
+  
   jQuery.noConflict();
+  
   $("#karir-keterangan").modal("show");
   document.querySelector(".body-karir-keterangan").innerHTML = `
       <h4>Kualifikasi</h4>
-      <p>${data.posisi}, ${data.keterangan}</p>
+      <p>${vKeterangan}</p>
   `;
-};
-
-const renderKarir = () => {
-  const bodyKarir = document.querySelector(".body-table-karir");
-  dataKarir.map((item, index) => {
-    if (bodyKarir) {
-      document.querySelector(".body-table-karir").innerHTML += `
-                  <tr>
-                  <th scope="row">
-                      <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.posisi}</div>
-                  </th>
-                  <td>
-                      <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.lokasi}</div>
-                  </td>
-                  <td>
-                      <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.fungsi}</div>
-                  </td>
-                  <td>
-                      <div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" onclick="showModal(${index})">Keterangan</div>
-                  </td>
-                  </tr>
-                  `;
-    }
-  });
-};
-
-renderKarir();
+});
 
 // ============
 // === GSAP ===
