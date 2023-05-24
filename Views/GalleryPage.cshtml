@@ -26,90 +26,34 @@
 </div>
 
 <main class="bg-white w-full">
-	<div class="container">
-		<div class="container-main-swiper">
-			<img src="/images/galeri-swiper-img.png" alt="" style="width: 100%; height: 55%">
+	<div class="container mt-5">
+		<div id="main-image-swiper">
 		</div>
-		<div class="swiper-galeri my-5 bg-gray swiper container">
-		<div class="swiper-wrapper align-items-center">
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-7.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-8.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-9.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-10.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-11.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-12.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-13.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-14.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-15.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img src="/images/our-project-slide-16.png">
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-gray rounded py-3 px-1 text-center d-flex flex-column align-items-center justify-content-center" style="height: 30vh;width:20vw">
-						<div class="gambar">
-								<img  src="/images/our-project-slide-17.png">
-						</div>
-					</div>
-				</div>
+	</div>
+	<div class="swiper-galeri my-5 bg-gray swiper">
+		<div class="swiper-wrapper swiper-wrapper-galeri align-items-center py-5">
 		</div>
+		<div>
+			<img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
 		</div>
+		<div>
+			<img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+		</div>
+		@* <div class="swiper-pagination mt-5"></div>		 *@
+	</div>
+
+	<div class="container bg-white py-5 border-top d-flex justify-content-between align-items-end flex-wrap container-albummmm">
+		@{
+			var indexGalleryAlbum = 0;
+		}
+		@foreach (var item in Model.GalleryAlbum)
+		{	
+            indexGalleryAlbum = indexGalleryAlbum + 1;
+
+			var albumThumbnailUrl = item.AlbumThumbnail.Url();
+			<div class="image-container my-3 pointer" style="width:30%;height:35vh;position:relative;background: url(@albumThumbnailUrl) center bottom no-repeat; background-size: cover;" onclick="callNewAlbum(@indexGalleryAlbum)">
+				<div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0;">@item.AlbumTitle</div>
+			</div>
+		}
 	</div>
 </main>

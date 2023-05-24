@@ -29,16 +29,57 @@
 	<img src="@Model.TentangPetrokimiaContentImage1.Url()" class="rich-float-left w-50">
 	<h3>@Model.TentangPetrokimiaContentTitle</h3>
 	<p>@Model.TentangPetrokimiaContent</p>
+	
 	<hr class="text-secondary my-5" />
+
+	<h3>@Model.AboutPetrokimiaProdukTitle</h3>
+	<p>@Model.AboutPetrokimiaProdukContent</p>
+	
+	<div class="bbm mt-5" data-aos="fade-up">
+		<h2>@Model.AboutPetrokimiaRefineryTitle</h2>
+		<div class="bbm-flex">
+			<div class="bbm-produk">
+				<h3>Produk </h3>
+				<div class="bbm-produk-list">
+				@foreach (var item in Model.AboutPetrokimiaRefineryList)
+				{
+				<h4>@item</h4>
+				}
+				</div>
+			</div>
+			<div class="bbm-image">
+				<img src="@Model.AboutPetrokimiaRefineryImage.Url()">
+			</div>
+		</div>
+	</div>
+
+	<div class="bbm mt-5" data-aos="fade-up">
+		<h2 style="background-color: #ED323D;">@Model.AboutPetrokimiaPetrochemicalTitle</h2>
+		<div class="bbm-flex">
+			<div class="bbm-produk">
+				<h3>Produk </h3>
+				<div class="bbm-produk-list">
+				@foreach (var item in Model.AboutPetrokimiaPetrochemicalList)
+				{
+				<h4>@item</h4>
+				}
+				</div>
+			</div>
+			<div class="bbm-image">
+				<img src="@Model.AboutPetrokimiaPetrochemicalImage.Url()">
+			</div>
+		</div>
+	</div>
+
 	<!-- MASIH HARDCODE -->
-	<h3>Produk GRR Tuban </h3>
+	@* <h3>Produk GRR Tuban </h3>
 	<p>
 	Kilang Grass Root Refinery (GRR) Tuban merupakan kilang BBM dengan teknologi terkini dengan kapasitas pengolahan crude oil mencapai 300 ribu barel per hari.
 	<br/>
 	<br/>
 	Kilang GRR Tuban mampu memproduksi total BBM sejumlah 10,921 kilo ton per tahun serta 5060 kilo ton produk petrokimia dan turunan petrokimia lainnya per tahun
 	</p>
-	<img src="/images/our-product-img.png" class="">
+	<img src="/images/our-product-img.png" class=""> *@
 	<div class="my-3" style="color:white">batas</div>
 	<img src="@Model.TentangPetrokimiaContentImage2.Url()" class="">
 </div>

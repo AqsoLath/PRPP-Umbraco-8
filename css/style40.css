@@ -5173,7 +5173,7 @@ a.coklat-prpp:hover{
 }
 
 
-.container-artikel .artikel-konten .button-file{
+.button-file{
 	display: inline-block;
 	position: relative;
 	font-family: 'futuraSemiBold';
@@ -5200,15 +5200,15 @@ a.coklat-prpp:hover{
 	transition: .1s;
 }
 
-.container-artikel .artikel-konten .button-file i{
+.button-file i{
 	margin-left: 16px;
 }
 
-.container-artikel .artikel-konten .button-file:hover{
+.button-file:hover{
 	color: #ffffff !important;
 }
 
-.container-artikel .artikel-konten .button-file:before{
+.button-file:before{
 	content: "";
 
 	position: absolute;
@@ -5230,7 +5230,7 @@ a.coklat-prpp:hover{
 	transition: .5s;
 }
 
-.container-artikel .artikel-konten .button-file:hover:before{
+.button-file:hover:before{
 	width: 100%;
 
 	border-radius: 4px;

@@ -36,6 +36,9 @@
     					</tr>
     				</thead>
     				<tbody class="body-table-karir">
+						@{
+							var indexCareerListItem = 0;
+						}
     				    @foreach (var item in Model.CareerListItem)
     			        {
     			            <tr>
@@ -49,9 +52,19 @@
             						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">@item.KarirListFungsi</div>
             					</td>
             					<td>
-            						<div class="btn-careerlist-keterangan px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" data-keterangan="@Html.Raw(item.KarirListKeterangan)">Keterangan</div>
-            					</td>
+									<div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" data-toggle="collapse" data-target="#collapse@indexCareerListItem" aria-expanded="false" aria-controls="collapse@indexCareerListItem">Keterangan</div>
+								</td>
     			            </tr>
+							<tr id="collapse@indexCareerListItem" class="klasifikasi collapse">
+								<td colspan="3">
+									<div class="bg-primary p-3 w-full text-white fw-bold m-2 rounded">
+										<h2 class="text-center">Klasifikasi</h2>
+										@item.KarirListKeterangan
+									</div>
+								</td>
+							</tr>
+
+							indexCareerListItem++;
     			        }
     				</tbody>
     		</table>

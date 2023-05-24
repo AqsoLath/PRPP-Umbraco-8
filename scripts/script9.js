@@ -422,18 +422,230 @@ $(document).ready(function () {
 // === KARIR PAGE ===
 // ============
 
-$(".btn-careerlist-keterangan").click(function() {
-  var vKeterangan = $(this).attr("data-keterangan");
-  
-  jQuery.noConflict();
-  
-  $("#karir-keterangan").modal("show");
-  document.querySelector(".body-karir-keterangan").innerHTML = `
-      <h4>Kualifikasi</h4>
-      <p>${vKeterangan}</p>
-  `;
-});
+// const dataKarir = [
+//   {
+//     posisi: "HR Analyst",
+//     lokasi: "Tuban",
+//     fungsi: "Human Resource",
+//     keterangan:
+//       `<p>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, 
+//       quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, 
+//       quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, 
+//       neque porro quisquam est, qui dolorem ipsum</p>
+      
+//       <ol>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//       </ol>
+      
+//       `,
+//   },
+//   {
+//     posisi: "IT Analyst",
+//     lokasi: "Tuban",
+//     fungsi: "IT",
+//     keterangan:
+//       `<p>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, 
+//       quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, 
+//       quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, 
+//       neque porro quisquam est, qui dolorem ipsum</p>
+      
+//       <ol>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//       </ol>
+      
+//       `,
+//   },
+//   {
+//     posisi: "IT Engineer",
+//     lokasi: "Jakarta",
+//     fungsi: "IT",
+//     keterangan:
+//       `<p>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, 
+//       quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, 
+//       quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, 
+//       neque porro quisquam est, qui dolorem ipsum</p>
+      
+//       <ol>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+//       </ol>
+      
+//       `,
+//   },
+// ];
 
+// const renderKarir = () => {
+//   const bodyKarir = document.querySelector(".body-table-karir");
+//   dataKarir.map((item, index) => {
+//     if (bodyKarir) {
+//       document.querySelector(".body-table-karir").innerHTML += `
+//         <tr>
+//           <th scope="row">
+//               <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.posisi}</div>
+//           </th>
+//           <td>
+//               <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.lokasi}</div>
+//           </td>
+//           <td>
+//               <div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">${item.fungsi}</div>
+//           </td>
+//           <td>
+//               <div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" data-toggle="collapse" data-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">Keterangan</div>
+//           </td>
+//         </tr>
+//         <tr id="collapse${index}" class="klasifikasi collapse">
+//           <td colspan="3">
+//             <div class="bg-primary p-3 w-full text-white fw-bold m-2 rounded">
+//               <h2 class="text-center">Klasifikasi</h2>
+//               ${item.keterangan}
+//             </div>
+//           </td>
+//         </tr>
+//       `;
+//     }
+//   });
+// };
+
+// renderKarir();
+
+
+
+// ==============
+// === GALERI ===
+// ==============
+
+const dataGaleri= [
+  {
+  image: "/images/galeri-grid-img-1.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+  {
+  image: "/images/galeri-grid-img-2.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+  {
+  image: "/images/galeri-grid-img-3.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+  {
+  image: "/images/galeri-grid-img-1.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+  {
+  image: "/images/galeri-grid-img-2.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+  {
+  image: "/images/galeri-grid-img-3.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+},
+]
+
+const renderGaleri = () => {
+  const bodyGaleri = document.querySelector(".swiper-wrapper-galeri");
+  dataGaleri.map((item, index) => {
+    if(bodyGaleri){
+      // console.log(item);
+      document.querySelector(".swiper-wrapper-galeri").innerHTML+= `
+			<div class="swiper-slide">
+				<div class="text-center d-flex flex-column align-items-center justify-content-center">
+					<div class="gambar w-100">
+							<img src=${item.image} width="100%" style="cursor:pointer" onclick="setIndexGaleri(${index})"/>
+					</div>
+				</div>
+			</div>
+      `
+    }
+  })
+}
+
+
+const dataAlbum= [
+  {
+  image: "/images/galeri-grid-img-1.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-1.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-1.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-2.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-2.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-2.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-3.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-3.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+  {
+  image: "/images/galeri-grid-img-3.png",
+  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+},
+]
+
+const renderAlbum = () => {
+  const body = document.querySelector(".container-album");
+  dataAlbum.map((item, index) => {
+    // console.log(item);
+    if(body){
+      // console.log(item);
+      document.querySelector(".container-album").innerHTML+= `
+      <div class="image-container my-3 pointer" style="width:30%;height:35vh;position:relative;background: url(${item.image}) center bottom no-repeat; background-size: cover;" onclick="callNewAlbum(${index})">
+        <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0;">${item.caption.substr(0, 128)}...</div>
+    </div>
+            `
+    }
+  })
+}
+
+
+renderGaleri()
+renderAlbum()
+
+const callNewAlbum = (index) => {
+  console.log(`supposed to call API to render album with selected index => ${index}`);
+}
+
+const setIndexGaleri = (index) => {
+  swiperGaleri.slideTo(index)
+  if(typeof document !== 'undefined') {
+    document.querySelector("#main-image-swiper").innerHTML= `
+    <div style="position: relative;height: 95vh; width:100%" class="d-flex flex-column align-items-center">
+      <img src=${dataGaleri[index].image} alt="" style="width: 100%; height: 100%;">
+      <div class="album-caption p-3 pb-5 text-white" style="position:absolute; bottom: 0; max-width:100">${dataGaleri[index].caption}</div>
+    </div>
+
+  `
+  //   document.querySelector("#main-image-swiper").innerHTML= `
+  //   <div class="image-container" style=width: 100%; height:100%%;position:relative;background: url('${dataGaleri[index].image}') center bottom no-repeat; background-size: cover; ">
+  //   <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0">${dataGaleri[index].caption}</div>
+  // </div>
+
+  // `
+}
+}
+ 
 // ============
 // === GSAP ===
 // ============
@@ -1054,15 +1266,16 @@ const swiperBapakbapakList = new Swiper(".bapakbapak-list", {
 const swiperGaleri = new Swiper(".swiper-galeri", {
   // Optional parameters
   // slidesPerView: 1,
-  loop: true,
+  loop: false,
   spaceBetween: 100,
   // autoplay: {
   //   delay: 1500,
-  //   disableOnInteraction: false,
+    disableOnInteraction: false,
   // },
 
   slidesPerView: 3,
   spaceBetween: 32,
+  centeredSlides: true,
 
   // Navigation arrows
   navigation: {
@@ -1071,6 +1284,11 @@ const swiperGaleri = new Swiper(".swiper-galeri", {
   },
   pagination: {
     el: ".swiper-pagination",
+    // clickable: true
     dynamicBullets: true,
   },
 });
+
+if(document.querySelector("#main-image-swiper") && typeof swiperGaleri !== "undefined"){
+  setIndexGaleri(0)
+}
