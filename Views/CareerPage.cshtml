@@ -20,6 +20,12 @@
 		<p>@Model.CareerContent1</p>
 	</div>
 	@* <h4 class="mt-5">@Model.CareerContent2TitleHijau</h4> *@
+
+	@if ( Model.CareerListItem.Count() < 1){
+		<div class="item-kosong mt-5" style="text-align: center;">
+			<h3>@Model.CareerListEmptyMessage</h3>
+		</div>
+	}
 	
 	@if (Model.CareerListItem != null && Model.CareerListItem.Count() > 0)
 	{
@@ -29,9 +35,9 @@
     		<table class="w-100">
     				<thead class="text-white">
     					<tr>
-    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded me-3">Posisi</div></th>
-    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">Lokasi</div></th>
-    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">Fungsi</div></th>
+    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded me-3">@Model.CareerListLabelPosisi</div></th>
+    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">@Model.CareerListLabelLokasi</div></th>
+    					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded">@Model.CareerListLabelFungsi</div></th>
     					<th scope="col"class="w-25"></th>
     					</tr>
     				</thead>
@@ -52,13 +58,13 @@
             						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">@item.KarirListFungsi</div>
             					</td>
             					<td>
-									<div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-primary pointer" data-toggle="collapse" data-target="#collapse@indexCareerListItem" aria-expanded="false" aria-controls="collapse@indexCareerListItem">Keterangan</div>
+									<div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-biruPRPP pointer" data-toggle="collapse" data-target="#collapse-@indexCareerListItem" aria-expanded="false" aria-controls="collapse-@indexCareerListItem">@Model.CareerListLabelKeterangan</div>
 								</td>
     			            </tr>
-							<tr id="collapse@indexCareerListItem" class="klasifikasi collapse">
+							<tr id="collapse-@indexCareerListItem" class="klasifikasi collapse">
 								<td colspan="3">
-									<div class="bg-primary p-3 w-full text-white fw-bold m-2 rounded">
-										<h2 class="text-center">Klasifikasi</h2>
+									<div class="bg-biruPRPP p-3 w-full text-white fw-bold m-2 rounded">
+										<h2 class="text-center">@Model.CareerListLabelKlasifikasi</h2>
 										@item.KarirListKeterangan
 									</div>
 								</td>
@@ -116,7 +122,7 @@
 <!-- MODAL -->
 @* *@
 
-	<div class="modal fade" id="karir-keterangan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	@* <div class="modal fade" id="karir-keterangan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body body-karir-keterangan text-white bg-primary">
@@ -128,4 +134,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> *@

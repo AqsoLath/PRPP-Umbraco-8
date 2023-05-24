@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e4d239022236175d")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5a0feb982725368b")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -3416,11 +3416,53 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string CareerContent2Title => this.Value<string>("careerContent2Title");
 
 		///<summary>
+		/// Career List Empty Message
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListEmptyMessage")]
+		public virtual string CareerListEmptyMessage => this.Value<string>("careerListEmptyMessage");
+
+		///<summary>
 		/// Career List Item
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("careerListItem")]
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CareerListItem> CareerListItem => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CareerListItem>>("careerListItem");
+
+		///<summary>
+		/// Career List Label Fungsi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListLabelFungsi")]
+		public virtual string CareerListLabelFungsi => this.Value<string>("careerListLabelFungsi");
+
+		///<summary>
+		/// Career List Label Keterangan
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListLabelKeterangan")]
+		public virtual string CareerListLabelKeterangan => this.Value<string>("careerListLabelKeterangan");
+
+		///<summary>
+		/// Career List Label Klasifikasi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListLabelKlasifikasi")]
+		public virtual string CareerListLabelKlasifikasi => this.Value<string>("careerListLabelKlasifikasi");
+
+		///<summary>
+		/// Career List Label Lokasi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListLabelLokasi")]
+		public virtual string CareerListLabelLokasi => this.Value<string>("careerListLabelLokasi");
+
+		///<summary>
+		/// Career List Label Posisi
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("careerListLabelPosisi")]
+		public virtual string CareerListLabelPosisi => this.Value<string>("careerListLabelPosisi");
 
 		///<summary>
 		/// Page Number

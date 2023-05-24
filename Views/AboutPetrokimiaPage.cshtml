@@ -39,7 +39,7 @@
 		<h2>@Model.AboutPetrokimiaRefineryTitle</h2>
 		<div class="bbm-flex">
 			<div class="bbm-produk">
-				<h3>Produk </h3>
+				<h3>@Umbraco.GetDictionaryValue("produk") </h3>
 				<div class="bbm-produk-list">
 				@foreach (var item in Model.AboutPetrokimiaRefineryList)
 				{
@@ -57,7 +57,7 @@
 		<h2 style="background-color: #ED323D;">@Model.AboutPetrokimiaPetrochemicalTitle</h2>
 		<div class="bbm-flex">
 			<div class="bbm-produk">
-				<h3>Produk </h3>
+				<h3>@Umbraco.GetDictionaryValue("produk") </h3>
 				<div class="bbm-produk-list">
 				@foreach (var item in Model.AboutPetrokimiaPetrochemicalList)
 				{
