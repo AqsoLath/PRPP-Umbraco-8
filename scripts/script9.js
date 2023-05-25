@@ -519,131 +519,234 @@ $(document).ready(function () {
 // === GALERI ===
 // ==============
 
-const dataGaleri= [
-  {
-  image: "/images/galeri-grid-img-1.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-  {
-  image: "/images/galeri-grid-img-2.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-  {
-  image: "/images/galeri-grid-img-3.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-  {
-  image: "/images/galeri-grid-img-1.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-  {
-  image: "/images/galeri-grid-img-2.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-  {
-  image: "/images/galeri-grid-img-3.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
-},
-]
+// const dataGaleri= [
+//   {
+//   image: "/images/galeri-grid-img-1.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+//   {
+//   image: "/images/galeri-grid-img-2.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+//   {
+//   image: "/images/galeri-grid-img-3.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+//   {
+//   image: "/images/galeri-grid-img-1.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+//   {
+//   image: "/images/galeri-grid-img-2.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+//   {
+//   image: "/images/galeri-grid-img-3.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor "
+// },
+// ]
 
-const renderGaleri = () => {
-  const bodyGaleri = document.querySelector(".swiper-wrapper-galeri");
-  dataGaleri.map((item, index) => {
-    if(bodyGaleri){
-      // console.log(item);
-      document.querySelector(".swiper-wrapper-galeri").innerHTML+= `
-			<div class="swiper-slide">
-				<div class="text-center d-flex flex-column align-items-center justify-content-center">
-					<div class="gambar w-100">
-							<img src=${item.image} width="100%" style="cursor:pointer" onclick="setIndexGaleri(${index})"/>
-					</div>
-				</div>
-			</div>
-      `
-    }
-  })
-}
-
-
-const dataAlbum= [
-  {
-  image: "/images/galeri-grid-img-1.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-1.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-1.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-2.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-2.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-2.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-3.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-3.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-  {
-  image: "/images/galeri-grid-img-3.png",
-  caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-},
-]
-
-const renderAlbum = () => {
-  const body = document.querySelector(".container-album");
-  dataAlbum.map((item, index) => {
-    // console.log(item);
-    if(body){
-      // console.log(item);
-      document.querySelector(".container-album").innerHTML+= `
-      <div class="image-container my-3 pointer" style="width:30%;height:35vh;position:relative;background: url(${item.image}) center bottom no-repeat; background-size: cover;" onclick="callNewAlbum(${index})">
-        <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0;">${item.caption.substr(0, 128)}...</div>
-    </div>
-            `
-    }
-  })
-}
+// const renderGaleri = () => {
+//   const bodyGaleri = document.querySelector(".swiper-wrapper-galeri");
+//   dataGaleri.map((item, index) => {
+//     if(bodyGaleri){
+//       // console.log(item);
+//       document.querySelector(".swiper-wrapper-galeri").innerHTML+= `
+// 			<div class="swiper-slide">
+// 				<div class="text-center d-flex flex-column align-items-center justify-content-center">
+// 					<div class="gambar w-100">
+// 							<img src=${item.image} width="100%" style="cursor:pointer" onclick="setIndexGaleri(${index})"/>
+// 					</div>
+// 				</div>
+// 			</div>
+//       `
+//     }
+//   })
+// }
 
 
-renderGaleri()
-renderAlbum()
+// const dataAlbum= [
+//   {
+//   image: "/images/galeri-grid-img-1.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-1.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-1.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-2.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-2.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-2.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-3.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-3.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+//   {
+//   image: "/images/galeri-grid-img-3.png",
+//   caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+// },
+// ]
 
-const callNewAlbum = (index) => {
-  console.log(`supposed to call API to render album with selected index => ${index}`);
-}
+// const renderAlbum = () => {
+//   const body = document.querySelector(".container-album");
+//   dataAlbum.map((item, index) => {
+//     // console.log(item);
+//     if(body){
+//       // console.log(item);
+//       document.querySelector(".container-album").innerHTML+= `
+//       <div class="image-container my-3 pointer" style="width:30%;height:35vh;position:relative;background: url(${item.image}) center bottom no-repeat; background-size: cover;" onclick="callNewAlbum(${index})">
+//         <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0;">${item.caption.substr(0, 128)}...</div>
+//     </div>
+//             `
+//     }
+//   })
+// }
 
-const setIndexGaleri = (index) => {
-  swiperGaleri.slideTo(index)
-  if(typeof document !== 'undefined') {
-    document.querySelector("#main-image-swiper").innerHTML= `
-    <div style="position: relative;height: 95vh; width:100%" class="d-flex flex-column align-items-center">
-      <img src=${dataGaleri[index].image} alt="" style="width: 100%; height: 100%;">
-      <div class="album-caption p-3 pb-5 text-white" style="position:absolute; bottom: 0; max-width:100">${dataGaleri[index].caption}</div>
-    </div>
 
-  `
-  //   document.querySelector("#main-image-swiper").innerHTML= `
-  //   <div class="image-container" style=width: 100%; height:100%%;position:relative;background: url('${dataGaleri[index].image}') center bottom no-repeat; background-size: cover; ">
-  //   <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0">${dataGaleri[index].caption}</div>
-  // </div>
+// renderGaleri()
+// renderAlbum()
 
+// const callNewAlbum = (index) => {
+//   console.log(`supposed to call API to render album with selected index => ${index}`);
+// }
+
+// const setIndexGaleri = (index) => {
+//   swiperGaleri.slideTo(index)
+//   if(typeof document !== 'undefined') {
+//       document.querySelector("#main-image-swiper").innerHTML= `
+//       <div style="position: relative;height: 95vh; width:100%" class="d-flex flex-column align-items-center">
+//         <img src=${dataGaleri[index].image} alt="" style="width: 100%; height: 100%;">
+//         <div class="album-caption p-3 pb-5 text-white" style="position:absolute; bottom: 0; max-width:100">${dataGaleri[index].caption}</div>
+//       </div>
+
+//     `
+//     //   document.querySelector("#main-image-swiper").innerHTML= `
+//     //   <div class="image-container" style=width: 100%; height:100%%;position:relative;background: url('${dataGaleri[index].image}') center bottom no-repeat; background-size: cover; ">
+//     //   <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0">${dataGaleri[index].caption}</div>
+//     // </div>
+
+//     // `
+//   }
+// }
+
+// $(".slide-galeri-item").on("click", function () {
+//   // console.log(this.find(".gambar img").src);
+//   console.log(this);
+// })
+
+$(".album-thumbnail").click(function(event){
+  // console.log($(this).attr("data-album-ke"))
+
+  document.querySelector("#main-image-swiper").innerHTML= ``;
+
+  $("#judul-album").text($(this).find(".album-caption").text())
+  
+  const dataAlbumKe = $(this).attr("data-album-ke");
+
+  const htmlSelectedAlbum = $(`#swiper-wrapper-galeri-${dataAlbumKe}`).get(0).outerHTML;
+
+  // console.log(htmlSelectedAlbum.html())
+
+  // document.querySelector("#swiper-galeri").innerHTML =
   // `
-}
+  //   ${htmlSelectedAlbum}
+  // `
+
+  var buttonNavigation = 
+  `
+  <div>
+    <img src="/images/tombol-kiri.svg" class="swiper-button-prev" style="--swiper-navigation-size: 100px">
+  </div>
+  <div>
+    <img src="/images/tombol-kanan.svg" class="swiper-button-next" style="--swiper-navigation-size: 100px">
+  </div>
+  `
+
+  $("#swiper-galeri").html("")
+
+  $("#swiper-galeri").html(htmlSelectedAlbum)
+
+  $(buttonNavigation).appendTo("#swiper-galeri")
+  
+  initiateSwiperGaleri();
+})
+
+$(document).ready(function(){
+  
+})
+
+// let slideGaleriItem = document.querySelectorAll(".slide-galeri-item");
+
+// // for (let i = 0; i < slideGaleriItem.length; i++) {
+// //   const element = slideGaleriItem[i];
+
+// //   console.log(element)
+
+// //   element.addEventListener("click", function(){
+// //     console.log("TERKLIKK")
+// //   })
+// // }
+
+// $(".slide-galeri-item").click(function(event){
+//   console.log("PANTEKK")
+//   swiperGaleri.slideTo($(this).attr("data-ke"))
+
+//   console.log($(this).find(".gambar img").attr("src"))
+//   console.log($(this).find(".gambar .caption-item").text())
+
+//   var imageSrc = $(this).find(".gambar img").attr("src");
+//   var captionItem = $(this).find(".gambar .caption-item").text();
+
+//   document.querySelector("#main-image-swiper").innerHTML= `
+//     <div class="image-container" style="width: 100%; height:75vh;position:relative;background: url('${imageSrc}') center bottom no-repeat; background-size: cover; ">
+//       <div class="album-caption w-100 p-3 text-white" style="position:absolute; bottom: 0">${captionItem}</div>
+//     </div>
+//     `
+// })
+
+function handleSlideGaleriItem(obj){
+  console.log("PANTEKK");
+
+  console.log(obj.getAttribute('data-ke'))
+
+  // initiateSwiperGaleri();
+
+  // swiperGaleri.slideTo($(this).attr("data-ke"))
+
+  // console.log($(this).find(".gambar img").attr("src"))
+  // console.log($(this).find(".gambar .caption-item").text())
+
+  
+  console.log(obj.querySelector(".gambar img").getAttribute("src"))
+  console.log(obj.querySelector(".gambar .caption-item").innerText)
+  
+  var imageSrc = obj.querySelector(".gambar img").getAttribute("src");
+  var captionItem = obj.querySelector(".gambar .caption-item").innerText;
+
+  document.querySelector("#main-image-swiper").innerHTML=
+   `
+     <div class="image-container" style="width: 100%; min-height: 50vh; position:relative; display: flex; align-items: center; justify-content: center; ">
+        <img src="${imageSrc}" style="width: 100%; height: 100%; ">
+        <div class="album-caption w-100 text-white" style="position:absolute; bottom: 5%; left: 0%; padding: 1vw 4vw; background-color: #333333aa; font-size: 1.6vw; color: #333333; font-weight: 500; ">${captionItem}</div>
+     </div>
+    `
 }
  
 // ============
@@ -1263,32 +1366,39 @@ const swiperBapakbapakList = new Swiper(".bapakbapak-list", {
   },
 });
 
-const swiperGaleri = new Swiper(".swiper-galeri", {
-  // Optional parameters
-  // slidesPerView: 1,
-  loop: false,
-  spaceBetween: 100,
-  // autoplay: {
-  //   delay: 1500,
-    disableOnInteraction: false,
-  // },
+function initiateSwiperGaleri(){
+  const swiperGaleri = new Swiper(".swiper-galeri", {
+    // Optional parameters
+    // slidesPerView: 1,
+    loop: true,
+    spaceBetween: 100,
+    // autoplay: {
+    //   delay: 1500,
+      disableOnInteraction: false,
+    // },
 
-  slidesPerView: 3,
-  spaceBetween: 32,
-  centeredSlides: true,
+    slidesPerView: 5,
+    spaceBetween: 32,
+    centeredSlides: true,
+    slideToClickedSlide: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    // clickable: true
-    dynamicBullets: true,
-  },
-});
 
-if(document.querySelector("#main-image-swiper") && typeof swiperGaleri !== "undefined"){
-  setIndexGaleri(0)
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      // clickable: true
+      dynamicBullets: true,
+    },
+  });
+
 }
+
+initiateSwiperGaleri()
+
+// if(document.querySelector("#main-image-swiper") && typeof swiperGaleri !== "undefined"){
+//   setIndexGaleri(0)
+// }

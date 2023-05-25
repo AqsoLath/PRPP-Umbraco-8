@@ -5307,7 +5307,35 @@ a.coklat-prpp:hover{
 }
 
 
+/*================*/
+/*==== GALERI ====*/
+/*================*/
 
+.main-galeri h3{
+	font-size: 3.5vw;
+	color: var(--fonte);
+}
+
+.main-galeri h4{
+	font-size: 3.2vw;
+	color: var(--fonte);
+}
+
+#swiper-galeri .swiper-slide{
+	transition: .25s;
+}
+
+#swiper-galeri .swiper-slide:hover{
+	transform: scale(1.1);
+}
+
+#swiper-galeri .swiper-slide-active{
+	transform: scale(1.2);
+}
+
+#swiper-galeri .swiper-slide-active:hover{
+	transform: scale(1.2);
+}
 
 /*==============*/
 /*===404 PAGE===*/
