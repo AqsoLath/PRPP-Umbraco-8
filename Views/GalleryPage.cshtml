@@ -6,9 +6,9 @@
 
 <div class="tentang-jumbotron">
 	<div
-		style="background-image: url(/images/hero-bg-image.png); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		style="background-image: url('@Model.HeroBackgroundImage.Url()'); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
 		<div class="container content">
-			<h1>News & Events</h1>
+			<h1>@Model.HeroTitle</h1>
 		</div>
 	</div>
 </div>
@@ -18,7 +18,7 @@
 
 		@Html.Partial("~/Views/Partials/navbarNews.cshtml")
 		<div class="bisnis-navbar-arrowdown" id="bisnis-navbar-arrowdown">
-			<a class="active">Galeri</a>
+			<a class="active">@Model.Name</a>
 			<i class="fa-solid fa-chevron-down panah-bawah"></i>
 			<i class="fa-solid fa-chevron-up panah-atas"></i>
 		</div>
@@ -26,7 +26,7 @@
 </div>
 
 <main class="main-galeri bg-white w-full bg-white py-5 border-top">
-	<h3 class="text-center">Dokumentasi Perjalanan PRPP</h3>
+	<h3 class="text-center">@Model.GaleriTitle</h3>
 	<div class="container " style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25vw;">
 		@{
 			var indexAlbumThumbnail = 0;
