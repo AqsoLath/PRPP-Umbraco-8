@@ -1378,7 +1378,7 @@ function initiateSwiperGaleri(){
     // },
 
     slidesPerView: 5,
-    spaceBetween: 32,
+    spaceBetween: 48,
     centeredSlides: true,
     slideToClickedSlide: true,
 
@@ -1402,3 +1402,46 @@ initiateSwiperGaleri()
 // if(document.querySelector("#main-image-swiper") && typeof swiperGaleri !== "undefined"){
 //   setIndexGaleri(0)
 // }
+
+
+// ===========================
+// ======= DATATABLE =========
+// ===========================
+
+
+$(document).ready(function () {
+  let tableKarir = $('#tableKarir').DataTable({
+    pageLength: 5,
+    "lengthChange": false,
+    "ordering": false
+  });
+
+  var dataTableKarir = [];
+  $(this).find('#data-tableKarir .data-list .data-item').each(function() {
+    dataTableKarir.push($(this).text());
+  });
+
+  var dataLabelKlasifikasi = $("#data-tableKarir .label-klasifikasi").text();
+
+  function generateKeterangan() {
+    tableKarir.rows().every(function(rowIdx, tableLoop, rowLoop) {
+      var newRow = $(`
+        <tr>
+          <td colspan="3">
+            <div id="collapse-${rowIdx}" class="klasifikasi collapse bg-biruPRPP p-3 w-full text-white fw-bold m-2 rounded" data-parent="#tableKarir">
+              <h2 class="text-center">${dataLabelKlasifikasi}</h2>
+                ${dataTableKarir[rowIdx]}
+            </div>
+          </td>
+        </tr>
+      `);
+      $(this.node()).after(newRow);
+    })
+  }
+
+  tableKarir.on("draw", function(){
+    generateKeterangan()
+  })
+
+  generateKeterangan()
+});

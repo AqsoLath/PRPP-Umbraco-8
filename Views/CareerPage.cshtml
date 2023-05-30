@@ -32,7 +32,7 @@
 	    <h3 class="mt-5">@Model.CareerContent2Title</h3>
     	<!-- <p>Model.CareerContent2</p> -->
     	<div class="table-wrapper my-3 container">
-    		<table class="w-100">
+    		<table class="w-100" id="tableKarir">
     				<thead class="text-white">
     					<tr>
     					<th scope="col" class="w-25"><div class="px-3 py-3 mx-2 w-full bg-green text-center rounded me-3">@Model.CareerListLabelPosisi</div></th>
@@ -49,55 +49,59 @@
     			        {
     			            <tr>
     			                <th scope="row">
-            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">@item.KarirListPosisi</div>
+            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary" style="height: 90px; display: flex; align-items: center; justify-content: center;">
+										<p class="text-center m-0">@item.KarirListPosisi</p>
+									</div>
             					</th>
             					<td>
-            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">@item.KarirListLokasi</div>
+            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary" style="height: 90px; display: flex; align-items: center; justify-content: center;">
+										<p class="text-center m-0">@item.KarirListLokasi</p>
+									</div>
             					</td>
             					<td>
-            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary">@item.KarirListFungsi</div>
+            						<div class="px-3 m-2 py-3 w-full border-green text-center rounded me-3 fw-bold text-primary" style="height: 90px; display: flex; align-items: center; justify-content: center;">
+										<p class="text-center m-0">@item.KarirListFungsi</p>
+									</div>
             					</td>
             					<td>
 									<div class="px-3 m-2 py-3 w-full text-center rounded me-3 fw-bold text-white bg-biruPRPP pointer" data-toggle="collapse" data-target="#collapse-@indexCareerListItem" aria-expanded="false" aria-controls="collapse-@indexCareerListItem">@Model.CareerListLabelKeterangan</div>
+									@* <div id="collapse-@indexCareerListItem" class="collapse" aria-labelledby="heading-@indexCareerListItem" data-parent="#tableKarir">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div> *@
 								</td>
     			            </tr>
-							<tr id="collapse-@indexCareerListItem" class="klasifikasi collapse">
+							@* <tr>
 								<td colspan="3">
-									<div class="bg-biruPRPP p-3 w-full text-white fw-bold m-2 rounded">
+									<div id="collapse-@indexCareerListItem" class="klasifikasi collapse bg-biruPRPP p-3 w-full text-white fw-bold m-2 rounded" data-parent="#tableKarir">
 										<h2 class="text-center">@Model.CareerListLabelKlasifikasi</h2>
 										@item.KarirListKeterangan
 									</div>
 								</td>
-							</tr>
+							</tr> *@
 
 							indexCareerListItem++;
     			        }
     				</tbody>
     		</table>
-    		<!--<div id="pagination" class="w-100 d-flex justify-content-end p-3" style="">-->
-    		<!--    <div class="d-flex justify-content-between align-items-center" style="width: 40vw">-->
-    		<!--	    <div class="d-flex align-items-center w-50">-->
-    		<!--		    <div class="text-sm text-secondary w-50">Jumlah Baris</div>-->
-      <!--      				<select class="form-select mx-3 w-50" aria-label="Default select example">-->
-      <!--      					<option selected value=10>10</option>-->
-      <!--      					<option value=20>20</option>-->
-      <!--      					<option value=30>30</option>-->
-      <!--      				</select>-->
-    		<!--	        </div>-->
-    		<!--	        <div class="d-flex align-items-center w-50 ms-3">-->
-    		<!--		        <div class="text-sm text-secondary me-3">1-10 of 134</div>-->
-    		<!--		        <div class="d-flex align-items-center">-->
-      <!--      					<div class="px-3 py-1 rounded rounded-5 bg-gray text-secondary pointer"> < </div>-->
-      <!--      					<div class="bg-white px-3 py-1 rounded rounded-5 text-secondary mx-3"> 1 </div>-->
-      <!--      					<div class="bg-white px-3 py-1 rounded rounded-5 text-secondary pointer"> > </div>-->
-    		<!--		        </div>-->
-    		<!--	        </div>-->
-    		<!--        </div>-->
-    	 <!--       </div>-->
-    	 <!--   </div>-->
         </div>
 	}
 </div>
+
+<div id="data-tableKarir" style="display: none;">
+	<p class="label-klasifikasi">@Model.CareerListLabelKlasifikasi</p>
+	<div class="data-list">
+		@foreach (var item in Model.CareerListItem)
+		{
+			<div class="data-item">@item.KarirListKeterangan</div>
+		}
+	</div>
+</div>
+
+<!-- ==================== -->
+<!-- === KARIR BANNER === -->
+<!-- ==================== -->
 
 <div class="fluid-container home-karir d-flex " data-aos="fade-up">
 	<div class="home-karir-vektor">
