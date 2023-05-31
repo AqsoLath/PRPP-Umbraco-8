@@ -125,8 +125,14 @@ body{
 /*=== DATATABLE ===*/
 /*=================*/
 
-#tableKarir td{
+#tableKarir td,
+#tableKarir th{
 	padding: 0;
+}
+
+#tableKarir thead th{
+	border: none;
+	padding: 8px 0;
 }
 
 
@@ -2969,6 +2975,50 @@ a.coklat-prpp:hover{
 }
 
 
+.container-third-parties .swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--abu400);
+	border-radius: 8px;
+	padding: 32px;
+
+	text-align: center;
+
+	aspect-ratio: 1/1;
+}
+
+.container-third-parties .swiper-slide .gambar{
+	background-color: var(--abu500);
+}
+
+.container-third-parties .swiper-slide img{
+	width: 50%;
+}
+
+.container-site-activities .site-wrapper{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.2vw;
+}
+
+@media(max-width: 992px){
+	.container-site-activities .site-wrapper{
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.container-site-activities .site-wrapper .gambar{
+	aspect-ratio: 1/1;
+}
+
+.container-site-activities .site-wrapper .gambar img{
+	width: 100%;
+	height: 100%;
+
+	object-fit: contain;
+}
 
 
 /* 
@@ -3244,6 +3294,49 @@ a.coklat-prpp:hover{
 	color: var(--abu600);
 	font-size: 20px;
 }
+
+.container-pedoman .pedoman-wrapper{
+	display: flex;
+	justify-content: center;
+	gap: 1.2vw;
+}
+
+.container-pedoman .pedoman-wrapper .gambar{
+	width: 50%;
+}
+
+.container-pedoman .pedoman-wrapper .konten{
+	width: 50%;
+}
+
+.container-pedoman .pedoman-wrapper .konten .list-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 8px 0;
+}
+
+.container-pedoman .pedoman-wrapper .konten .list-item .button-file{
+	flex-shrink: 0;
+}
+
+.container-whistle .whistle-wrapper{
+	display: flex;
+	justify-content: space-between;
+
+	gap: 1.2vw;
+}
+
+.container-whistle .whistle-wrapper .gambar{
+	width: 50%;
+}
+
+.container-whistle .whistle-wrapper .konten{
+	width: 50%;
+}
+
+
 
 
 /*=============================*/
@@ -3544,6 +3637,13 @@ a.coklat-prpp:hover{
 	position: absolute;
 
 	background-image: url('/images/background-karir-pabrik.png');
+}
+
+#tableKarir .body-table-karir .karir-td{
+	height: 90px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
 }
 
 
@@ -5331,6 +5431,54 @@ a.coklat-prpp:hover{
 	color: var(--fonte);
 }
 
+.main-galeri .album-container{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)); 
+	gap: 1.25vw;
+}
+
+.main-galeri .album-container .album-thumbnail{
+	width: 100%; 
+	height: 35vh; 
+	position: relative;
+}
+
+.main-galeri .album-container .album-thumbnail .album-caption{
+	position:absolute; 
+	bottom: 5%; 
+	left: 0; 
+	padding: .5vw 1vw; 
+	background-color: #333333aa;
+}
+
+#main-image-swiper .image-container{
+	width: 100%; 
+	min-height: 50vh; 
+	position:relative; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+}
+
+#main-image-swiper .image-container img{
+	width: 100%; 
+	height: 100%; 
+}
+
+#main-image-swiper .image-container .album-caption{
+	position:absolute; 
+	bottom: 5%; 
+	left: 0%; 
+
+	padding: 1vw 4vw; 
+	background-color: #333333aa; 
+	
+	font-size: 1.6vw; 
+	color: #333333; 
+	font-weight: 500; 
+}
+
+
 .main-galeri h4{
 	font-size: 3.2vw;
 	color: var(--fonte);
@@ -5353,6 +5501,35 @@ a.coklat-prpp:hover{
 #swiper-galeri .swiper-slide-active:hover{
 	transform: scale(1.1);
 }
+
+
+@media(max-width: 992px){
+	.main-galeri h3{
+		font-size: 24px;
+	}
+	
+	.main-galeri h4{
+		font-size: 20px;
+	}
+
+	.main-galeri .album-container{
+		grid-template-columns: repeat(2, minmax(0, 1fr)); 
+	}
+	
+	.main-galeri .album-container .album-thumbnail{
+		height: 25vh; 
+	}
+
+	.main-galeri .album-container .album-thumbnail .album-caption{
+		font-size: 12px;
+	}
+
+	#main-image-swiper .image-container .album-caption{
+		font-size: 12px;
+	}
+}
+
+
 
 /*==============*/
 /*===404 PAGE===*/
@@ -7157,7 +7334,37 @@ footer .social-media{
 		font-size: 14px;
 	}
 
+	.container-pedoman .pedoman-wrapper{
+		flex-direction: column;
+	}
+	
+	.container-pedoman .pedoman-wrapper .gambar{
+		width: 100%;
+	}
 
+	.container-pedoman .pedoman-wrapper .konten{
+		width: 100%;
+	}
+
+	.container-pedoman .pedoman-wrapper .konten .list-item{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+		
+	.container-whistle .whistle-wrapper{
+		flex-direction: column-reverse;
+
+		gap: 1.2vw;
+	}
+
+	.container-whistle .whistle-wrapper .gambar{
+		width: 100%;
+	}
+
+	.container-whistle .whistle-wrapper .konten{
+		width: 100%;
+	}
 		
 	/*=============================*/
 	/*=== TANGGUNG JAWAB | HSSE ===*/

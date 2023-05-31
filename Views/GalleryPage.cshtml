@@ -27,15 +27,15 @@
 
 <main class="main-galeri bg-white w-full bg-white py-5 border-top">
 	<h3 class="text-center">@Model.GaleriTitle</h3>
-	<div class="container " style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25vw;">
+	<div class="container album-container">
 		@{
 			var indexAlbumThumbnail = 0;
 		}
 		@foreach (var item in Model.GalleryAlbum)
 		{	
 			var albumThumbnailUrl = item.AlbumThumbnail.Url();
-			<div class="album-thumbnail image-container my-3 pointer" style="width:100%; height:35vh; position:relative;background: url(@albumThumbnailUrl) center bottom no-repeat; background-size: cover;" data-album-ke="@indexAlbumThumbnail">
-				<div class="album-caption w-100 text-white" style="position:absolute; bottom: 5%; left: 0; padding: .5vw 1vw; background-color: #333333aa;">@item.AlbumTitle</div>
+			<div class="album-thumbnail image-container my-3 pointer" style="background: url(@albumThumbnailUrl) center bottom no-repeat; background-size: cover;" data-album-ke="@indexAlbumThumbnail">
+				<div class="album-caption w-100 text-white" style="">@item.AlbumTitle</div>
 			</div>
 			indexAlbumThumbnail++;
 		}

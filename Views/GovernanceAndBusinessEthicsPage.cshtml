@@ -25,89 +25,90 @@
 </div>
 
 
+<div class="container container-tata-kelola px-2 sustainable-sub-content sustainable-sub-content-2 rich-text-content" style="margin: 0 auto; " data-aos="fade-up">
+    <img src="/images/etika-bisnis-img.png">
+    <h3 style="color: #AEC23C ">@Model.GovernanceContentTitle</h3>
+    <p>@Model.GovernanceContentText</p>
+</div>
 
-    <div class="container container-tata-kelola rich-text-content d-flex justify-content-between" data-aos="fade-up">
-        <div class="w-50 me-3">
-            <h4>@Model.GovernanceContentTitle</h4>
-            <p>@Model.GovernanceContentText</p>
-        </div>
-        <div class="w-50 ms-3" data-aos="fade-up">
-            <img src="/images/etika-bisnis-img.png" style="width:100%" alt="ethics code">
-        </div>
+<div class="container container-kode-etik" data-aos="fade-up">
+    <div class="ethics-code-wrapper">
+        <p>@Model.EthicsCodeDescription</p>
     </div>
-    
-    <div class="container container-kode-etik" data-aos="fade-up">
-        <div class="ethics-code-wrapper">
-            <p>@Model.EthicsCodeDescription</p>
-        </div>
 
-        <div class="ethics-code-list-wrapper">
-		@foreach (var item in Model.EthicsCodeList){
-			<div class="ethics-code-list" data-aos="fade-up">
-                <div class="gambar">
-                    <img src="@item.EthicsCodeImage.Url()" alt="ethics code">
-                </div>
-                <div class="konten">
-                    <p>@item.EthicsCodeContent</p>
-                </div>
+    <div class="ethics-code-list-wrapper">
+    @foreach (var item in Model.EthicsCodeList){
+        <div class="ethics-code-list" data-aos="fade-up">
+            <div class="gambar">
+                <img src="@item.EthicsCodeImage.Url()" alt="ethics code">
             </div>
-		}
-		<a class="button-file" href="@Model.FileCodeOfConduct.Url()" download="">Download File Code Of Conduct PRPP <i class="fa-solid fa-download"></i> </a>
+            <div class="konten">
+                <p>@item.EthicsCodeContent</p>
+            </div>
         </div>
+    }
+        <a class="button-file" href="@Model.FileCodeOfConduct.Url()" download="">Download File Code Of Conduct PRPP <i class="fa-solid fa-download"></i> </a>
+    </div>
+</div>
+<hr class="text-secondary my-5" />
 
-       <hr class="text-secondary my-5" />
-       
-       <div class="d-flex justify-content-between" style="gap:1rem">
-            <div class="w-50 me-3" data-aos="fade-up">
-                @{
-                    @* var mediaPedomanKepatuhan = Model.Value<MediaWithCrops>("PedomanKepatuhanImage"); *@
-                        var mediaPedomanKepatuhan = Model.MediaPedomanKepatuhan.Url();
-                }
-                <img src="@mediaPedomanKepatuhan" style="width:100%" alt="ethics code">
-            </div>
-            <div class="w-50 ms-3" data-aos="fade-up">
-                <h5 class="text-green" style="color:#AEC23C">@Model.PedomanKepatuhanTitle</h5>
-                <p>@Model.PedomanKepatuhanContent</p>
-                <div>
-                    @if (Model.PedomanKepatuhanFiles != null)
+<div class="container container-pedoman py-3">
+    <div class="pedoman-wrapper" style="">
+        <div class="gambar" data-aos="fade-up">
+            @{
+                @* var mediaPedomanKepatuhan = Model.Value<MediaWithCrops>("PedomanKepatuhanImage"); *@
+                    var mediaPedomanKepatuhan = Model.MediaPedomanKepatuhan.Url();
+            }
+            <img src="@mediaPedomanKepatuhan" style="width:100%" alt="ethics code">
+        </div>
+        <div class="konten" data-aos="fade-up">
+            <h5 class="text-green" style="color:#AEC23C">@Model.PedomanKepatuhanTitle</h5>
+            <p>@Model.PedomanKepatuhanContent</p>
+            <div>
+                @if (Model.PedomanKepatuhanFiles != null)
+                {
+                    var indexPedomanKepatuhan = 0;
+                    
+                    foreach (var item in Model.PedomanKepatuhanFiles)
                     {
-                        var indexPedomanKepatuhan = 0;
+                        <!--var filePedomanKepatuhan = Model.Value<IPublishedContent>("PedomanKepatuhanFile");-->
+                        indexPedomanKepatuhan = indexPedomanKepatuhan + 1;
                         
-                        foreach (var item in Model.PedomanKepatuhanFiles)
-                        {
-                            <!--var filePedomanKepatuhan = Model.Value<IPublishedContent>("PedomanKepatuhanFile");-->
-                            indexPedomanKepatuhan = indexPedomanKepatuhan + 1;
-                            
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p>@indexPedomanKepatuhan. @item.PedomanKepatuhanTitle</p>
-                                <a class="d-flex justify-content-between align-items-center px-3 py-1 border-green rounded rounded-3 text-primary pointer" style="width:35%" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">
-                                    <div>Download File</div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download text-primary" viewBox="0 0 16 16">
-                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        }
+                        <div class="list-item">
+                            <p>@indexPedomanKepatuhan. @item.PedomanKepatuhanTitle</p>
+                            <a class="button-file" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">Download File<i class="fa-solid fa-download"></i> </a>
+                            @* <a class="d-flex justify-content-between align-items-center px-3 py-1 border-green rounded rounded-3 text-primary pointer" style="width:35%" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">
+                                <div>Download File</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download text-primary" viewBox="0 0 16 16">
+                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                </svg>
+                            </a> *@
+                        </div>
                     }
-                </div>
-            </div>
-       </div>
-	<div class="my-3" style="color:white">batas</div>
-       <div class="d-flex jusfity-content-between" style="gap:1rem">
-            <div class="w-50 me-3" data-aos="fade-up">
-                <h5 class="text-green" style="color:#AEC23C">@Model.WhisttleblowingSystemTitle</h5>
-                <p>
-                    @Model.WhisttleblowingSystemContent
-                </p>
-            </div>
-            <div class="w-50 ms-3" data-aos="fade-up">
-                @{
-                    @* var mediaWhistleBlowing = Model.Value<MediaWithCrops>("WhistleBlowingSystemImage"); *@
-                        var mediaWhistleblowingSystem = Model.WhisttleblowingSystemImage.Url();
                 }
-                <img src="@mediaWhistleblowingSystem" style="width:100%" alt="ethics code">
             </div>
-
-       </div>
+        </div>
     </div>
+</div>
+
+
+<div class="container container-whistle py-3">
+    <div class="my-3" style="color:white">batas</div>
+    <div class="whistle-wrapper" style="gap:1rem">
+        <div class="gambar me-3" data-aos="fade-up">
+            <h5 class="text-green" style="color:#AEC23C">@Model.WhisttleblowingSystemTitle</h5>
+            <p>
+                @Model.WhisttleblowingSystemContent
+            </p>
+        </div>
+        <div class="konten ms-3" data-aos="fade-up">
+            @{
+                @* var mediaWhistleBlowing = Model.Value<MediaWithCrops>("WhistleBlowingSystemImage"); *@
+                    var mediaWhistleblowingSystem = Model.WhisttleblowingSystemImage.Url();
+            }
+            <img src="@mediaWhistleblowingSystem" style="width:100%" alt="ethics code">
+        </div>
+
+    </div>
+</div>

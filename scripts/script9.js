@@ -722,7 +722,6 @@ $(document).ready(function(){
 // })
 
 function handleSlideGaleriItem(obj){
-  console.log("PANTEKK");
 
   console.log(obj.getAttribute('data-ke'))
 
@@ -742,9 +741,9 @@ function handleSlideGaleriItem(obj){
 
   document.querySelector("#main-image-swiper").innerHTML=
    `
-     <div class="image-container" style="width: 100%; min-height: 50vh; position:relative; display: flex; align-items: center; justify-content: center; ">
-        <img src="${imageSrc}" style="width: 100%; height: 100%; ">
-        <div class="album-caption w-100 text-white" style="position:absolute; bottom: 5%; left: 0%; padding: 1vw 4vw; background-color: #333333aa; font-size: 1.6vw; color: #333333; font-weight: 500; ">${captionItem}</div>
+     <div class="image-container" style=" ">
+        <img src="${imageSrc}" style="">
+        <div class="album-caption w-100 text-white" style="">${captionItem}</div>
      </div>
     `
 }
@@ -951,8 +950,15 @@ const swiperOurProjectLower = new Swiper(".our-project-slider-lower", {
     disableOnInteraction: false,
   },
 
-  slidesPerView: 3,
-  spaceBetween: 32,
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+
+  slidesPerView: 2,
+  spaceBetween: 12,
 
   // Navigation arrows
   navigation: {
@@ -975,8 +981,15 @@ const swiperOurProjectUpper = new Swiper(".our-project-slider-upper", {
     disableOnInteraction: false,
   },
 
-  slidesPerView: 3,
-  spaceBetween: 32,
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+
+  slidesPerView: 2,
+  spaceBetween: 12,
 
   // Navigation arrows
   navigation: {
@@ -1377,8 +1390,18 @@ function initiateSwiperGaleri(){
       disableOnInteraction: false,
     // },
 
-    slidesPerView: 5,
-    spaceBetween: 48,
+    
+  breakpoints: {
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 48,
+      
+    },
+  },
+
+  slidesPerView: 3,
+  spaceBetween: 16,
+
     centeredSlides: true,
     slideToClickedSlide: true,
 
