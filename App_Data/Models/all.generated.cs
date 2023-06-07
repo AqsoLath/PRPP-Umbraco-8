@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "12fbf151de5e0b1d")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "bc92da70ac900eb4")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
@@ -4479,6 +4479,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual global::Umbraco.Core.Models.MediaWithCrops FileCodeOfConduct => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("fileCodeOfConduct");
 
 		///<summary>
+		/// File Code of Conduct Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("fileCodeOfConductTitle")]
+		public virtual string FileCodeOfConductTitle => this.Value<string>("fileCodeOfConductTitle");
+
+		///<summary>
 		/// Governance Content Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
@@ -4512,6 +4519,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("pedomanKepatuhanFiles")]
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.PedomanKepatuhan> PedomanKepatuhanFiles => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.PedomanKepatuhan>>("pedomanKepatuhanFiles");
+
+		///<summary>
+		/// Pedoman Kepatuhan Files Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pedomanKepatuhanFilesTitle")]
+		public virtual string PedomanKepatuhanFilesTitle => this.Value<string>("pedomanKepatuhanFilesTitle");
 
 		///<summary>
 		/// Pedoman Kepatuhan Title
