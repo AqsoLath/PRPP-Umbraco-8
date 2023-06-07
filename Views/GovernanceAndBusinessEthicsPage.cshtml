@@ -47,7 +47,7 @@
             </div>
         </div>
     }
-        <a class="button-file" href="@Model.FileCodeOfConduct.Url()" download="">Download File Code Of Conduct PRPP <i class="fa-solid fa-download"></i> </a>
+        <a class="button-file" href="@Model.FileCodeOfConduct.Url()" download="">@Model.FileCodeOfConductTitle <i class="fa-solid fa-download"></i> </a>
     </div>
 </div>
 <hr class="text-secondary my-5" />
@@ -76,7 +76,7 @@
                         
                         <div class="list-item">
                             <p>@indexPedomanKepatuhan. @item.PedomanKepatuhanTitle</p>
-                            <a class="button-file" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">Download File<i class="fa-solid fa-download"></i> </a>
+                            <a class="button-file" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">@Model.PedomanKepatuhanFilesTitle <i class="fa-solid fa-download"></i> </a>
                             @* <a class="d-flex justify-content-between align-items-center px-3 py-1 border-green rounded rounded-3 text-primary pointer" style="width:35%" href="@item.PedomanKepatuhanFile.Url()" target="_blank" download="">
                                 <div>Download File</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download text-primary" viewBox="0 0 16 16">
